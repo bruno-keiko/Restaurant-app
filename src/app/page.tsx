@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
               height={24}
               priority
             />
-          </a>
+          </a>{" "}
+          <Button />
         </div>
       </div>
 
@@ -85,9 +87,7 @@ export default function Home() {
           <h2>
             Deploy <span>-&gt;</span>
           </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+          <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
         </a>
       </div>
     </main>
