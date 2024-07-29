@@ -6,11 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint && stylelint --allow-empty-input \"**/*.{css,scss}\"",
+    "lint:fix": "next lint --fix && stylelint --allow-empty-input --fix \"**/*.{css,scss}\"",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "commit": "cz",
-    "format": "prettier --check .",
+    "format": "prettier --check . ",
     "format:fix": "prettier --write --list-different .",
     "prepare": "husky"
   },
@@ -46,6 +47,11 @@
     "eslint-plugin-storybook": "^0.8.0",
     "prettier": "^3.3.3",
     "storybook": "^8.2.6",
+    "stylelint": "^16.7.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-selector-bem-pattern": "^4.0.0",
     "typescript": "^5"
   },
   "config": {
