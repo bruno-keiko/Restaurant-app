@@ -22,7 +22,7 @@ The primary goal of this project is educational. It provides a sandbox environme
 11. [User-Centric Performance Metrics](https://web.dev/articles/user-centric-performance-metrics)
 
 
-##Our UIX is [here](https://www.figma.com/design/xiAbsYNAyBYPH5pfPUkIEX/Restaurant-website-template-(Community)?node-id=0-1&t=SsJ8S57pB4BlgRxA-0)
+## Our UIX is [here](https://www.figma.com/design/xiAbsYNAyBYPH5pfPUkIEX/Restaurant-website-template-(Community)?node-id=0-1&t=SsJ8S57pB4BlgRxA-0)
 
 ## Setup
 
