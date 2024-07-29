@@ -1,10 +1,10 @@
 .storybook-header {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
-  display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+  display: flex;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   justify-content: space-between;
+  padding: 15px 20px;
 }
 
 .storybook-header svg {
@@ -13,11 +13,11 @@
 }
 
 .storybook-header h1 {
-  font-weight: 700;
+  display: inline-block;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1;
   margin: 6px 0 6px 10px;
-  display: inline-block;
   vertical-align: top;
 }
 
