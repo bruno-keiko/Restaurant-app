@@ -7,9 +7,7 @@ This project is created solely for learning purposes. It is designed to help dev
 
 The primary goal of this project is educational. It provides a sandbox environment where developers can experiment, learn, and improve their skills in a practical manner.
 
-## Features
-
-Projectde ulanyljak tehnologiyalar we metodlar (hazirlikche):
+## Features and methods
 
 1. [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
 2. [Sass](https://sass-lang.com/)
