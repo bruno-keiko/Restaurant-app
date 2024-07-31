@@ -1,6 +1,7 @@
 .next
 .cache
 package-lock.json
+storybook-static
 public
 node_modules
 next-env.d.ts

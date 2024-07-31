@@ -1,0 +1,50 @@
+{
+  "v": 5,
+  "entries": {
+    "atoms-button--docs": {
+      "id": "atoms-button--docs",
+      "title": "Atoms/Button",
+      "name": "Docs",
+      "importPath": "./src/components/atoms/button/Button.stories.tsx",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "atoms-button--default": {
+      "type": "story",
+      "id": "atoms-button--default",
+      "name": "Default",
+      "title": "Atoms/Button",
+      "importPath": "./src/components/atoms/button/Button.stories.tsx",
+      "componentPath": "./src/components/atoms/button/Button.tsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "atoms-button--small": {
+      "type": "story",
+      "id": "atoms-button--small",
+      "name": "Small",
+      "title": "Atoms/Button",
+      "importPath": "./src/components/atoms/button/Button.stories.tsx",
+      "componentPath": "./src/components/atoms/button/Button.tsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "atoms-button--medium": {
+      "type": "story",
+      "id": "atoms-button--medium",
+      "name": "Medium",
+      "title": "Atoms/Button",
+      "importPath": "./src/components/atoms/button/Button.stories.tsx",
+      "componentPath": "./src/components/atoms/button/Button.tsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "atoms-button--large": {
+      "type": "story",
+      "id": "atoms-button--large",
+      "name": "Large",
+      "title": "Atoms/Button",
+      "importPath": "./src/components/atoms/button/Button.stories.tsx",
+      "componentPath": "./src/components/atoms/button/Button.tsx",
+      "tags": ["dev", "test", "autodocs"]
+    }
+  }
+}
