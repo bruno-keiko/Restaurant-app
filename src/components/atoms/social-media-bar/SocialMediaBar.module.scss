@@ -1,0 +1,17 @@
+.social-media-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--small {
+    gap: 20px;
+  }
+
+  &--medium {
+    gap: 40px;
+  }
+
+  &--large {
+    gap: 50px;
+  }
+}
