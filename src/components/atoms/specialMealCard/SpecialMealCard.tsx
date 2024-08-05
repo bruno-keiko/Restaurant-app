@@ -9,14 +9,10 @@ interface SpecialMealCardProps {
 const SpecialMealCard: React.FC<SpecialMealCardProps> = ({ image, title }) => {
   return (
     <article className={styles.card}>
-      <figure className={styles["card__img-box"]}>
-        <img
-          src={image}
-          alt="Special meal image"
-          className={styles["card__img-box__img"]}
-        />
+      <figure className={styles["card__box"]}>
+        <img src={image} alt={title} className={styles["card__box__img"]} />
+        <figcaption className={styles["card__box__title"]}>{title}</figcaption>
       </figure>
-      <h3 className={styles["card__title"]}>{title}</h3>
     </article>
   );
 };

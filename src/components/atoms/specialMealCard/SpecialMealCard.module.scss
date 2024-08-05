@@ -17,21 +17,20 @@
     color: $white-floral;
   }
 
-  &__img-box {
-    margin: auto;
-    width: px-to-rem(108.3);
-    height: px-to-rem(86);
-    border-radius: $br-sm;
-    overflow: hidden;
+  &__box {
+    @include center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 
     &__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      width: px-to-rem(108.3);
+      height: px-to-rem(86);
+      border-radius: $br-sm;
+      @include margin-bottom(sm);
     }
 
     &__title {
-      display: block;
       font-size: $fs-xl;
       font-weight: $fw-normal;
       line-height: px-to-rem(29.3);
