@@ -35,6 +35,12 @@
 @mixin padding($space) {
   padding: map-get($spacing, $space);
 }
+
+@mixin padding-vertical($space) {
+  padding-top: map-get($spacing, $space);
+  padding-bottom: map-get($spacing, $space);
+}
+
 @mixin margin($space) {
   margin: map-get($spacing, $space);
 }

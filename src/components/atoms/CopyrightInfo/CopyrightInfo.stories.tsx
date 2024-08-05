@@ -2,7 +2,7 @@ import CopyrightInfo from "./CopyrightInfo";
 
 export const Default = {
   args: {
-    text: "�� 2024 My Website. Created by Zaman Hudayberdiev. All rights reserved",
+    text: "�� 2024 My Website. All rights reserved",
   },
 };
 
