@@ -1,0 +1,10 @@
+@import "../../../foundations/sass/all";
+
+.copyrightInfo {
+  color: $white-floral;
+  font-size: $fs-lg;
+  @include center;
+  height: 100px;
+  background-color: $secondary-color;
+  font-weight: $fw-bold;
+}
