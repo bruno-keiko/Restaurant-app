@@ -1,6 +1,6 @@
-/*=============================================
+/* =============================================
 =            Mixins                           =
-=============================================*/
+============================================= */
 
 /**
  *
@@ -8,38 +8,40 @@
  * styles for components.
  *
  */
+@use "sass:map";
+
 @mixin center {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 @mixin tablet {
-  @media (min-width: map-get($breakpoints, "md")) {
+  @media (min-width: map.get($breakpoints, "md")) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (min-width: map-get($breakpoints, "lg")) {
+  @media (min-width: map.get($breakpoints, "lg")) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: map-get($breakpoints, "xl")) {
+  @media (min-width: map.get($breakpoints, "xl")) {
     @content;
   }
 }
 
 @mixin padding($space) {
-  padding: map-get($spacing, $space);
+  padding: map.get($spacing, $space);
 }
 
 @mixin margin($space) {
-  margin: map-get($spacing, $space);
+  margin: map.get($spacing, $space);
 }
 
 @mixin margin-bottom($space) {
-  margin-bottom: map-get($spacing, $space);
+  margin-bottom: map.get($spacing, $space);
 }

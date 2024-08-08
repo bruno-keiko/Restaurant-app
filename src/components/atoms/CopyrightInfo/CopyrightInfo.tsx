@@ -7,7 +7,7 @@ interface CopyrightInfoProps {
 
 const CopyrightInfo: React.FC<CopyrightInfoProps> = ({ text }) => {
   return (
-    <div className={`${styles.copyrightInfo}`}>
+    <div className={`${styles["copyright-info"]} `}>
       <span>{text}</span>
     </div>
   );

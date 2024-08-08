@@ -1,32 +1,33 @@
 @import "../../../foundations/sass/all";
 
 .button {
-  color: $btn-primary-color;
   background-color: $btn-primary-bg;
-  border-radius: $br-md;
-  font-size: $fs-xl;
   border: none;
-  @include center;
+  border-radius: $br-md;
+  color: $btn-primary-color;
   cursor: pointer;
+  font-size: $fs-xl;
+
+  @include center;
 
   &--small {
-    height: 35px;
-    min-width: 90px;
     border-radius: $br-sm;
     font-size: $fs-sm;
     font-weight: $fw-bold;
+    height: 35px;
+    min-width: 90px;
   }
 
   &--medium {
+    border-radius: $br-md;
     height: 60px;
     min-width: 300px;
-    border-radius: $br-md;
   }
 
   &--large {
+    border-radius: $br-md;
+    font-size: $fs-xxl;
     height: 120px;
     min-width: 120px;
-    font-size: $fs-xxl;
-    border-radius: $br-md;
   }
 }

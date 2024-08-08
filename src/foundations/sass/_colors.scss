@@ -1,6 +1,6 @@
-/*=============================================
+/* =============================================
 =            Foundation - colors              =
-=============================================*/
+============================================= */
 
 /**
  * This file defines the actual colors that will be used for styling. They will default to the palette
@@ -8,15 +8,15 @@
  * with their own variables.
  */
 
-/*=============================================
+/* =============================================
 =            Global text colors               =
-=============================================*/
+============================================= */
 // $body-text-color: var(--body-text-color, $dark) !default;
 // $body-bg-color: var(--body-bg-color, $white) !default;
 
-/*=============================================
+/* =============================================
 =                 Buttons                     =
-=============================================*/
+============================================= */
 $btn-primary-color: var(--btn-primary-color,$white-floral ) !default;
 $btn-primary-bg: var(--btn-primary-bg,$primary-color) !default;
 
