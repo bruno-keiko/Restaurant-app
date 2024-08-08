@@ -4,8 +4,7 @@
   "rules": {
     "order/properties-alphabetical-order": true,
     "declaration-property-unit-allowed-list": {
-      "/^border/": ["px"],
-      "/^padding|^gap/": ["rem"]
+      "/^border/": ["px"]
     },
     "unit-allowed-list": ["%", "deg", "px", "rem", "ms"],
     "color-named": "never",
