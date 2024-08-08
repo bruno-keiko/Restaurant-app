@@ -1,6 +1,6 @@
 @import "../../../foundations/sass/all";
 
-.social-media-bar {
+.navbar {
   @include center;
 
   &--small {
@@ -14,4 +14,10 @@
   &--large {
     gap: 50px;
   }
+}
+
+.items {
+  color: $navbar-secondary-color;
+  font-size: $fs-lg;
+  text-decoration: none;
 }

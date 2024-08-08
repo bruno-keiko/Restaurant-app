@@ -1,4 +1,3 @@
-
 # Restaurant App
 
 This project is created solely for learning purposes. It is designed to help developers understand and practice various concepts and technologies, including but not limited to React, Sass, TypeScript, and modern web development practices.
@@ -21,8 +20,7 @@ The primary goal of this project is educational. It provides a sandbox environme
 10. [Cypress](https://www.cypress.io/)
 11. [User-Centric Performance Metrics](https://web.dev/articles/user-centric-performance-metrics)
 
-
-## Our UIX is [here](https://www.figma.com/design/xiAbsYNAyBYPH5pfPUkIEX/Restaurant-website-template-(Community)?node-id=0-1&t=SsJ8S57pB4BlgRxA-0)
+## Our UIX is [here](<https://www.figma.com/design/xiAbsYNAyBYPH5pfPUkIEX/Restaurant-website-template-(Community)?node-id=0-1&t=SsJ8S57pB4BlgRxA-0>)
 
 ## Setup
 
@@ -56,6 +54,8 @@ Contributions are welcome! Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
 ```
 
 This update directs potential contributors to the `CONTRIBUTING.md` file for more detailed guidelines on contributing to your project.
+```

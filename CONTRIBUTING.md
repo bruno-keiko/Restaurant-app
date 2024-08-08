@@ -1,7 +1,7 @@
-
 # How to Contribute to Restaurant ⭐
 
 Thank you for taking the time to contribute!
+
 # Table of Contents
 
 - [Prerequisites](#prerequisites)
@@ -33,17 +33,15 @@ Here are prerequisites you should meet before contributing to Restaurant GitHub:
 - a GitHub account
 - fundamental knowledge of the GitHub and git version control flow (fork, clone, push, commit, branches, etc.)
 
-
 # Where can I get help?
 
 Our maintainers and developers are here to help! We aim to give a safe space for contributors of all skill levels to build their skills while making an impact. 🤝
 
-You can ask  team members questions at any point during your contribution in the following places on GitHub:
+You can ask team members questions at any point during your contribution in the following places on GitHub:
 
 - Issue discussions in an issue you're assigned to or interested in.
 - Pull request discussions for your contribution.
 - Or, create a new issue with the `type: question / suggestion` label.
-
 
 # What kind of contributions does Restaurant app want?
 
@@ -198,21 +196,20 @@ Whether you are a beginner developer or experienced, we recommend all contributo
 
    **Important Note about Tests:** We are currently making upgrades to our products performances. Therefore, some tests may need to be ran multiple times before they pass, and some may not pass at all. We recommend frequently running tests as you make code changes, then at your own discretion, deciding which tests fail due to your code changes, and fixing them so that they pass. Please reach out to Restaurant app staff in issue discussions if you encounter any issues with tests. Thank you for your patience!
 
-
-
-6. **Write readable commit messages** as demonstrated below:
+5. **Write readable commit messages** as demonstrated below:
 
 ### How to Write Readable Commit Messages:
 
 **Basic Anatomy of a Commit Message:**
 
 ```
-git cz   
+git cz
 ```
+
 or
 
 ```
-npm run commit 
+npm run commit
 
 ```
 
@@ -221,15 +218,11 @@ npm run commit
 - (< 50 char) first line is the commit title. This should be capitalized and contain a short, one-line summary.
 - Blank line to separate title from body. This ensures “git log” can parse logs correctly.
 
-
-
 **Example: Git Commit Message (Bad):**
 
 ```
 fixed bug on landing page
 ```
-
-
 
 ## 5. **Sync Your Fork if Needed:**
 
@@ -255,7 +248,6 @@ Finally, please resolve any merge conflicts by manually editing the conflicting 
 - [GitHub Docs: Resolving Merge Conflicts on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 - [GitHub Docs: Configuring a Remote Repo for a Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork)
 - [FreeCodeCamp: How to Sync Your Fork with the Original Git Repo](https://www.freecodecamp.org/news/how-to-sync-your-fork-with-the-original-git-repository/)
-
 
 ## 6. **Push Changes to GitHub:**
 
