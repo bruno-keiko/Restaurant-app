@@ -51,6 +51,7 @@ export default function Home() {
           </h2>
           <p>
             Find in-depth information about Next.js features and API. example 2
+            p
           </p>
         </a>
 
