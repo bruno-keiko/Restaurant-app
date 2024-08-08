@@ -1,0 +1,23 @@
+@import "../../../foundations/sass/all";
+
+.info-card {
+  @include center;
+  gap: map-get($spacing, sm);
+  // background-color: $primary-color;
+  color: $white-floral;
+
+  &__icon {
+    width: map-get($spacing, mds);
+    height: map-get($spacing, mds);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    font-size: $fs-xs;
+    font-weight: $fw-normal;
+  }
+}
