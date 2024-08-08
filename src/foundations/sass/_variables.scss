@@ -145,11 +145,14 @@ $spacing: (
   // 96px
 ) !default;
 
+@function px-to-rem($px-value) {
+  @return $px-value / 16 * 1rem;
+}
+
 /* =====  End of Spacing  ====== */
 
 /* Border radius values */
 $br-sm: 10px;
 $br-md: 20px;
-$br-lg: 25px; 
-$br-full: 9999px; 
-
+$br-lg: 25px;
+$br-full: 9999px;
