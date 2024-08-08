@@ -1,0 +1,41 @@
+@import "../../../foundations/sass/all";
+
+.menu-item {
+  // background-color: $white-floral;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.75rem;
+
+  &__info-box {
+    border-bottom: 3px dashed $primary-color;
+    flex-basis: 100%;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: $fs-xl;
+      font-weight: $fw-normal;
+      color: $primary-color;
+      margin-bottom: map-get($spacing, xxs);
+    }
+    &__description {
+      margin: 0;
+      padding: 0;
+      font-size: $fs-md;
+      font-weight: $fw-normal;
+      margin-bottom: map-get($spacing, xs);
+    }
+  }
+
+  &__price-box {
+    align-self: flex-end;
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+    span {
+      color: $primary-color;
+      position: relative;
+      top: 3px;
+    }
+  }
+}
