@@ -1,0 +1,13 @@
+@import "../../../foundations/sass/all";
+
+.navbar {
+  @include center;
+
+  gap: 40px;
+
+  &__items {
+    color: $navbar-secondary-color;
+    font-size: $fs-lg;
+    text-decoration: none;
+  }
+}
