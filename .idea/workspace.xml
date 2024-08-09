@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d0d11a3-6d58-4a9c-902c-ce02b15c851c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/navbar/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/navbar/navbar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/navbar/navbar.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/navbar/navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Button.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Configure.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Header.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/accessibility.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/accessibility.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/addon-library.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/assets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/avif-test-image.avif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/context.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/discord.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/docs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/figma-plugin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/share.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/styling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/testing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/theming.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/tutorials.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/social-media-bar/SocialMediaBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/social-media-bar/SocialMediaBar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foundations/sass/_all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/foundations/sass/_all.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foundations/sass/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/foundations/sass/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foundations/sass/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/foundations/sass/_typography.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/NavBar" />
+                    <option name="lastUsedInstant" value="1723120473" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="root" />
+                    <option name="lastUsedInstant" value="1723120069" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2kKEcyr5kHdGOpcr8lAyBaI7vw7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/NavBar",
+    "last_opened_file_path": "C:/Users/user/Documents/Restaurant-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\user\\Documents\\Restaurant-app\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d0d11a3-6d58-4a9c-902c-ce02b15c851c" name="Changes" comment="" />
+      <created>1723023951503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723023951503</updated>
+      <workItem from="1723023953271" duration="15000" />
+      <workItem from="1723024059137" duration="149000" />
+      <workItem from="1723024209519" duration="2262000" />
+      <workItem from="1723094088095" duration="2468000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

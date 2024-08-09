@@ -17,6 +17,9 @@
 /* =============================================
 =                 Buttons                     =
 ============================================= */
-$btn-primary-color: var(--btn-primary-color,$white-floral ) !default;
-$btn-primary-bg: var(--btn-primary-bg,$primary-color) !default;
-
+$btn-primary-color: var(--btn-primary-color, $white-floral) !default;
+$btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
+$navbar-secondary-color: var(
+  --navbar-secondary-color,
+  $secondary-color
+) !default;
