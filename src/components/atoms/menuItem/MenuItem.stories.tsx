@@ -3,13 +3,8 @@ import MenuItem from "./MenuItem";
 export const Default = {
   args: {
     name: "Gazpacho Garlic",
-    ingredients: [
-      "Chilled",
-      "tomato",
-      "cucumber",
-      "garlic",
-      "red pepper soup.",
-    ],
+    ingredients:
+      "Marinated seabass with sour sauce, dill & coriander on bread.",
     price: 55,
   },
 };
