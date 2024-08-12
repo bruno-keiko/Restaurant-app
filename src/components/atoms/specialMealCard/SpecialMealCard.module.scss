@@ -1,20 +1,16 @@
 @import "../../../foundations/sass/all";
 
 .card {
-  background-color: $white-floral;
   border-radius: $br-md;
-  color: $primary-color;
-  flex-direction: column;
+  color: $special-meal-card-text-color;
   height: px-to-rem(180);
   text-align: center;
   transition: all 300ms ease;
   width: px-to-rem(180);
 
-  @include center;
-
   &:hover {
-    background-color: $primary-color;
-    color: $white-floral;
+    background-color: $special-meal-card-text-color;
+    color: $special-meal-card-text-color-hover;
   }
 
   &__box {
@@ -22,7 +18,7 @@
 
     flex-direction: column;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 
     &__img {
       border-radius: $br-sm;
