@@ -1,20 +1,11 @@
+@use "sass:map";
 @import "../../../foundations/sass/all";
 
 .info-card {
-  @include center;
-  gap: map-get($spacing, sm);
-  // background-color: $primary-color;
-  color: $white-floral;
-
-  &__icon {
-    width: map-get($spacing, mds);
-    height: map-get($spacing, mds);
-
-    svg {
-      width: 100%;
-      height: 100%;
-    }
-  }
+  align-items: center;
+  color: $info-card-text-color;
+  display: inline-flex;
+  gap: map.get($spacing, "sm");
 
   &__title {
     font-size: $fs-xs;

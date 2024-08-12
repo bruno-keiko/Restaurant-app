@@ -1,3 +1,4 @@
+import { FC } from "react";
 import InfoCard from "./InfoCard";
 
 export const Default = {
@@ -20,11 +21,18 @@ export const Default = {
   },
 };
 
-const infoCard = {
+const infoCardConfig = {
   title: "Atoms/InfoCard",
   component: InfoCard,
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
+  decorators: [
+    (Story: FC) => (
+      <div style={{ backgroundColor: " #c33", display: "inline-block" }}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
-export default infoCard;
+export default infoCardConfig;

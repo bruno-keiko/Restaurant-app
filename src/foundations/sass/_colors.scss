@@ -23,3 +23,8 @@ $navbar-secondary-color: var(
   --navbar-secondary-color,
   $secondary-color
 ) !default;
+
+/* =============================================
+=                 InfoCArd                     =
+============================================= */
+$info-card-text-color: var(--info-card-text-color, $white-floral);
