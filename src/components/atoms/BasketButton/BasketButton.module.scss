@@ -1,0 +1,23 @@
+@import "../../../foundations/sass/all";
+
+.basket-button {
+  @include center;
+
+  background-color: $basket-button-bg;
+  border: none;
+  border-radius: 9999px;
+  flex-direction: column;
+  height: px-to-rem(61);
+  width: px-to-rem(61);
+
+  &__count {
+    color: $basket-button-text-color;
+    font-size: $fs-lg;
+    font-weight: $fw-extrabold;
+  }
+
+  &__icon {
+    position: relative;
+    transform: translate(0, -11%);
+  }
+}
