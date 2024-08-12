@@ -24,7 +24,15 @@ $navbar-secondary-color: var(
   $secondary-color
 ) !default;
 
-/* =============================================
-=                 InfoCArd                     =
-============================================= */
+=============================================
+=                 InfoCard                  =
+=============================================
 $info-card-text-color: var(--info-card-text-color, $white-floral);
+
+
+================================================
+=                 MenuItem                     =
+============================================= */
+
+$menu-item-primary-color: var(--menu-item-primary-color, $primary-color);
+$menu-item-text-color: var(--menu-item-text-color, $secondary-color);
