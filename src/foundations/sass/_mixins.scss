@@ -45,7 +45,3 @@
 @mixin margin-bottom($space) {
   margin-bottom: map.get($spacing, $space);
 }
-
-@mixin margin-bottom($space) {
-  margin-bottom: map-get($spacing, $space);
-}

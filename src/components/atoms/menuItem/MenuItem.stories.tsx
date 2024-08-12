@@ -1,3 +1,4 @@
+import { FC } from "react";
 import MenuItem from "./MenuItem";
 
 export const Default = {
@@ -9,11 +10,18 @@ export const Default = {
   },
 };
 
-const menuItem = {
+const menuItemConfig = {
   title: "Atoms/MenuItem",
   component: MenuItem,
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
+  decorators: [
+    (Story: FC) => (
+      <div style={{ backgroundColor: "#fff8ee " }}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
-export default menuItem;
+export default menuItemConfig;

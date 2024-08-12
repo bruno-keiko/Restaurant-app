@@ -2,29 +2,25 @@
 @import "../../../foundations/sass/all";
 
 .menu-item {
-  * {
-    padding: 0;
-    margin: 0;
-  }
-
   display: flex;
-  justify-content: space-between;
   gap: map.get($spacing, "xs");
+  justify-content: space-between;
 
   &__info-box {
     border-bottom: 3px dashed $menu-item-primary-color;
     flex-basis: 100%;
 
     &__title {
+      color: $menu-item-primary-color;
       font-size: $fs-xl;
       font-weight: $fw-normal;
-      color: $menu-item-primary-color;
       margin-bottom: map.get($spacing, "xxs");
     }
+
     &__ingredients {
+      color: $menu-item-text-color;
       font-size: $fs-md;
       font-weight: $fw-normal;
-      color: $menu-item-text-color;
       margin-bottom: map.get($spacing, "xs");
     }
   }
@@ -33,6 +29,7 @@
     align-self: flex-end;
     font-size: $fs-lg;
     font-weight: $fw-bold;
+
     span {
       color: $menu-item-primary-color;
       position: relative;
