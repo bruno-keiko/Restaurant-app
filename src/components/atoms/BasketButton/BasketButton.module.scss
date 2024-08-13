@@ -5,7 +5,7 @@
 
   background-color: $basket-button-bg;
   border: none;
-  border-radius: 9999px;
+  border-radius: $br-full;
   flex-direction: column;
   height: px-to-rem(61);
   width: px-to-rem(61);
