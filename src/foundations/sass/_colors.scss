@@ -19,11 +19,31 @@
 ============================================= */
 $btn-primary-color: var(--btn-primary-color, $white-floral) !default;
 $btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
-$navbar-secondary-color: var(
-  --navbar-secondary-color,
-  $secondary-color
-) !default;
-$docard-secondary-color: var(
-  --docard-secondary-color,
-  $secondary-color
-) !default;
+
+
+/* =============================================
+=                 Navbar                      =
+============================================= */
+
+$navbar-color: var(--navbar-color,
+    $secondary-color) !default;
+
+/* =============================================
+=                 DeliveryOrderCard                      =
+============================================= */
+
+$docard-secondary-color: var(--docard-secondary-color,
+    $secondary-color) !default;
+
+/* =============================================
+=                 InfoCard                  =
+============================================= */
+$info-card-text-color: var(--info-card-text-color, $white-floral);
+
+
+/* =============================================
+=                 MenuItem                     =
+============================================= */
+
+$menu-item-primary-color: var(--menu-item-primary-color, $primary-color);
+$menu-item-text-color: var(--menu-item-text-color, $secondary-color);

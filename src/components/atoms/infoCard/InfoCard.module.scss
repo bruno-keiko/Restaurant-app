@@ -1,0 +1,14 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.info-card {
+  align-items: center;
+  color: $info-card-text-color;
+  display: inline-flex;
+  gap: map.get($spacing, "sm");
+
+  &__title {
+    font-size: $fs-xs;
+    font-weight: $fw-normal;
+  }
+}
