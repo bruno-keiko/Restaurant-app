@@ -13,8 +13,8 @@ const SpecialMealCard: React.FC<SpecialMealCardProps> = ({ image, title }) => {
       <figure className={styles["card__box"]}>
         <Image
           src={image}
-          height={180}
-          width={180}
+          height={200}
+          width={250}
           alt={title}
           className={styles["card__box__img"]}
         />
