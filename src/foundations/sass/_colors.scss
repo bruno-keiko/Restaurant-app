@@ -20,7 +20,6 @@
 $btn-primary-color: var(--btn-primary-color, $white-floral) !default;
 $btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
 
-
 /* =============================================
 =                 Navbar                      =
 ============================================= */
@@ -40,10 +39,16 @@ $docard-secondary-color: var(--docard-secondary-color,
 ============================================= */
 $info-card-text-color: var(--info-card-text-color, $white-floral);
 
-
 /* =============================================
 =                 MenuItem                     =
 ============================================= */
 
 $menu-item-primary-color: var(--menu-item-primary-color, $primary-color);
 $menu-item-text-color: var(--menu-item-text-color, $secondary-color);
+
+/* =============================================
+=                 BasketButton                 =
+============================================= */
+
+$basket-button-bg: var(--basket-button-bg, $secondary-color);
+$basket-button-text-color: var(--basket-button-text-color, $white-floral);
