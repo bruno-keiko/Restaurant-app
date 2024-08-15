@@ -48,11 +48,8 @@ $basket-button-text-color: var(--basket-button-text-color, $white-floral);
 /* =============================================
 =                 SpecialMealCard              =
 ============================================= */
-$special-meal-card-text-color: var(
-  --special-meal-card-text-color,
-  $primary-color
-);
-$special-meal-card-text-color-hover: var(
-  --special-meal-card-text-color-hover,
+$special-meal-card-color: var(--special-meal-card-color, $primary-color);
+$special-meal-card-color-hover: var(
+  --special-meal-card-color-hover,
   $white-floral
 );

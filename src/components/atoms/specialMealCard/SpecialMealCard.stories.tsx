@@ -20,9 +20,6 @@ const specialMealCardConfig = {
       <div
         style={{
           backgroundColor: "#fff8ee",
-          height: "180px",
-          width: "180px",
-          borderRadius: "20px",
         }}
       >
         <Story />
