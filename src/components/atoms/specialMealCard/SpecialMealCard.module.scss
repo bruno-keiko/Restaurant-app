@@ -1,20 +1,17 @@
+@use "sass:map";
 @import "../../../foundations/sass/all";
 
 .card {
-  background-color: $white-floral;
   border-radius: $br-md;
-  color: $primary-color;
-  flex-direction: column;
+  color: $special-meal-card-color;
   height: px-to-rem(180);
   text-align: center;
   transition: all 300ms ease;
   width: px-to-rem(180);
 
-  @include center;
-
   &:hover {
-    background-color: $primary-color;
-    color: $white-floral;
+    background-color: $special-meal-card-color;
+    color: $special-meal-card-color-hover;
   }
 
   &__box {
@@ -22,17 +19,20 @@
 
     flex-direction: column;
     height: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+    overflow: hidden;
 
     &__img {
       border-radius: $br-sm;
       height: px-to-rem(86);
+      margin-top: map.get($spacing, "sm");
       width: px-to-rem(108.3);
-
-      @include margin-bottom(sm);
     }
 
     &__title {
+      @include center;
+
+      flex-grow: 1;
       font-size: $fs-xl;
       font-weight: $fw-normal;
       line-height: px-to-rem(29.3);

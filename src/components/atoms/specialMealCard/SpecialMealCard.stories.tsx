@@ -1,3 +1,4 @@
+import { FC } from "react";
 import SpecialMealCard from "./SpecialMealCard";
 
 export const Default = {
@@ -9,11 +10,22 @@ export const Default = {
   },
 };
 
-const specialMealCard = {
+const specialMealCardConfig = {
   title: "Atoms/SpecialMealCard",
   component: SpecialMealCard,
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
+  decorators: [
+    (Story: FC) => (
+      <div
+        style={{
+          backgroundColor: "#fff8ee",
+        }}
+      >
+        <Story />
+      </div>
+    ),
+  ],
 };
 
-export default specialMealCard;
+export default specialMealCardConfig;

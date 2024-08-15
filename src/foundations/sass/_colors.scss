@@ -52,3 +52,12 @@ $menu-item-text-color: var(--menu-item-text-color, $secondary-color);
 
 $basket-button-bg: var(--basket-button-bg, $secondary-color);
 $basket-button-text-color: var(--basket-button-text-color, $white-floral);
+
+/* =============================================
+=                 SpecialMealCard              =
+============================================= */
+$special-meal-card-color: var(--special-meal-card-color, $primary-color);
+$special-meal-card-color-hover: var(
+  --special-meal-card-color-hover,
+  $white-floral
+);
