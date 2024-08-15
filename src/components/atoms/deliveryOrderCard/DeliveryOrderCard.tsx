@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import foodImage from "./images/food.png";
 import styles from "./DeliveryOrderCard.module.scss";
 
 interface DeliveryOrderCardProps {
@@ -19,9 +18,11 @@ const DeliveryOrderCard: React.FC<DeliveryOrderCardProps> = ({
         <p className={styles["delivery-card__info__tel"]}>{tel}</p>
       </div>
       <Image
-        src={foodImage}
+        src="./images/food.png"
         alt={title}
-        className={styles["delivery-order__image"]}
+        width="100"
+        height="100"
+        className={styles["delivery-card__image"]}
       />
     </div>
   );
