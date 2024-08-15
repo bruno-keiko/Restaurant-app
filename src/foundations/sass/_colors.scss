@@ -27,7 +27,7 @@ $btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
 $navbar-color: var(--navbar-color, $secondary-color) !default;
 
 /* =============================================
-=                 DeliveryOrderCard                      =
+=                 DeliveryOrderCard            =
 ============================================= */
 
 $delivery-order-card-color: var(
@@ -62,6 +62,13 @@ $special-meal-card-color-hover: var(
   --special-meal-card-color-hover,
   $white-floral
 );
+
+/* ================================================
+=                 HighLightCard               =
+============================================= */
+$highlight-card-bg: var(--highlight-card-bg, $primary-color);
+$highlight-card-color: var(--highlight-card-color, $white-floral);
+$highlight-card-link-tint: var(--highlight-card-link-tint, $white);
 
 /* =============================================
 =                 BranchCard              =
