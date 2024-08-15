@@ -24,7 +24,15 @@ $btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
 =                 Navbar                      =
 ============================================= */
 
-$navbar-color: var(--navbar-color, $secondary-color) !default;
+$navbar-color: var(--navbar-color,
+    $secondary-color) !default;
+
+/* =============================================
+=                 DeliveryOrderCard                      =
+============================================= */
+
+$delivery-order-card-color: var(--delivery-order-card-color,
+    $secondary-color) !default;
 
 /* =============================================
 =                 InfoCard                  =
