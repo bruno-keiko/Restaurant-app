@@ -2,7 +2,7 @@ import CopyrightInfo from "./CopyrightInfo";
 
 export const Default = {
   args: {
-    text: "�� 2024 My Website. All rights reserved",
+    text: "\u00A9 2024 My Website. All rights reserved",
   },
 };
 
