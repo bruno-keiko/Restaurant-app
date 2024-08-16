@@ -1,15 +1,15 @@
 import React from "react";
-import styles from "./HighLightCard.module.scss";
+import styles from "./HighlightCard.module.scss";
 import Link from "next/link";
 
-interface HighLightCardProps {
+interface HighlightCardProps {
   image: React.ReactElement<React.SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
   link: string;
 }
 
-const HighLightCard: React.FC<HighLightCardProps> = ({
+const HighlightCard: React.FC<HighlightCardProps> = ({
   image,
   title,
   description,
@@ -34,4 +34,4 @@ const HighLightCard: React.FC<HighLightCardProps> = ({
   );
 };
 
-export default HighLightCard;
+export default HighlightCard;

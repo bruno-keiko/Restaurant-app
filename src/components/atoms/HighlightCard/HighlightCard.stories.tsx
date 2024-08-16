@@ -1,9 +1,9 @@
-import Feature from "./HighLightCard";
-import { FeatureIcon } from "./icon";
+import HighlightCard from "./HighlightCard";
+import { HighlightIcon } from "./HighlightIcon";
 
 export const Default = {
   args: {
-    image: FeatureIcon,
+    image: HighlightIcon,
     title: "100 % Fresh Foods",
     description:
       "Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.",
@@ -11,11 +11,11 @@ export const Default = {
   },
 };
 
-const highLightCardConfig = {
-  title: "Atoms/HighLightCard",
-  component: Feature,
+const highlightCardConfig = {
+  title: "Atoms/HighlightCard",
+  component: HighlightCard,
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
 };
 
-export default highLightCardConfig;
+export default highlightCardConfig;

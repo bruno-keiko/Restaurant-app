@@ -1,4 +1,4 @@
-export const FeatureIcon = (
+export const HighlightIcon = (
   <svg
     width="80"
     height="80"
