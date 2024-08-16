@@ -7,6 +7,10 @@
   display: inline-flex;
   gap: map.get($spacing, "sm");
 
+  svg {
+    vertical-align: middle;
+  }
+
   &__title {
     font-size: $fs-xs;
     font-weight: $fw-normal;
