@@ -8,10 +8,12 @@ interface InfoCardProps {
 
 const InfoCard: React.FC<InfoCardProps> = ({ icon, title }) => {
   return (
-    <div className={styles["info-card"]}>
-      <span className={styles["info-card__icon"]}>{icon}</span>
-      <span className={styles["info-card__title"]}>{title}</span>
-    </div>
+    <article className={styles["info-card"]}>
+      <div className={styles["info-card__icon"]}>
+        <div className={styles["info-card__icon__box"]}>{icon}</div>
+      </div>
+      <div className={styles["info-card__title"]}>{title}</div>
+    </article>
   );
 };
 
