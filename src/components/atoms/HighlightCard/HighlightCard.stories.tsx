@@ -1,9 +1,8 @@
 import HighlightCard from "./HighlightCard";
-import { HighlightIcon } from "./HighlightIcon";
 
 export const Default = {
   args: {
-    image: HighlightIcon,
+    image: "icons/highlight-icon.svg",
     title: "100 % Fresh Foods",
     description:
       "Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.",
