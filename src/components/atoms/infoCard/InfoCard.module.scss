@@ -3,16 +3,19 @@
 
 .info-card {
   align-items: center;
-  color: $info-card-text-color;
-  display: inline-flex;
-  gap: map.get($spacing, "sm");
+  display: flex;
+  gap: 15px;
 
-  svg {
-    vertical-align: middle;
+  &__icon {
+    @include center;
+
+    &__box {
+      @include center;
+    }
   }
 
   &__title {
+    color: $info-card-color;
     font-size: $fs-xs;
-    font-weight: $fw-normal;
   }
 }

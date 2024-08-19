@@ -4,6 +4,7 @@ import InfoCard from "./InfoCard";
 export const Default = {
   args: {
     icon: (
+      // <div>D</div>
       <svg
         width="20"
         height="20"
@@ -28,7 +29,7 @@ const infoCardConfig = {
   excludeStories: /.*Data$/,
   decorators: [
     (Story: FC) => (
-      <div style={{ backgroundColor: " #c33", display: "inline-block" }}>
+      <div style={{ backgroundColor: " #c33" }}>
         <Story />
       </div>
     ),
