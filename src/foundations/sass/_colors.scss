@@ -24,15 +24,13 @@ $btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
 =                 Navbar                      =
 ============================================= */
 
-$navbar-color: var(--navbar-color,
-                $secondary-color) !default;
+$navbar-color: var(--navbar-color,$secondary-color) !default;
 
 /* =============================================
 =                 DeliveryOrderCard                      =
 ============================================= */
 
-$delivery-order-card-color: var(--delivery-order-card-color,
-                $secondary-color) !default;
+$delivery-order-card-color: var(--delivery-order-card-color, $secondary-color) !default;
 
 /* =============================================
 =                 InfoCard                  =
@@ -57,8 +55,10 @@ $basket-button-text-color: var(--basket-button-text-color, $white-floral);
 =                 SpecialMealCard              =
 ============================================= */
 $special-meal-card-color: var(--special-meal-card-color, $primary-color);
-$special-meal-card-color-hover: var(--special-meal-card-color-hover,
-                $white-floral);
+$special-meal-card-color-hover: var(
+    --special-meal-card-color-hover,
+    $white-floral
+);
 
 /* =============================================
 =                 BranchCard              =
