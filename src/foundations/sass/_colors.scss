@@ -64,7 +64,4 @@ $special-meal-card-color-hover: var(
 =                 BranchCard              =
 ============================================= */
 $branch-card-color: var(--branch-card-color, $white-floral) !default;
-$branch-card-background-color: var(--branch-card-background-color,
-                $primary-color) !default;
-$branch-card-location-color: var(--branch-card-location-color,
-                $green-neon) !default;
+$branch-card-location-color: var(--branch-card-location-color, $green-neon) !default;
