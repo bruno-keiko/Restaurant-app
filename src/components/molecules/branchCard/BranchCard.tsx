@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./BranchCard.module.scss";
 import Image from "next/image";
+import InfoCard from "@/components/atoms/infoCard/InfoCard";
 
 interface BranchCardProps {
   name: string;
@@ -22,28 +23,32 @@ const BranchCard: React.FC<BranchCardProps> = ({
       <div className={styles["branch-card__info"]}>
         <h3 className={styles["branch-card__info__name"]}>{name}</h3>
         <p className={styles["branch-card__info__address"]}>{address}</p>
-        <p className={styles["branch-card__info__info_block"]}>
-          <span className={styles["branch-card__info__info_block__time"]}>
-            <Image
-              src="/icons/watch.svg"
-              alt="Phone"
-              width={20}
-              height={20}
-              className={styles["branch-card__info__info_block__tel__icon"]}
-            />
-            {time}
-          </span>
-          <span className={styles["branch-card__info__info_block__tel"]}>
-            <Image
-              src="/icons/phone.svg"
-              alt="Phone"
-              width={20}
-              height={20}
-              className={styles["branch-card__info__info_block__tel__icon"]}
-            />
-            {tel}
-          </span>
-        </p>
+        <div className={styles["branch-card__info__info_block"]}>
+          <InfoCard
+            icon={
+              <Image
+                src="/icons/watch.svg"
+                alt="Watch"
+                width={20}
+                height={20}
+                className={styles["branch-card__info__info_block__icon"]}
+              />
+            }
+            title={time}
+          />
+          <InfoCard
+            icon={
+              <Image
+                src="/icons/phone.svg"
+                alt="Phone"
+                width={20}
+                height={20}
+                className={styles["branch-card__info__info_block__icon"]}
+              />
+            }
+            title={tel}
+          />
+        </div>
         <a className={styles["branch-card__info__location"]} href={location}>
           Click to View Google Map
         </a>
