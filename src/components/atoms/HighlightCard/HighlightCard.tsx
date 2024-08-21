@@ -26,11 +26,7 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
 
       <p className={styles["highlight-card__description"]}>{description}</p>
 
-      <Link
-        className={styles["highlight-card__link"]}
-        href={link}
-        target="_blank"
-      >
+      <Link className={styles["highlight-card__link"]} href={link}>
         Read More
       </Link>
     </article>

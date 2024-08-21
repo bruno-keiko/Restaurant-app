@@ -20,7 +20,7 @@
 
     &::after {
       background-color: $highlight-card-color;
-      border-radius: 9999px;
+      border-radius: $br-full;
       color: $highlight-card-bg;
       content: "2";
       display: block;
@@ -59,7 +59,7 @@
     position: absolute;
     right: map.get($spacing, xl);
     text-decoration: none;
-    transition: all 0.3s; /* stylelint-disable-line unit-allowed-list */
+    transition: all 0.3s;
 
     @include padding-horizontal(md);
     @include padding-vertical(xs);

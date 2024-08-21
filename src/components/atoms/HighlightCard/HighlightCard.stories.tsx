@@ -6,7 +6,7 @@ export const Default = {
     title: "100 % Fresh Foods",
     description:
       "Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.",
-    link: "https://tmcars.info/",
+    link: "/",
   },
 };
 
