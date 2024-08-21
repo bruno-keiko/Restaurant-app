@@ -28,7 +28,7 @@ const infoCardConfig = {
   excludeStories: /.*Data$/,
   decorators: [
     (Story: FC) => (
-      <div style={{ backgroundColor: " #c33", display: "inline-block" }}>
+      <div style={{ backgroundColor: " #c33" }}>
         <Story />
       </div>
     ),
