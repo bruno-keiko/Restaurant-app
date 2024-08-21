@@ -59,7 +59,9 @@
     position: absolute;
     right: map.get($spacing, xl);
     text-decoration: none;
-    transition: all 0.3s;
+
+    // transition: all 0.3s;
+    transition: all #{0.3}s;
 
     @include padding-horizontal(md);
     @include padding-vertical(xs);
