@@ -1,0 +1,57 @@
+@import "../../../foundations/sass/all";
+
+.member-card {
+  align-items: center;
+  color: $member-card-color;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+  position: relative;
+  transition: all 300ms ease;
+  width: fit-content;
+
+  &__info {
+    align-items: center;
+    border: 3px solid $member-card-border-color;
+    border-radius: 50%; // stylelint-disable-line declaration-property-unit-allowed-list
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: px-to-rem(10);
+    height: px-to-rem(343);
+    justify-content: end;
+    overflow: hidden; 
+    padding: px-to-rem(20);
+    padding-bottom: px-to-rem(70);
+    position: relative; 
+    text-align: center;
+    width: px-to-rem(343);
+
+    &__name {
+      color: $member-card-color;
+      font-size: $fs-xl;
+      font-weight: $fw-bold;
+    }
+
+    &__about {
+      color: $member-card-color;
+      font-size: $fs-md;
+      font-weight: $fw-normal;
+    }
+  }
+
+ &__image { 
+    height: px-to-rem(217); 
+    left: 40%;
+    object-fit: cover; 
+    position: absolute; 
+    top: -px-to-rem(50); 
+    transform: translate(25%, -25%);
+    width: px-to-rem(217);
+    z-index: 100;
+  }
+
+  &__social-media {
+    margin-top: px-to-rem(10);
+  }
+}
