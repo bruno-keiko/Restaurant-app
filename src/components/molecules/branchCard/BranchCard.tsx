@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./BranchCard.module.scss";
 import Image from "next/image";
 import InfoCard from "@/components/atoms/infoCard/InfoCard";
+import Link from "next/link";
 
 interface BranchCardProps {
   name: string;
@@ -49,9 +50,9 @@ const BranchCard: React.FC<BranchCardProps> = ({
             title={tel}
           />
         </div>
-        <a className={styles["branch-card__info__location"]} href={location}>
+        <Link href={location} className={styles["branch-card__info__location"]}>
           Click to View Google Map
-        </a>
+        </Link>
       </div>
     </div>
   );
