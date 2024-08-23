@@ -13,7 +13,7 @@
   &__info {
     align-items: center;
     border: 3px solid $member-card-border-color;
-    border-radius: 50%; // stylelint-disable-line declaration-property-unit-allowed-list
+    border-radius: $br-full; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
