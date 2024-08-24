@@ -5,59 +5,69 @@
   box-shadow: 0 5px 5px 0 #0003;
 
   &__top {
-    align-items: center;
     background-color: $header-top-bg-color;
-    display: flex;
-    height: px-to-rem(35);
-    justify-content: space-between;
 
-    &__info-box {
+    @include padding-horizontal(sm);
+
+    &__container {
+      align-items: center;
       display: flex;
-      gap: map.get($spacing, "xxl");
-    }
+      height: px-to-rem(35);
+      justify-content: space-between;
 
-    &__link:link,
-    &__link:visited {
-      color: $header-bottom-bg-color;
-      font-size: $fs-xs;
-      text-decoration: none;
-      text-transform: uppercase;
+      &__info-box {
+        display: flex;
+        gap: map.get($spacing, "xxl");
+      }
 
-      &:hover,
-      &:active {
-        text-decoration: underline;
+      &__link:link,
+      &__link:visited {
+        color: $header-bottom-bg-color;
+        font-size: $fs-xs;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
       }
     }
   }
 
   &__bottom {
-    align-items: center;
     background-color: $header-bottom-bg-color;
-    display: flex;
-    height: px-to-rem(100);
-    justify-content: space-between;
 
-    &__info-box {
+    @include padding-horizontal(sm);
+
+    &__container {
       align-items: center;
       display: flex;
-      gap: map.get($spacing, "xl");
+      height: px-to-rem(100);
+      justify-content: space-between;
 
-      &__link:link,
-      &__link:visited {
-        background-color: $header-top-bg-color;
-        border-radius: $br-sm;
-        color: $header-bottom-bg-color;
-        font-size: $fs-md;
-        font-weight: $fw-bold;
-        text-decoration: none;
-        text-transform: uppercase;
+      &__info-box {
+        align-items: center;
+        display: flex;
+        gap: map.get($spacing, "xl");
 
-        @include padding-horizontal(sm);
-        @include padding-vertical(xxs);
+        &__link:link,
+        &__link:visited {
+          background-color: $header-top-bg-color;
+          border-radius: $br-sm;
+          color: $header-bottom-bg-color;
+          font-size: $fs-md;
+          font-weight: $fw-bold;
+          text-decoration: none;
+          text-transform: uppercase;
 
-        &:hover,
-        &:active {
-          background-color: $header-bottom-link-shade-color;
+          @include padding-horizontal(sm);
+          @include padding-vertical(xxs);
+
+          &:hover,
+          &:active {
+            background-color: $header-bottom-link-shade-color;
+          }
         }
       }
     }

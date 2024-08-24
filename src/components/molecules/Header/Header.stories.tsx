@@ -1,17 +1,9 @@
 import Header from "./Header";
 
-export const Default = {
-  // args: {
-  //   image: "icons/highlight-icon.svg",
-  //   title: "100 % Fresh Foods",
-  //   description:
-  //     "Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.",
-  //   link: "/",
-  // },
-};
+export const Default = {};
 
 const headerConfig = {
-  title: "Atoms/Header",
+  title: "Molecules/Header",
   component: Header,
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
