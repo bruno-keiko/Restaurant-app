@@ -12,20 +12,21 @@
 
   &__info {
     align-items: center;
+    aspect-ratio: 1;
     border: 3px solid $member-card-border-color;
-    border-radius: $br-full; 
+    border-radius: $br-full;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: px-to-rem(10);
-    height: px-to-rem(343);
+    height: auto;
     justify-content: end;
-    overflow: hidden; 
+    max-width: px-to-rem(343);
+    overflow: hidden;
     padding: px-to-rem(20);
     padding-bottom: px-to-rem(70);
-    position: relative; 
+    position: relative;
     text-align: center;
-    width: px-to-rem(343);
 
     &__name {
       color: $member-card-color;
@@ -40,15 +41,21 @@
     }
   }
 
- &__image { 
-    height: px-to-rem(217); 
+  &__image-container {
+    border: 5px solid $member-card-border-color;
+    border-radius: $br-full;
     left: 40%;
-    object-fit: cover; 
-    position: absolute; 
-    top: -px-to-rem(50); 
+    overflow: hidden;
+    position: absolute;
+    top: -px-to-rem(50);
     transform: translate(25%, -25%);
-    width: px-to-rem(217);
     z-index: 100;
+
+    &__image {
+      height: px-to-rem(217);
+      object-fit: cover;
+      width: px-to-rem(217);
+    }
   }
 
   &__social-media {

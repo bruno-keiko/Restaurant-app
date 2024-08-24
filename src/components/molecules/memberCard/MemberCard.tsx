@@ -23,8 +23,14 @@ const MemberCard: React.FC<MemberCardProps> = ({
 }) => {
   return (
     <div className={styles["member-card"]}>
-      <div className={styles["member-card__image"]}>
-        <Image src={image} alt={`${name}'s picture`} width={180} height={180} />
+      <div className={styles["member-card__image-container"]}>
+        <Image
+          className={styles["member-card__image-container-image"]}
+          src={image}
+          alt={`${name}'s picture`}
+          width={180}
+          height={180}
+        />
       </div>
       <div className={styles["member-card__info"]}>
         <h3 className={styles["member-card__info__name"]}>{name}</h3>
