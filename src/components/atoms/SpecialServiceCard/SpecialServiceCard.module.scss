@@ -1,0 +1,25 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.service-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  &__Title {
+    color: rgb(177, 6, 6);
+    @include center;
+    font-size: 50px;
+    margin-bottom: 25px;
+    font-weight: 900;
+  }
+
+  &__Description {
+    color: rgb(92, 91, 91);
+    font-size: 30px;
+    
+  }
+}
