@@ -24,13 +24,16 @@ $btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
 =                 Navbar                      =
 ============================================= */
 
-$navbar-color: var(--navbar-color,$secondary-color) !default;
+$navbar-color: var(--navbar-color, $secondary-color) !default;
 
 /* =============================================
 =                 DeliveryOrderCard                      =
 ============================================= */
 
-$delivery-order-card-color: var(--delivery-order-card-color, $secondary-color) !default;
+$delivery-order-card-color: var(
+  --delivery-order-card-color,
+  $secondary-color
+) !default;
 
 /* =============================================
 =                 InfoCard                  =
@@ -56,14 +59,15 @@ $basket-button-text-color: var(--basket-button-text-color, $white-floral);
 ============================================= */
 $special-meal-card-color: var(--special-meal-card-color, $primary-color);
 $special-meal-card-color-hover: var(
-    --special-meal-card-color-hover,
-    $white-floral
+  --special-meal-card-color-hover,
+  $white-floral
 );
 
 /* =============================================
 =                 BranchCard              =
 ============================================= */
 $branch-card-color: var(--branch-card-color, $white-floral) !default;
+
 $branch-card-location-color: var(--branch-card-location-color, $green-neon) !default;
 
 /* ======================================================
@@ -71,3 +75,18 @@ $branch-card-location-color: var(--branch-card-location-color, $green-neon) !def
 ======================================================= */
 $special-service-heading-color:var(--special-service-heading-color,$primary-color) !default;
 $special-service-description-color:var(--special-service-description-color,$secondary-color) !default;
+=======
+$branch-card-location-color: var(
+  --branch-card-location-color,
+  $green-neon
+) !default;
+
+/* =============================================
+=                 MemberCard              =
+============================================= */
+$member-card-color: var(--member-card-color, $primary-color) !default;
+$member-card-border-color: var(
+  --member-card-border-color,
+  $primary-color
+) !default;
+

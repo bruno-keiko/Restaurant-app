@@ -1,11 +1,11 @@
 @import "../../../foundations/sass/all";
 
-.delivery-card{
+.delivery-card {
   align-items: center;
-  border-radius: $br-sm; 
+  border-radius: $br-sm;
   color: $delivery-order-card-color;
   display: flex;
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   height: px-to-rem(41);
   justify-content: space-between;
   overflow: hidden;
@@ -18,17 +18,17 @@
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    
+
     &__title {
-      font-size: $fs-md; 
-      font-weight: $fw-bold; 
-      padding: px-to-rem(2); 
+      font-size: $fs-md;
+      font-weight: $fw-bold;
+      padding: px-to-rem(2);
     }
 
-    &__tel{
-      font-size: $fs-sm; 
-      font-weight: $fw-normal; 
-      padding: px-to-rem(2); 
+    &__tel {
+      font-size: $fs-sm;
+      font-weight: $fw-normal;
+      padding: px-to-rem(2);
     }
   }
 

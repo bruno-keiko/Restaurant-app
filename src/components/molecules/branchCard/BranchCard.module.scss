@@ -12,7 +12,6 @@
   transition: all 300ms ease;
   width: fit-content;
 
-
   &__info {
     align-items: center;
     display: flex;
@@ -25,7 +24,6 @@
       font-size: $fs-xxl;
       font-weight: $fw-bold;
       padding: px-to-rem(2);
-
     }
 
     &__address {
