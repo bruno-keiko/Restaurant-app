@@ -1,0 +1,40 @@
+@import "../../../foundations/sass/all";
+
+.ourstory-card {
+  border-radius: $br-sm;
+  display: flex;
+  gap: px-to-rem(20);
+  overflow: hidden;
+  padding: px-to-rem(20);
+  transition: all 300ms ease;
+
+  &--primary {
+    border: 2px solid $ourstory-card-border-color;
+  }
+
+  &--secondary {
+    flex-direction: row-reverse;
+  }
+
+  &__image {
+    border-radius: $br-sm;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__image,
+  &__info {
+    flex: 1;
+  }
+
+  &__info {
+    color: $ourstory-card-color;
+    gap: px-to-rem(10);
+
+    &__story {
+      font-size: $fs-md;
+      margin: $spacing-sm;
+    }
+  }
+}
