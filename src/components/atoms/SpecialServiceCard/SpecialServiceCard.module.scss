@@ -2,24 +2,23 @@
 @import "../../../foundations/sass/all";
 
 .service-card {
-  align-items: center;
-  display: flex;
+  @include center;
   flex-direction: column;
-  justify-content: space-between;
+  
   gap: 15px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: $playfair;
 
   &__Title {
-    color: rgb(177, 6, 6);
+    color: $Special-service-heading-color;
     @include center;
-    font-size: 50px;
-    margin-bottom: 25px;
-    font-weight: 900;
+    font-size: $fs-xxl;
+   @include margin-bottom($spacing);
+    font-weight: $fw-bold;
   }
 
   &__Description {
-    color: rgb(92, 91, 91);
-    font-size: 30px;
+    color: $Special-service-description-color;
+    font-size: $fs-xl;
     
   }
 }
