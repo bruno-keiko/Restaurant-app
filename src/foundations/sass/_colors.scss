@@ -65,3 +65,9 @@ $special-meal-card-color-hover: var(
 ============================================= */
 $branch-card-color: var(--branch-card-color, $white-floral) !default;
 $branch-card-location-color: var(--branch-card-location-color, $green-neon) !default;
+
+/* ======================================================
+=                SpecialServiceCard              =
+======================================================= */
+$special-service-heading-color:var(--special-service-heading-color,$primary-color) !default;
+$special-service-description-color:var(--special-service-description-color,$secondary-color) !default;
