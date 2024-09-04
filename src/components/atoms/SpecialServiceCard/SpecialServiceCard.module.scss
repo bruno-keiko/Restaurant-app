@@ -8,7 +8,7 @@
   gap: 15px;
   font-family: $playfair;
 
-  &__Title {
+  &__title {
     color: $Special-service-heading-color;
     @include center;
     font-size: $fs-xxl;
@@ -16,7 +16,7 @@
     font-weight: $fw-bold;
   }
 
-  &__Description {
+  &__description {
     color: $Special-service-description-color;
     font-size: $fs-xl;
     
