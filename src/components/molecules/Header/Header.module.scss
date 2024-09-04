@@ -2,7 +2,7 @@
 @import "../../../foundations/sass/all";
 
 .header {
-  box-shadow: 0 5px 5px 0 #0003;
+  box-shadow: 0 5px 5px 0 $header-shadow-color;
 
   &__top {
     background-color: $header-top-bg-color;
