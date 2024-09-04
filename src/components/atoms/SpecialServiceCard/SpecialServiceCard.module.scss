@@ -9,7 +9,7 @@
   font-family: $playfair;
 
   &__title {
-    color: $Special-service-heading-color;
+    color: $special-service-heading-color;
     @include center;
     font-size: $fs-xxl;
    @include margin-bottom($spacing);
@@ -17,7 +17,7 @@
   }
 
   &__description {
-    color: $Special-service-description-color;
+    color: $special-service-description-color;
     font-size: $fs-xl;
     
   }
