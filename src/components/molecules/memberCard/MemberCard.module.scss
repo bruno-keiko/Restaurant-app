@@ -1,0 +1,64 @@
+@import "../../../foundations/sass/all";
+
+.member-card {
+  align-items: center;
+  color: $member-card-color;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+  position: relative;
+  transition: all 300ms ease;
+  width: fit-content;
+
+  &__info {
+    align-items: center;
+    aspect-ratio: 1;
+    border: 3px solid $member-card-border-color;
+    border-radius: $br-full;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: px-to-rem(10);
+    height: auto;
+    justify-content: end;
+    max-width: px-to-rem(343);
+    overflow: hidden;
+    padding: px-to-rem(20);
+    padding-bottom: px-to-rem(70);
+    position: relative;
+    text-align: center;
+
+    &__name {
+      color: $member-card-color;
+      font-size: $fs-xl;
+      font-weight: $fw-bold;
+    }
+
+    &__about {
+      color: $member-card-color;
+      font-size: $fs-md;
+      font-weight: $fw-normal;
+    }
+  }
+
+  &__image-container {
+    border: 5px solid $member-card-border-color;
+    border-radius: $br-full;
+    left: 40%;
+    overflow: hidden;
+    position: absolute;
+    top: -px-to-rem(50);
+    transform: translate(25%, -25%);
+    z-index: 100;
+
+    &__image {
+      height: px-to-rem(217);
+      object-fit: cover;
+      width: px-to-rem(217);
+    }
+  }
+
+  &__social-media {
+    margin-top: px-to-rem(10);
+  }
+}
