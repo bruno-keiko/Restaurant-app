@@ -4,7 +4,7 @@ import SpecialServiceCard, { SpecialServiceCardProps } from './SpecialServiceCar
 
 // Define metadata for the Storybook story
 const meta: Meta = {
-  title: 'Components/SpecialServiceCard',
+  title: 'atoms/SpecialServiceCard',
   component: SpecialServiceCard,
   parameters: {
     layout: 'centered',
