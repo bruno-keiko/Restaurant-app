@@ -8,6 +8,7 @@ interface HighlightCardProps {
   title: string;
   description: string;
   link: string;
+  mode: "primary" | "secondary";
 }
 
 const HighlightCard: React.FC<HighlightCardProps> = ({
@@ -15,9 +16,12 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
   title,
   description,
   link,
+  mode = "secondary",
 }) => {
   return (
-    <article className={styles["highlight-card"]}>
+    <article
+      className={`${styles["highlight-card"]} ${styles[`highlight-card--${mode}`]}`}
+    >
       <figure className={styles["highlight-card__image-box"]}>
         <Image src={image} alt="Card icon" width={80} height={80} />
       </figure>

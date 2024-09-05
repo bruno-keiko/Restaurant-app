@@ -2,8 +2,8 @@
 @import "../../../foundations/sass/all";
 
 .highlight-card {
-  background-color: $highlight-card-bg;
-  color: $highlight-card-color;
+  $this: &;
+
   height: px-to-rem(376);
   max-width: px-to-rem(408);
   padding: map.get($spacing, "sm");
@@ -19,9 +19,7 @@
     @include margin-bottom(xl);
 
     &::after {
-      background-color: $highlight-card-color;
       border-radius: $br-full;
-      color: $highlight-card-bg;
       content: "2";
       display: block;
       font-size: $fs-xxl;
@@ -63,16 +61,55 @@
 
     @include padding-horizontal(md);
     @include padding-vertical(xs);
+  }
 
-    &:link,
-    &:visited {
-      background-color: $highlight-card-color;
-      color: $highlight-card-bg;
+  &--primary {
+    background-color: $highlight-card-bg;
+    color: $highlight-card-color;
+
+    #{$this}__image-box {
+      &::after {
+        background-color: $highlight-card-color;
+        color: $highlight-card-bg;
+      }
     }
 
-    &:hover,
-    &:active {
-      background-color: $highlight-card-link-tint;
+    #{$this}__link {
+      &:link,
+      &:visited {
+        background-color: $highlight-card-color;
+        color: $highlight-card-bg;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $highlight-card-link-tint;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $highlight-card-color;
+    color: $highlight-card-secondary-color;
+
+    #{$this}__image-box {
+      &::after {
+        background-color: $highlight-card-bg;
+        color: $highlight-card-color;
+      }
+    }
+
+    #{$this}__link {
+      &:link,
+      &:visited {
+        background-color: $highlight-card-bg;
+        color: $highlight-card-color;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $highlight-card-secondary-link-shade;
+      }
     }
   }
 }

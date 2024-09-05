@@ -69,6 +69,14 @@ $special-meal-card-color-hover: var(
 $highlight-card-bg: var(--highlight-card-bg, $primary-color);
 $highlight-card-color: var(--highlight-card-color, $white-floral);
 $highlight-card-link-tint: var(--highlight-card-link-tint, $white);
+$highlight-card-secondary-color: var(
+  --highlight-card-secondary-color,
+  $secondary-color
+);
+$highlight-card-secondary-link-shade: var(
+  --highlight-card-secondary-link-shade,
+  $primary-color-shade
+);
 
 /* =============================================
 =                 BranchCard              =
@@ -87,13 +95,6 @@ $member-card-border-color: var(
   --member-card-border-color,
   $primary-color
 ) !default;
-
-/* ================================================
-=                 HighLightCard               =
-============================================= */
-$highlight-card-bg: var(--highlight-card-bg, $primary-color);
-$highlight-card-color: var(--highlight-card-color, $white-floral);
-$highlight-card-link-tint: var(--highlight-card-link-tint, $white);
 
 /* ================================================
 =                 Header               =
