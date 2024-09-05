@@ -45,3 +45,13 @@
 @mixin margin-bottom($space) {
   margin-bottom: map.get($spacing, $space);
 }
+
+@mixin padding-horizontal($space) {
+  padding-left: map.get($spacing, $space);
+  padding-right: map.get($spacing, $space);
+}
+
+@mixin padding-vertical($space) {
+  padding-bottom: map.get($spacing, $space);
+  padding-top: map.get($spacing, $space);
+}
