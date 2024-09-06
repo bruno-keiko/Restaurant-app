@@ -30,8 +30,10 @@ $navbar-color: var(--navbar-color, $secondary-color) !default;
 =                 DeliveryOrderCard            =
 ============================================= */
 
-$delivery-order-card-color: var(--delivery-order-card-color,
-    $secondary-color) !default;
+$delivery-order-card-color: var(
+  --delivery-order-card-color,
+  $secondary-color
+) !default;
 
 /* =============================================
 =                 InfoCard                  =
@@ -56,8 +58,10 @@ $basket-button-text-color: var(--basket-button-text-color, $white-floral);
 =                 SpecialMealCard              =
 ============================================= */
 $special-meal-card-color: var(--special-meal-card-color, $primary-color);
-$special-meal-card-color-hover: var(--special-meal-card-color-hover,
-    $white-floral);
+$special-meal-card-color-hover: var(
+  --special-meal-card-color-hover,
+  $white-floral
+);
 
 /* ================================================
 =                 HighLightCard               =
@@ -65,30 +69,44 @@ $special-meal-card-color-hover: var(--special-meal-card-color-hover,
 $highlight-card-bg: var(--highlight-card-bg, $primary-color);
 $highlight-card-color: var(--highlight-card-color, $white-floral);
 $highlight-card-link-tint: var(--highlight-card-link-tint, $white);
-$highlight-card-secondary-color: var(--highlight-card-secondary-color,
-    $secondary-color);
-$highlight-card-secondary-link-shade: var(--highlight-card-secondary-link-shade,
-    $primary-color-shade);
+$highlight-card-secondary-color: var(
+  --highlight-card-secondary-color,
+  $secondary-color
+);
+$highlight-card-secondary-link-shade: var(
+  --highlight-card-secondary-link-shade,
+  $primary-color-shade
+);
 
 /* =============================================
 =                 BranchCard              =
 ============================================= */
 $branch-card-color: var(--branch-card-color, $white-floral) !default;
-$branch-card-location-color: var(--branch-card-location-color, $green-neon) !default;
+$branch-card-location-color: var(
+  --branch-card-location-color,
+  $green-neon
+) !default;
 
 /* ======================================================
 =                SpecialServiceCard              =
 ======================================================= */
-$special-service-heading-color: var(--special-service-heading-color, $primary-color) !default;
-$special-service-description-color: var(--special-service-description-color, $secondary-color) !default;
-
+$special-service-heading-color: var(
+  --special-service-heading-color,
+  $primary-color
+) !default;
+$special-service-description-color: var(
+  --special-service-description-color,
+  $secondary-color
+) !default;
 
 /* =============================================
 =                 MemberCard              =
 ============================================= */
 $member-card-color: var(--member-card-color, $primary-color) !default;
-$member-card-border-color: var(--member-card-border-color,
-    $primary-color) !default;
+$member-card-border-color: var(
+  --member-card-border-color,
+  $primary-color
+) !default;
 
 /* ================================================
 =                 Header               =
@@ -96,12 +114,13 @@ $member-card-border-color: var(--member-card-border-color,
 
 $header-top-bg-color: var(--header-top-bg, $primary-color);
 $header-bottom-bg-color: var(--header-bottom-bg, $white-floral);
-$header-bottom-link-shade-color: var(--header-bottom-link-shade-color,
-    $primary-color-shade);
+$header-bottom-link-shade-color: var(
+  --header-bottom-link-shade-color,
+  $primary-color-shade
+);
 $header-shadow-color: var(--header-shadow-color, $shadow-color);
 
 /* =============================================
-<<<<<<< HEAD
 =                 AchievementCard                 =
 ============================================= */
 $achievement-img-border-color: var(--header-color, $primary-color);
@@ -110,6 +129,17 @@ $achievement-header-color: var(--header-color, $primary-color);
 /* =============================================
 =                 OurStoryCard              =
 ============================================= */
-$ourstory-card-border-color: var(--ourstory-card-border-color, $primary-color) !default;
-$ourstory-card-background-color: var(--ourstory-card-background-color, $white) !default;
+$ourstory-card-border-color: var(
+  --ourstory-card-border-color,
+  $primary-color
+) !default;
+$ourstory-card-background-color: var(
+  --ourstory-card-background-color,
+  $white
+) !default;
 $ourstory-card-color: var(--ourstory-card-color, $secondary-color) !default;
+
+/* =============================================
+=                 SpecialMenu               =
+============================================= */
+$special-menu-header-color: var(--special-menu-header-color, $primary-color);
