@@ -1,14 +1,18 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styles from "./OurStoryCard.module.scss";
 import Image from "next/image";
 
 interface OurStoryCardProps {
   image: string;
-  story: string;
-  mode: "primary" | "secondary";
+  story: ReactNode;
+  mode?: "primary" | "secondary";
 }
 
-const OurStoryCard: React.FC<OurStoryCardProps> = ({ image, story, mode }) => {
+const OurStoryCard: React.FC<OurStoryCardProps> = ({
+  image,
+  story,
+  mode = "primary",
+}) => {
   return (
     <div
       className={`${styles["ourstory-card"]} ${
@@ -18,7 +22,13 @@ const OurStoryCard: React.FC<OurStoryCardProps> = ({ image, story, mode }) => {
       }`}
     >
       <div className={styles["ourstory-card__image"]}>
-        <Image src={image} alt="Our Story" width={511} height={294} />
+        <Image
+          src={image}
+          alt="Our Story"
+          layout="responsive"
+          width={511}
+          height={294}
+        />
       </div>
       <div className={styles["ourstory-card__info"]}>
         <div className={styles["ourstory-card__info__story"]} />
