@@ -86,3 +86,24 @@ $member-card-border-color: var(
   $primary-color
 ) !default;
 
+
+=======
+/* ================================================
+=                 HighLightCard               =
+============================================= */
+$highlight-card-bg: var(--highlight-card-bg, $primary-color);
+$highlight-card-color: var(--highlight-card-color, $white-floral);
+$highlight-card-link-tint: var(--highlight-card-link-tint, $white);
+
+/* ================================================
+=                 Header               =
+============================================= */
+
+$header-top-bg-color: var(--header-top-bg, $primary-color);
+$header-bottom-bg-color: var(--header-bottom-bg, $white-floral);
+$header-bottom-link-shade-color: var(
+  --header-bottom-link-shade-color,
+  $primary-color-shade
+);
+$header-shadow-color: var(--header-shadow-color, $shadow-color);
+
