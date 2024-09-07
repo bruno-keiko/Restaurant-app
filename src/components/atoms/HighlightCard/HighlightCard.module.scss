@@ -1,0 +1,115 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.highlight-card {
+  $this: &;
+
+  height: px-to-rem(376);
+  max-width: px-to-rem(408);
+  padding: map.get($spacing, "sm");
+  position: relative;
+
+  &__image-box {
+    @include center;
+
+    margin-top: map.get($spacing, "md");
+    position: relative;
+    z-index: 1;
+
+    @include margin-bottom(xl);
+
+    &::after {
+      border-radius: $br-full;
+      content: "2";
+      display: block;
+      font-size: $fs-xxl;
+      font-weight: $fw-bold;
+      height: px-to-rem(100);
+      position: absolute;
+      transform: translate(75%, -10%);
+      width: px-to-rem(100);
+      z-index: -1;
+
+      @include center;
+    }
+  }
+
+  &__title {
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+    text-align: center;
+
+    @include margin-bottom(lg);
+  }
+
+  &__description {
+    font-size: $fs-md;
+    font-weight: $fw-normal;
+    line-height: 1.2;
+
+    @include padding-horizontal(xs);
+  }
+
+  &__link {
+    border-radius: $br-sm;
+    bottom: map.get($spacing, md);
+    font-size: $fs-xl;
+    position: absolute;
+    right: map.get($spacing, xl);
+    text-decoration: none;
+    transition: all #{300}ms;
+
+    @include padding-horizontal(md);
+    @include padding-vertical(xs);
+  }
+
+  &--primary {
+    background-color: $highlight-card-bg;
+    color: $highlight-card-color;
+
+    #{$this}__image-box {
+      &::after {
+        background-color: $highlight-card-color;
+        color: $highlight-card-bg;
+      }
+    }
+
+    #{$this}__link {
+      &:link,
+      &:visited {
+        background-color: $highlight-card-color;
+        color: $highlight-card-bg;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $highlight-card-link-tint;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $highlight-card-color;
+    color: $highlight-card-secondary-color;
+
+    #{$this}__image-box {
+      &::after {
+        background-color: $highlight-card-bg;
+        color: $highlight-card-color;
+      }
+    }
+
+    #{$this}__link {
+      &:link,
+      &:visited {
+        background-color: $highlight-card-bg;
+        color: $highlight-card-color;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $highlight-card-secondary-link-shade;
+      }
+    }
+  }
+}
