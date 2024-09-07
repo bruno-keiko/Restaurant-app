@@ -16,7 +16,7 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
   title,
   description,
   link,
-  mode = "secondary",
+  mode = "primary",
 }) => {
   return (
     <article
