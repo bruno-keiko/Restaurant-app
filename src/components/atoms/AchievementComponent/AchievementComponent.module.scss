@@ -1,0 +1,48 @@
+@import "../../../foundations/sass/all";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: start;
+  margin: 1rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  padding: map-get($spacing, sm);
+}
+
+.image-container {
+  border: 3px solid $btn-primary-bg;
+  border-radius: 50%;
+  margin-right: map-get($spacing, sm);
+}
+
+.header {
+  font-size: $fs-xxl;
+  font-weight: $fw-bold;
+  color: $primary-color;
+  margin-bottom: map-get($spacing, xxs);
+}
+
+.icon {
+  margin-left: map-get($spacing, xxxs);
+  height: 20px;
+  width: 20px;
+  margin-top: map-get($spacing, xxxs);
+}
