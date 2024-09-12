@@ -17,9 +17,5 @@
     gap: map.get($spacing, md);
 
     @include center;
-
-    & > * {
-      flex: 0 0 auto;
-    }
   }
 }
