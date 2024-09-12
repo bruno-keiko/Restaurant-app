@@ -87,8 +87,8 @@ $branch-card-location-color: var(--branch-card-location-color, $green-neon) !def
 /* ======================================================
 =                SpecialServiceCard              =
 ======================================================= */
-$special-service-heading-color:var(--special-service-heading-color,$primary-color) !default;
-$special-service-description-color:var(--special-service-description-color,$secondary-color) !default;
+$special-service-heading-color: var(--special-service-heading-color,$primary-color) !default;
+$special-service-description-color: var(--special-service-description-color,$secondary-color) !default;
 
 
 /* =============================================
@@ -112,3 +112,8 @@ $header-bottom-link-shade-color: var(
 );
 $header-shadow-color: var(--header-shadow-color, $shadow-color);
 
+/* =============================================
+=                 AchievementCard                 =
+============================================= */
+$achievement-img-border-color: var(--header-color, $primary-color);
+$achievement-header-color: var(--header-color, $primary-color);

@@ -1,0 +1,49 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 1rem;
+  width: fit-content;
+
+  &__info-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__main-content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: map.get($spacing, sm);
+  }
+
+  &__image-container {
+    border: 3px solid $achievement-img-border-color;
+    border-radius: 50px;
+    margin-right: map.get($spacing, sm);
+  }
+
+  &__header {
+    color: $achievement-header-color;
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    margin-bottom: map.get($spacing, xxs);
+  }
+
+  &__icon {
+    height: 20px;
+    margin-left: map.get($spacing, xxxs);
+    margin-top: map.get($spacing, xxxs);
+    width: 20px;
+  }
+}

@@ -1,4 +1,4 @@
-import AchievementComponent from "./AchievementComponent";
+import AchievementCard from "./AchievementCard";
 
 export const Default = {
   args: {
@@ -8,10 +8,10 @@ export const Default = {
       "Certain circumstances and owning to the claims of duty obligation sof business it will frequently.",
   },
 };
-const achievementComponentConfig = {
-  title: "Atoms/AchievementComponent",
-  component: AchievementComponent,
+const achievementCardConfig = {
+  title: "Atoms/AchievementCard",
+  component: AchievementCard,
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
 };
-export default achievementComponentConfig;
+export default achievementCardConfig;
