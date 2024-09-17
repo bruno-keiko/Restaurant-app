@@ -1,0 +1,49 @@
+.review-card-container {
+  background-color: #fff8ee;
+  padding-top: 0.5rem;
+}
+
+.swiper {
+  padding-bottom: 3rem !important;
+}
+
+/* Custom Swiper Pagination Styles */
+.swiper-pagination-bullet {
+  background: transparent !important;
+  border: 2px solid #c33; /* Shortened hex color */
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c33 !important; /* Shortened hex color */
+}
+
+.headings {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    color: #c33; /* Shortened hex color */
+    font-family: Roboto, sans-serif; /* Added generic font family */
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41.02px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    text-align: left;
+
+    span {
+      color: #000; /* Changed from named color "black" to hex color */
+    }
+  }
+
+  h5 {
+    color: #c33; /* Shortened hex color */
+    font-family: Roboto, sans-serif; /* Added generic font family */
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+  }
+}

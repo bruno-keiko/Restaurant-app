@@ -3,22 +3,23 @@
 
 .service-card {
   @include center;
+
   flex-direction: column;
-  
-  gap: 15px;
   font-family: $playfair;
+  gap: 15px; // Moved this below font-family to match alphabetical order
 
   &__title {
-    color: $special-service-heading-color;
     @include center;
+
+    color: $special-service-heading-color;
     font-size: $fs-xxl;
-   @include margin-bottom($spacing);
     font-weight: $fw-bold;
+
+    @include margin-bottom($spacing); // Moved this below font-size to match alphabetical order
   }
 
   &__description {
     color: $special-service-description-color;
     font-size: $fs-md;
-    
   }
 }

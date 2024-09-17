@@ -1,0 +1,35 @@
+.card-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-img {
+  border: 5px solid #c33; /* Shortened the hex color */
+  border-radius: 100px; /* Removed the percentage unit for border-radius */
+}
+
+.card-heading {
+  color: #2a435d;
+  font-family: Roboto, sans-serif; /* Added a generic font family fallback */
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.3px;
+  text-align: center;
+}
+
+.card-comment {
+  color: #2a435d;
+  font-family: Roboto, sans-serif; /* Added a generic font family fallback */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: center;
+}
+
+.do-opaque {
+  opacity: 0.2;
+}
