@@ -82,22 +82,14 @@ $highlight-card-secondary-link-shade: var(
 =                 BranchCard              =
 ============================================= */
 $branch-card-color: var(--branch-card-color, $white-floral) !default;
-$branch-card-location-color: var(
-  --branch-card-location-color,
-  $green-neon
-) !default;
+$branch-card-location-color: var(--branch-card-location-color, $green-neon) !default;
 
 /* ======================================================
 =                SpecialServiceCard              =
 ======================================================= */
-$special-service-heading-color: var(
-  --special-service-heading-color,
-  $primary-color
-) !default;
-$special-service-description-color: var(
-  --special-service-description-color,
-  $secondary-color
-) !default;
+$special-service-heading-color: var(--special-service-heading-color,$primary-color) !default;
+$special-service-description-color: var(--special-service-description-color,$secondary-color) !default;
+
 
 /* =============================================
 =                 MemberCard              =
@@ -119,3 +111,9 @@ $header-bottom-link-shade-color: var(
   $primary-color-shade
 );
 $header-shadow-color: var(--header-shadow-color, $shadow-color);
+
+/* =============================================
+=                 AchievementCard                 =
+============================================= */
+$achievement-img-border-color: var(--header-color, $primary-color);
+$achievement-header-color: var(--header-color, $primary-color);

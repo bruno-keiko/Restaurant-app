@@ -6,20 +6,20 @@
 
   flex-direction: column;
   font-family: $playfair;
-  gap: 15px; // Moved this below font-family to match alphabetical order
+  gap: 15px;
 
   &__title {
-    @include center;
-
     color: $special-service-heading-color;
     font-size: $fs-xxl;
     font-weight: $fw-bold;
 
-    @include margin-bottom($spacing); // Moved this below font-size to match alphabetical order
+    @include center;
+   @include margin-bottom($spacing);
   }
 
   &__description {
     color: $special-service-description-color;
     font-size: $fs-md;
+    
   }
 }
