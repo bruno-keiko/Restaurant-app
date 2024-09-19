@@ -153,6 +153,15 @@ $spacing: (
   xxxl: 6rem,
   // 96px
 ) !default;
+$spacing-xxxs: 0.25rem; // 4px
+$spacing-xxs: 0.5rem; // 8px
+$spacing-xs: 0.75rem; // 12px
+$spacing-sm: 1rem; // 16px
+$spacing-md: 1.5rem; // 24px
+$spacing-lg: 2rem; // 32px
+$spacing-xl: 3rem; // 48px
+$spacing-xxl: 4.5rem; // 72px
+$spacing-xxxl: 6rem; // 96px
 
 @function px-to-rem($px-value) {
   @return $px-value / 16 * 1rem;

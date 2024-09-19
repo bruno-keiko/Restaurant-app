@@ -10,14 +10,11 @@
 
   &__title {
     color: $special-service-heading-color;
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
 
     @include center;
-
-    font-size: $fs-xxl;
-
-    @include margin-bottom($spacing);
-
-    font-weight: $fw-bold;
+   @include margin-bottom($spacing);
   }
 
   &__description {
