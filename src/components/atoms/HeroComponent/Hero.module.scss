@@ -1,0 +1,33 @@
+.hero-img {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  color: #fff8ee;
+  font-family: Roboto, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41.02px;
+  text-align: left;
+}
+
+.subtitle {
+  color: #fff8ee;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: justify;
+}
+
+.text-container {
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff8ee;
+  display: flex;
+  height: 280px;
+  justify-content: center;
+  width: 100%;
+}

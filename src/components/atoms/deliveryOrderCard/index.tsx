@@ -1,1 +1,1 @@
-export { default } from "./DeliveryOrderCard.tsx";
+export { default } from "./DeliveryOrderCard";
