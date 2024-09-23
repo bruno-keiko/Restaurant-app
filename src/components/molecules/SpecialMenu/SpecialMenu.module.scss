@@ -1,0 +1,21 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.special-menu {
+  &__header {
+    color: $special-menu-header-color;
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include margin-bottom("xxl");
+  }
+
+  &__meals-container {
+    flex-wrap: wrap;
+    gap: map.get($spacing, md);
+
+    @include center;
+  }
+}
