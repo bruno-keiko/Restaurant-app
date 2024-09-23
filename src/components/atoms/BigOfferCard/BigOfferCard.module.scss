@@ -1,0 +1,17 @@
+@import "../../../foundations/sass/all";
+
+.big-offer-card {
+  height: px-to-rem(200);
+  width: px-to-rem(560);
+
+  &__link {
+    display: block;
+    height: 100%;
+
+    &__img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
