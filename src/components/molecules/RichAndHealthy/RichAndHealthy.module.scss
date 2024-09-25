@@ -1,0 +1,93 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.rich-and-healthy {
+  color: $rich-and-healthy-color;
+
+  &__image-1 {
+    border-radius: $br-md;
+    height: px-to-rem(600);
+    width: px-to-rem(361);
+  }
+
+  &__subheading {
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+    text-align: center;
+
+    @include margin-bottom("sm");
+  }
+
+  &__inner-box {
+    display: flex;
+    gap: map.get($spacing, "lg");
+  }
+
+  &__heading {
+    color: $rich-and-healthy-heading-color;
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    max-width: px-to-rem(510);
+
+    @include margin-bottom("lg");
+  }
+
+  &__text {
+    font-size: $fs-xl;
+    line-height: 1.4;
+    max-width: px-to-rem(750);
+
+    @include margin-bottom("xs");
+  }
+
+  &__feature-and-contact {
+    display: flex;
+    gap: map.get($spacing, "sm");
+  }
+
+  &__features-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 109px;
+
+    @include padding-vertical("lg");
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, "lg");
+  }
+
+  &__feature-item {
+    display: flex;
+    gap: map.get($spacing, "xxs");
+
+    &__text {
+      font-size: $fs-xl;
+    }
+  }
+
+  &__link-wrapper {
+    text-align: center;
+  }
+
+  &__link:link,
+  &__link:visited {
+    background-color: $rich-and-healthy-link-bg;
+    border-radius: $br-md;
+    color: $rich-and-healthy-link-color;
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include padding-horizontal(xl);
+    @include padding-vertical(xs);
+
+    &:hover,
+    &:active {
+      background-color: $header-bottom-link-shade-color;
+    }
+  }
+}
