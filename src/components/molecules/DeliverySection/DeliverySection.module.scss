@@ -1,0 +1,51 @@
+@import "../../../foundations/sass/all";
+
+.delivery-section {
+  font-family: Roboto, sans-serif;
+
+  &__sectionTitle {
+    font-size: $fs-lg;
+    font-weight: $h-3-font-weight;
+    color: $delivery-section-color;
+    margin-left: px-to-rem(349);
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 103px;
+    // border: solid 1px blue;
+    & > div {
+      flex: 1;
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: px-to-rem(520);
+    // border: solid 1px blue;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      font-size: $h-2-font-size;
+      font-weight: $h-3-font-weight;
+      & > span {
+        color: $delivery-section-color;
+      }
+    }
+  }
+
+  &__image,
+  & > img {
+    height: px-to-rem(313);
+    width: px-to-rem(447);
+  }
+
+  &__delivery-oreder-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 29px;
+    // border: solid 1px red;
+  }
+}
