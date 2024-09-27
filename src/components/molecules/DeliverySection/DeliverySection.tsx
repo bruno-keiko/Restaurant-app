@@ -18,9 +18,18 @@ const DeliverySection: React.FC = ({}) => {
             two sides of the building, overlooking the market and a bustling
             London inteon.
           </p>
-          <div className={styles["delivery-section__delivery-oreder-card"]}>
+          <div className={styles["delivery-section__delivery-order-card"]}>
             <DeliveryOrderCard title="Delivery Order" tel="+880 1630 225 015" />
-            <Button children="Order Now" size="small" />
+            <Button
+              size="small"
+              children="Order Now"
+              style={{
+                height: "50px",
+                minWidth: "159px",
+                fontSize: "25px",
+                fontWeight: "400",
+              }}
+            />
           </div>
         </div>
         <Image
@@ -28,7 +37,6 @@ const DeliverySection: React.FC = ({}) => {
           alt={"food delivery"}
           width="447"
           height="330"
-          // className={styles["delivery-section__image"]}
         />
       </div>
     </div>
