@@ -6,7 +6,10 @@ export interface SpecialServiceCardProps {
   description: string | React.ReactNode;
 }
 
-const SpecialServiceCard: React.FC<SpecialServiceCardProps> = ({ title, description }) => {
+const SpecialServiceCard: React.FC<SpecialServiceCardProps> = ({
+  title,
+  description,
+}) => {
   return (
     <article className={styles["service-card"]}>
       <div className={styles["service-card__title"]}>{title}</div>

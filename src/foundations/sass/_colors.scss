@@ -143,3 +143,27 @@ $ourstory-card-color: var(--ourstory-card-color, $secondary-color) !default;
 =                 SpecialMenu               =
 ============================================= */
 $special-menu-header-color: var(--special-menu-header-color, $primary-color);
+
+/* =============================================
+=                 RichAndHealthy               =
+============================================= */
+$rich-and-healthy-heading-color: var(
+  --rich-and-healthy-heading-color,
+  $primary-color
+) !default;
+$rich-and-healthy-color: var(
+  --rich-and-healthy-color,
+  $secondary-color
+) !default;
+$rich-and-healthy-link-bg: var(
+  --rich-and-healthy-link-bg,
+  $primary-color
+) !default;
+$rich-and-healthy-link-color: var(
+  --rich-and-healthy-link-color,
+  $white-floral
+) !default;
+$rich-and-healthy-link-shade-color: var(
+  --rich-and-healthy-link-shade-color,
+  $primary-color-shade
+) !default;
