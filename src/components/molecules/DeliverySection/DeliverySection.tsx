@@ -1,9 +1,14 @@
+import React, { ReactNode } from "react";
 import DeliveryOrderCard from "@/components/atoms/deliveryOrderCard";
 import Button from "@/components/atoms/button/Button";
 import Image from "next/image";
 import styles from "./DeliverySection.module.scss";
 
-const DeliverySection: React.FC = ({}) => {
+interface DeliverySectionProps {
+  story: ReactNode;
+}
+
+const DeliverySection: React.FC<DeliverySectionProps> = ({}) => {
   return (
     <div className={styles["delivery-section"]}>
       <h2 className={styles["delivery-section__sectionTitle"]}>Delivery</h2>
