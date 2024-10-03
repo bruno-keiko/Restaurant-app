@@ -13,12 +13,12 @@ const DeliveryOrderCard: React.FC<DeliveryOrderCardProps> = ({
 }) => {
   return (
     <div className={styles["delivery-card"]}>
-      <div className={styles["delievry-card__info"]}>
+      <div className={styles["delivery-card__info"]}>
         <h2 className={styles["delivery-card__info__title"]}>{title}</h2>
         <p className={styles["delivery-card__info__tel"]}>{tel}</p>
       </div>
       <Image
-        src="./images/food.png"
+        src="/images/food.png"
         alt={title}
         width="100"
         height="100"
