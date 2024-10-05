@@ -167,3 +167,9 @@ $rich-and-healthy-link-shade-color: var(
   --rich-and-healthy-link-shade-color,
   $primary-color-shade
 ) !default;
+
+/* =============================================
+=                 DeliverySection             =
+============================================= */
+$delivery-section-color: var(--delivery-section-color, $primary-color);
+
