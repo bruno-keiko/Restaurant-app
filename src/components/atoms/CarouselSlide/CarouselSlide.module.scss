@@ -1,0 +1,89 @@
+@import "../../../foundations/sass/all";
+
+.swiper-slide{
+    margin: 0 auto;
+    width: 78%;
+
+    &--main{
+        display: flex;
+
+        &--headings {
+            width: 60%;
+
+            & > *{
+                font-family: Roboto, sans-serif; // Following the figma design
+                font-style: italic;
+                font-weight: 500;
+                text-align: left;
+            }
+
+            & > h4{
+                color: $primary-color;
+                font-size: px-to-rem(20);
+                line-height: 23.44px;
+            }
+
+            & > h2{
+                color: $secondary-color;
+                font-size: px-to-rem(50);
+                line-height: 58.59px;
+                text-align: left;
+                text-transform: uppercase;
+
+                & > span{
+                    color: $primary-color;
+                }
+            }
+        }
+
+        &--image{
+            max-height: px-to-rem(292);
+            width: 40%;
+
+            img{
+                display: block;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        &--cta {
+            @include center;
+
+            > a{
+                background-color: $primary-color;
+                border-radius: px-to-rem(10);
+                color: $btn-primary-color;
+                display: block;
+                font-family: Roboto, sans-serif;
+                font-size: px-to-rem(25);
+                font-weight: 700;
+                min-width: px-to-rem(200);
+                padding: px-to-rem(14);
+                text-align: center;
+                text-decoration: none;
+            }
+
+            > p{
+                color: $secondary-color;
+                font-size: px-to-rem(25);
+                font-weight: 400;
+                line-height: 29.33px;
+                margin: 0 px-to-rem(10);
+                padding: px-to-rem(10);
+            }
+        }
+    }
+
+    &--socials{
+        max-width: fit-content;
+        padding: px-to-rem(5);
+        width: fit-content;
+        
+        & > div {
+            align-items: flex-end;
+            gap: px-to-rem(20);
+            justify-content: space-between;
+        }
+    }
+}
