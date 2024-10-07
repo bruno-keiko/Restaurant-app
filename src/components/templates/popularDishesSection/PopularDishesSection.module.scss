@@ -1,3 +1,18 @@
+@import "../../../foundations/sass/all";
+
 .popular-dishes-section {
-  display: block;
+  &__subheading {
+    color: $popular-dishes-section-subheading-color;
+    font-size: $fs-sm;
+    font-weight: $fw-bold;
+    text-align: center;
+  }
+
+  &__heading {
+    color: $popular-dishes-section-color;
+    font-size: $fs-xl;
+    line-height: px-to-rem(41);
+    margin-bottom: px-to-rem(20);
+    text-align: center;
+  }
 }

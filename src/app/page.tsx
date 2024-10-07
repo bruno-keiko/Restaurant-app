@@ -5,6 +5,8 @@ import Header from "@/components/molecules/Header";
 import MainCarousel from "@/components/molecules/MainCarousel";
 import RichAndHealthy from "@/components/molecules/RichAndHealthy";
 import SpecialMenu from "@/components/molecules/SpecialMenu";
+import BigOfferSection from "@/components/templates/bigOfferSection/BigOfferSection";
+import PopularDishesSection from "@/components/templates/popularDishesSection/PopularDishesSection";
 
 const slides = Array.from({ length: 5 }, (item, index) => ({
   id: index,
@@ -32,9 +34,11 @@ export default function Home() {
       <div style={{ marginTop: "50px", marginBottom: "50px" }}>
         <MainContainer>
           <MainCarousel slides={slides} />
-          <DeliverySection />
-          <SpecialMenu meals={meals} />
+          <PopularDishesSection />
           <RichAndHealthy />
+          <BigOfferSection />
+          <SpecialMenu meals={meals} />
+          <DeliverySection />
         </MainContainer>
       </div>
       <CopyrightInfo text={"\u00A9 2024 My Website. All rights reserved"} />
