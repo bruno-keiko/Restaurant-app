@@ -1,1 +1,6 @@
 @import "../foundations/sass/reset";
+@import "../foundations/sass/all";
+
+body {
+  background-color: $white-floral;
+}

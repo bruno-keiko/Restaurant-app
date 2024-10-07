@@ -1,5 +1,5 @@
 import React from "react";
-import { Meta, Story } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 import SpecialServiceCard, {
   SpecialServiceCardProps,
 } from "./SpecialServiceCard";
@@ -16,7 +16,7 @@ const meta: Meta = {
 export default meta;
 
 // Define a template for the stories
-const Template: Story<SpecialServiceCardProps> = (args) => (
+const Template: StoryFn<SpecialServiceCardProps> = (args) => (
   <SpecialServiceCard {...args} />
 );
 

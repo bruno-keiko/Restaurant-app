@@ -1,0 +1,21 @@
+@import "../../../foundations/sass/all";
+
+.big-offer-section {
+  &__heading {
+    color: $big-offer-section-color;
+    font-size: $fs-xxl;
+    font-style: italic;
+    font-weight: $fw-bold;
+    line-height: 1.2;
+    margin-bottom: px-to-rem(14);
+    text-align: center;
+  }
+
+  &__subheading {
+    color: $big-offer-section-subheading-color;
+    font-size: $fs-sm;
+    font-weight: $fw-bold;
+    margin-bottom: px-to-rem(24);
+    text-align: center;
+  }
+}

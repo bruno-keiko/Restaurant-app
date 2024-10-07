@@ -2,6 +2,7 @@ import styles from "./CarouselSlide.module.scss";
 import React from "react";
 import { SwiperSlide } from "swiper/react";
 import Link from "next/link";
+import Image from "next/image";
 import SocialMediaBar from "../social-media-bar/SocialMediaBar";
 
 interface SocialMedia {
@@ -36,7 +37,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
             </h2>
           </div>
           <div className={styles["swiper-slide--main--image"]}>
-            <img src={image} alt={dishname} />
+            <Image src={image} alt={dishname} />
           </div>
         </div>
         <div className={styles["swiper-slide--main--cta"]}>

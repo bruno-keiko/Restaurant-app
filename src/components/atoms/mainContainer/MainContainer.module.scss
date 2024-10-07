@@ -1,6 +1,9 @@
 @import "../../../foundations/sass/all";
 
 .container {
+  display: flex;
+  flex-direction: column;
+  gap: px-to-rem(50);
   margin: 0 auto;
   max-width: px-to-rem(1220);
 }

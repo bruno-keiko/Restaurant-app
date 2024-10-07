@@ -20,7 +20,10 @@ interface MainCarouselProps {
     dishname: string;
     price: string;
     link: string;
-    socialMedia: [];
+    socialMedia: {
+      icon: string;
+      href: string;
+    }[];
   }[];
 }
 

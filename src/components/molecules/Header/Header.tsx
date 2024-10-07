@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = () => {
                 title="7.30 AM - 9.30 PM"
                 icon={
                   <Image
-                    src="icons/watch_icon.svg"
+                    src="/icons/watch_icon.svg"
                     alt="Watch icon"
                     width={20}
                     height={20}
@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = () => {
                 title="+880 1630 225 015"
                 icon={
                   <Image
-                    src="icons/phone_icon.svg"
+                    src="/icons/phone_icon.svg"
                     alt="Phone icon"
                     width={20}
                     height={20}
@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = () => {
         <MainContainer>
           <div className={styles["header__bottom__container"]}>
             <Image
-              src="icons/logo.png"
+              src="/icons/logo.png"
               alt="Plate and with spoon and fork"
               height={75}
               width={112}

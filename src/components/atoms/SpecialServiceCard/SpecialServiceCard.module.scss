@@ -14,12 +14,11 @@
     font-weight: $fw-bold;
 
     @include center;
-   @include margin-bottom($spacing);
+    @include margin-bottom($spacing);
   }
 
   &__description {
     color: $special-service-description-color;
     font-size: $fs-md;
-    
   }
 }

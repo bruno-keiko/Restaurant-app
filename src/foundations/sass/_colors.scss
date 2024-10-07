@@ -173,3 +173,26 @@ $rich-and-healthy-link-shade-color: var(
 ============================================= */
 $delivery-section-color: var(--delivery-section-color, $primary-color);
 
+/* =============================================
+=                 PopularDishesSection             =
+============================================= */
+$popular-dishes-section-color: var(
+  --popular-dishes-section-color,
+  $primary-color
+) !default;
+$popular-dishes-section-subheading-color: var(
+  --popular-dishes-section-subheading-color,
+  $secondary-color
+) !default;
+
+/* =============================================
+=                 BigOfferSection             =
+============================================= */
+$big-offer-section-color: var(
+  --popular-dishes-section-color,
+  $primary-color
+) !default;
+$big-offer-section-subheading-color: var(
+  --popular-dishes-section-subheading-color,
+  $secondary-color
+) !default;
