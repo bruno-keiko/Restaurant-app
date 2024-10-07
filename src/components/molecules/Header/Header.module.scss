@@ -14,10 +14,12 @@
       display: flex;
       height: px-to-rem(35);
       justify-content: space-between;
+      min-width: px-to-rem(480);
 
       &__info-box {
         display: flex;
         gap: map.get($spacing, "xxl");
+        min-width: fit-content;
       }
 
       &__link:link,
