@@ -1,0 +1,9 @@
+/* ===== SWIPERJS - MAIN CAROUSEL ===== */
+
+.swiper{
+    --swiper-theme-color: #{$primary-color};
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-inactive-color: #{$white-floral};
+    --swiper-pagination-bullet-width: 14px;
+    --swiper-pagination-bullet-height: 14px;
+}
