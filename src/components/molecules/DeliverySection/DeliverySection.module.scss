@@ -1,42 +1,48 @@
 @import "../../../foundations/sass/all";
 
 .delivery-section {
-  width: fit-content;
   font-family: Roboto, sans-serif;
+
   &__sectionTitle {
+    color: $delivery-section-color;
     font-size: $fs-lg;
     font-weight: $h-3-font-weight;
-    color: $delivery-section-color;
-    margin-left: px-to-rem(165);
     margin-bottom: px-to-rem(27);
+    margin-left: px-to-rem(165);
   }
+
   &__content {
     display: flex;
-    justify-content: center;
     gap: 103px;
+    justify-content: center;
   }
+
   &__left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     &__title {
       display: flex;
       flex-direction: column;
+      font-family: Roboto, sans-serif;
       font-size: 35px;
       font-weight: 700;
-      font-family: Roboto, sans-serif;
-      width: 518px;
       line-height: 41.02px;
       white-space: nowrap;
+      width: 518px;
+
       & > span {
         color: $delivery-section-color;
       }
     }
+
     & > p {
+      font-size: $fs-md;
+      font-weight: $fw-normal;
+
       // border: solid 1px green;
       width: px-to-rem(520);
-      font-weight: $fw-normal;
-      font-size: $fs-md;
     }
   }
 
@@ -47,16 +53,16 @@
   }
 
   &__delivery-order-card {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0 29px;
 
     &__button {
-      height: "50px";
-      min-width: "159px";
       font-size: $fs-xl;
       font-weight: $fw-normal;
+      height: "50px";
+      min-width: "159px";
     }
   }
 }
