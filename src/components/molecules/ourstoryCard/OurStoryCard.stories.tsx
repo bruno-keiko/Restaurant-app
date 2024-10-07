@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import OurStoryCard from "./OurStoryCard";
 
 export const Default = {

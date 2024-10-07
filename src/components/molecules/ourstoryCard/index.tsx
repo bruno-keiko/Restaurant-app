@@ -1,1 +1,1 @@
-export { default } from "./OurStoryCard.tsx";
+export { default } from "./OurStoryCard";

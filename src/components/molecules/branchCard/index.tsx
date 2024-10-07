@@ -1,1 +1,1 @@
-export { default } from "./BranchCard.tsx";
+export { default } from "./BranchCard";
