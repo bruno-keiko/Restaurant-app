@@ -10,6 +10,18 @@
  */
 @use "sass:map";
 
+@mixin secondary-heading{
+  font-family: Roboto, sans-serif;
+  font-size: px-to-rem(35);
+  font-weight: 700;
+}
+
+@mixin body-font{
+  font-family: Roboto, sans-serif;
+  font-size: px-to-rem(18);
+  font-weight: 400;
+}
+
 @mixin center {
   align-items: center;
   display: flex;
