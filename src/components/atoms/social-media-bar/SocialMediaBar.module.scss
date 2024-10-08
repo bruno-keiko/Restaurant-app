@@ -14,4 +14,20 @@
   &--large {
     gap: 50px;
   }
+  
+  @media (max-width: 480px) {
+    gap: 20px;
+
+    &--small {
+      gap: 10px;
+    }
+
+    &--medium {
+      gap: 15px;
+    }
+
+    &--large {
+      gap: 25px;
+    }
+  }
 }

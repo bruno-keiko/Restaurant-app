@@ -18,4 +18,34 @@
     margin-bottom: px-to-rem(24);
     text-align: center;
   }
+  .big-offer-card {
+    position: relative; // Add relative positioning to manage overflow
+    overflow: hidden; // Ensure any overflow is hidden
+    border-radius: $br-sm; // Add border radius if needed
+    height: auto; // Allow dynamic height based on content
+
+    img {
+      width: 100%; // Make image responsive
+      height: auto; // Maintain aspect ratio
+      max-height: px-to-rem(150); // Max height for larger screens
+      object-fit: cover; // Make sure image covers the area without distortion
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .big-offer-card {
+      img {
+        max-height: px-to-rem(100); // Reduce max height for tablets
+      }
+    }
+  }
+  
+  @media all and (max-width: 480px) {
+    .big-offer-card {
+      img {
+        max-height: px-to-rem(75);
+        max-width: px-to-rem(75); // Further reduce max height for small mobiles
+      }
+    }
+  }
 }

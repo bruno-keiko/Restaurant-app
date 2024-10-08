@@ -27,17 +27,24 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
   socialMedia,
 }) => {
   return (
-    <SwiperSlide style={{ width: "1166px" }} key={id}>
+    <SwiperSlide className="slide-dots" style={{ width: "1166px" }} key={id}>
       <div className={styles["swiper-slide"]}>
         <div className={styles["swiper-slide--main"]}>
           <div className={styles["swiper-slide--main--headings"]}>
             <h4>Best In Town</h4>
             <h2>
-              Enjoy Our Chicken <span>{dishname}</span> Fast Food
+              Enjoy Our Chicken <br />
+              <span>{dishname}</span> Fast Food
             </h2>
           </div>
           <div className={styles["swiper-slide--main--image"]}>
-            <Image src={image} alt={dishname} />
+            <Image
+              className="--img"
+              width={500}
+              height={500}
+              src={image}
+              alt={dishname}
+            />
           </div>
         </div>
         <div className={styles["swiper-slide--main--cta"]}>

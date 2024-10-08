@@ -10,6 +10,11 @@
     width: px-to-rem(361);
   }
 
+  &__image-2 {
+    width: 50%; // Full width for mobile screens
+    height: 20%;// Maintain aspect ratio
+  }
+
   &__subheading {
     font-size: $fs-lg;
     font-weight: $fw-bold;
@@ -88,6 +93,76 @@
     &:hover,
     &:active {
       background-color: $header-bottom-link-shade-color;
+    }
+  }
+  
+  @media all and (max-width: 1024px) {
+    &__image-1 {
+      width: 30%; // Full width for mobile screens
+      height: 30%; // Maintain aspect ratio
+    }
+
+    &__image-2 {
+      width: 20%; // Full width for mobile screens
+      height: 70%;// Maintain aspect ratio
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .rich-and-healthy {
+      &__inner-box {
+        flex-direction: column; // Stack the inner box on smaller screens
+      }
+  
+      &__image-1 {
+        width: 100%; // Full width for mobile screens
+        height: auto; // Maintain aspect ratio
+      }
+  
+      &__image-2 {
+        width: 20%; // Full width for mobile screens
+        height: 70%;// Maintain aspect ratio
+      }
+  
+      &__heading {
+        font-size: $fs-xl; // Adjust font size for smaller screens
+      }
+  
+      &__text {
+        font-size: $fs-lg; // Adjust font size for smaller screens
+      }
+  
+      &__link:link,
+      &__link:visited {
+        font-size: $fs-lg; // Adjust link size
+      }
+    }
+  }
+  
+  @media all and (max-width: 480px) {
+    .rich-and-healthy {
+      &__subheading {
+        font-size: $fs-md; // Smaller font size for better readability
+      }
+  
+      &__feature-item {
+        align-items: center; // Center align the items
+        flex-direction: column; // Stack items vertically
+        
+      }
+  
+      &__link:link,
+      &__link:visited {
+        @include padding-horizontal(lg); // Adjust padding for mobile
+        @include padding-vertical(sm); // Adjust padding for mobile
+      }
+
+      &__image-2 {
+        height: 70%; // Maintain aspect ratio
+        width: 20%; // Full width for mobile screens
+        
+
+      }
     }
   }
 }

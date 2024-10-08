@@ -37,4 +37,31 @@
       margin: $spacing-sm;
     }
   }
+
+  @media all and (max-width: 768px) {
+    .ourstory-card {
+      flex-direction: column; // Stack the image and info on smaller screens
+  
+      &__image {
+        width: 100%; // Full width on smaller screens
+        height: auto; // Maintain aspect ratio
+      }
+  
+      &__info {
+        margin-top: $spacing-sm; // Add margin between image and info
+      }
+    }
+  }
+  
+  @media all and (max-width: 480px) {
+    .ourstory-card {
+      padding: px-to-rem(10); // Reduce padding on small screens
+  
+      &__info {
+        &__story {
+          font-size: $fs-sm; // Smaller font size for better readability
+        }
+      }
+    }
+  }
 }

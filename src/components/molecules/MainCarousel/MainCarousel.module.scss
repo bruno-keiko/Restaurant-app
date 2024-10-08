@@ -21,4 +21,37 @@
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    width: px-to-rem(900); // Adjust width for tablets
+    padding: px-to-rem(5); // Reduce padding
+    min-height: px-to-rem(300);
+  }
+
+  // Responsive design for mobile devices
+  @media (max-width: 768px) {
+    width: 100%; // Full width on mobile
+    padding: px-to-rem(3);
+    min-height: px-to-rem(250);
+
+    & > div:last-of-type {
+      right: 5px; // Adjust pagination position for smaller screens
+    }
+  }
+
+  // Extra small screens (mobile)
+  @media (max-width: 480px) {
+    overflow: hidden;
+    width: 100%;
+    padding: px-to-rem(2);
+    min-height: px-to-rem(200);
+
+    & > div:last-of-type {
+      right: 5px;
+    }
+
+    & > span {
+      border-width: 1px; // Make pagination bullets smaller
+    }
+  }
 }

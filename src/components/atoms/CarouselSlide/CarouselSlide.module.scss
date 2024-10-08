@@ -86,4 +86,105 @@
       justify-content: space-between;
     }
   }
+
+  @media all and (max-width: 768px) {
+    .swiper-slide {
+      width: 100%; // Increase width on smaller screens for more visibility
+  
+      &--main {
+        flex-direction: column; // Stack items vertically on mobile
+        text-align: center;
+  
+        &--headings {
+          width: 100%; // Full width on mobile
+  
+          & > h4 {
+            font-size: px-to-rem(16); // Adjust the font-size for mobile
+            line-height: 20px;
+          }
+  
+          & > h2 {
+            font-size: px-to-rem(36); // Reduce heading size for smaller screens
+            line-height: 44px;
+  
+            & > span {
+              color: $primary-color;
+            }
+          }
+        }
+  
+        &--image {
+          width: 80%; // Make image take more space on mobile
+          max-height: none; // Remove max-height on mobile
+  
+          img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+          }
+        }
+  
+        &--cta {
+          > a {
+            font-size: px-to-rem(18); // Adjust CTA button size
+            padding: px-to-rem(10);
+            min-width: px-to-rem(150);
+          }
+        }
+      }
+  
+      &--socials {
+        justify-content: center; // Center social icons on mobile
+  
+        & > div {
+          gap: px-to-rem(10); // Reduce gap between icons on mobile
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    .swiper-slide {
+      width: 50%; // Make it almost full width on small mobiles
+  
+      &--main {
+        &--headings {
+          width: 40%;
+          & > h4 {
+            font-size: px-to-rem(14); // Further reduce the font size
+          }
+  
+          & > h2 {
+            font-size: px-to-rem(30); // Further reduce heading size
+            line-height: 36px;
+          }
+        }
+  
+        &--image {
+          width: 100%; // Make image take full width
+          max-height: none; // Ensure it adapts to content
+  
+          img {
+            height: auto; // Maintain aspect ratio
+            width: 40%; // Ensure it fills the container
+          }
+        }
+  
+        &--cta {
+          width: 40%;
+          > a {
+            font-size: px-to-rem(16); // Reduce button font size
+            padding: px-to-rem(8); // Adjust padding
+            min-width: auto; // Allow it to adjust width
+          }
+        }
+      }
+  
+      &--socials {
+        & > div {
+          gap: px-to-rem(5); // Further reduce gap between icons
+        }
+      }
+    }
+  }
 }

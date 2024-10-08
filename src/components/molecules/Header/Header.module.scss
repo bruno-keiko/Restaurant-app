@@ -73,3 +73,42 @@
     }
   }
 }
+
+// Add responsiveness
+@media (max-width: 768px) { // Tablet and below
+  .header__top__container {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: $spacing-md;
+  }
+
+  .header__bottom__container {
+    flex-direction: column;
+    height: auto;
+    gap: map.get($spacing, "md");
+    padding-bottom: $spacing-md;
+  }
+
+  .header__bottom__container__logo {
+    margin-bottom: $spacing-sm;
+  }
+}
+
+@media (max-width: 480px) { // Mobile
+  .header__top__container {
+    padding: $spacing-sm;
+  }
+
+  .header__bottom__container {
+    padding: $spacing-sm;
+  }
+
+  .header__bottom__container__info-box {
+    flex-direction: column;
+    gap: map.get($spacing, "md");
+  }
+
+  .header__bottom__container__logo {
+    width: 100px; // Smaller logo for mobile
+  }
+}

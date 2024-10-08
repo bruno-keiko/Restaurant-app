@@ -39,4 +39,49 @@
     padding: px-to-rem(2);
     width: px-to-rem(35);
   }
+
+  // Responsive adjustments for smaller screens
+  @media (max-width: 768px) {
+    flex-direction: column; // Stack elements vertically for tablets and smaller screens
+    align-items: flex-start;
+    height: auto; // Remove fixed height for flexibility
+    width: 100%; // Make it responsive to container width
+
+    &__info {
+      min-width: unset; // Remove minimum width for smaller screens
+
+      &__title {
+        font-size: $fs-sm; // Reduce title font size for smaller screens
+      }
+
+      &__tel {
+        font-size: $fs-xs; // Reduce phone number font size
+      }
+    }
+
+    &__image {
+      height: px-to-rem(30); // Slightly smaller image for smaller screens
+      width: px-to-rem(30);
+    }
+  }
+
+  @media (max-width: 480px) { // Mobile phones
+    padding: px-to-rem(5); // Reduce padding for mobile
+
+    &__info {
+      &__title {
+        font-size: $fs-xs; // Further reduce title font size
+      }
+
+      &__tel {
+        font-size: $fs-xs; // Further reduce phone number font size
+      }
+    }
+
+    &__image {
+      height: px-to-rem(25); // Even smaller image for mobile screens
+      width: px-to-rem(25);
+    }
+  }
 }
+

@@ -6,16 +6,49 @@
   display: flex;
   gap: 15px;
 
-  &__icon {
+  .info-card__icon {
     @include center;
 
-    &__box {
+    .info-card__box{
       @include center;
     }
   }
 
-  &__title {
+  .info-card__title {
     color: $info-card-color;
     font-size: $fs-xs;
   }
+
+
+  // Media queries for responsiveness
+  @media (max-width: 1024px) { // Tablet and smaller
+    .info-card{
+      gap: 10px;
+    }
+    
+
+    .info-card__title {
+      font-size: $fs-sm; // Adjust font size for tablet
+    }
+  }
+
+  @media (max-width: 768px) { // Tablet and mobile
+    .info-card{
+      flex-direction: column; // Stack icon and title vertically
+      gap: 8px;
+    }
+    
+    .info-card__title {
+      font-size: $fs-sm;
+    }
+  }
+
+  @media (max-width: 480px) { // Mobile
+   
+    .info-card__title {
+      font-size: $fs-xs; // Make the font smaller on mobile
+    }
+    
+  }
+
 }

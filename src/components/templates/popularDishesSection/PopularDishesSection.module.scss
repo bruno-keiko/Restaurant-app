@@ -15,4 +15,50 @@
     margin-bottom: px-to-rem(20);
     text-align: center;
   }
+
+  img {
+    height: auto;
+    width: 100%;  // Ensure the image takes the full width of the card
+    max-height: px-to-rem(150); // Limit max height for larger screens
+    object-fit: cover; // Ensure the image covers the area without distortion
+    overflow: hidden; // Prevent overflow
+  }
+
+/* Responsive adjustments */
+@media all and (max-width: 768px) {
+  .popular-dishes-section {
+    &__heading {
+      font-size: $fs-lg; // Adjust heading size for tablets
+      line-height: px-to-rem(36); // Adjust line height
+    }
+
+    &__subheading {
+      font-size: $fs-xs; // Adjust subheading size for tablets
+    }
+
+    img {
+      max-height: px-to-rem(100); // Reduce max height for tablets
+      overflow: hidden; // Hide overflow
+    }
+  }
+}
+
+@media all and (max-width <= 480px) {
+  .popular-dishes-section {
+    &__heading {
+      font-size: $fs-md; // Further reduce heading size for small mobiles
+      line-height: px-to-rem(30);
+    }
+
+    &__subheading {
+      font-size: $fs-xs; // Adjust subheading size for small mobiles
+    }
+
+    img {
+      max-height: px-to-rem(75); // Further reduce max height for small mobiles
+      overflow: hidden; // Hide overflow
+    }
+  }
+  
+}
 }

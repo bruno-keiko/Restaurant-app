@@ -2,6 +2,7 @@
 
 .delivery-section {
   font-family: Roboto, sans-serif;
+  padding: 20px;
 
   &__sectionTitle {
     color: $delivery-section-color;
@@ -31,6 +32,7 @@
       line-height: 41.02px;
       white-space: nowrap;
       width: 518px;
+      padding-left: 20px;
 
       & > span {
         color: $delivery-section-color;
@@ -54,15 +56,83 @@
 
   &__delivery-order-card {
     align-items: center;
-    display: flex;
     justify-content: space-between;
     margin: 0 29px;
+    padding: 20px;
 
     &__button {
       font-size: $fs-xl;
       font-weight: $fw-normal;
       height: "50px";
       min-width: "159px";
+    }
+  }
+  @media all and (max-width: 768px) {
+    .delivery-section {
+      &__sectionTitle {
+        margin-left: px-to-rem(20); // Reduced margin for smaller screens
+        font-size: $fs-md; // Adjusted font size
+        text-align: center; // Center the text
+      }
+  
+      &__content {
+        flex-direction: column; // Stack content vertically on smaller screens
+        align-items: center; // Center align for better layout
+        gap: 50px; // Reduced gap between items
+      }
+  
+      &__left {
+        &__title {
+          font-size: 28px; // Adjusted font size
+          width: 100%; // Allow title to take full width
+          text-align: center; // Center the title text
+          white-space: normal; // Allow wrapping
+        }
+  
+        & > p {
+          width: auto; // Allow paragraph to adjust its width
+          text-align: center; // Center the paragraph text
+          white-space: normal; // Allow wrapping
+        }
+      }
+  
+      &__image,
+      & > img {
+        width: 100%; // Full width for images
+        height: auto; // Maintain aspect ratio
+      }
+  
+      &__delivery-order-card {
+        margin: 0 15px; // Reduced margin for better fit
+      }
+    }
+  }
+  
+  @media all and (max-width: 480px) {
+    .delivery-section {
+      &__sectionTitle {
+        font-size: $fs-sm; // Smaller font size for mobile
+        text-align: center; // Center the text for mobile
+      }
+      &__left {
+        &__title {
+          font-size: 24px; // Further reduced font size
+          text-align: center; // Center the title text for mobile
+          white-space: normal; // Allow wrapping for mobile
+        }
+  
+        & > p {
+          font-size: $fs-sm; // Adjusted paragraph size for mobile
+          text-align: center; // Center the paragraph text for mobile
+          white-space: normal; // Allow wrapping for mobile
+        }
+      }
+  
+      &__delivery-order-card {
+        &__button {
+          font-size: $fs-lg; // Adjusted button size for mobile
+        }
+      }
     }
   }
 }
