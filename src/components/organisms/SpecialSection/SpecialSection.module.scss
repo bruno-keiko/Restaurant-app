@@ -1,0 +1,34 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.special-section {
+  background-color: $special-section-bg-color;
+  color: $special-section-color;
+
+  // height: px-to-rem(875);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, "sm");
+  }
+
+  &__upheading {
+    color: $special-section-upheading-color;
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    text-align: center;
+  }
+
+  &__subheading {
+    font-size: $fs-sm;
+    text-align: center;
+  }
+}
