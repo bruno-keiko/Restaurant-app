@@ -37,7 +37,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
             </h2>
           </div>
           <div className={styles["swiper-slide--main--image"]}>
-            <Image src={image} alt={dishname} />
+            <Image src={image} alt={dishname} width={438} height={292} />
           </div>
         </div>
         <div className={styles["swiper-slide--main--cta"]}>
