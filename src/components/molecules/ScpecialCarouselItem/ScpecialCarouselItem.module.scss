@@ -1,0 +1,55 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.carousel-item {
+  display: flex;
+  gap: map.get($spacing, "xxl");
+  justify-content: center;
+  overflow: hidden;
+
+  &__cta {
+    width: px-to-rem(489);
+  }
+
+  &__img-wrapper {
+    height: px-to-rem(615);
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__link {
+    @include center;
+
+    background-color: $special-carousel-item-link-bg-color;
+    color: $special-carousel-item-link-color;
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    gap: map.get($spacing, "xxl");
+    height: px-to-rem(60);
+    position: relative;
+    text-decoration: none;
+    transition: all #{300}ms ease-out;
+
+    @include padding-horizontal("xs");
+  }
+
+  &__link:hover {
+    background-color: $special-carousel-item-link-hover-bg-color;
+  }
+
+  &__arrow-icon {
+    position: absolute;
+    right: map.get($spacing, "xs");
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, "md");
+    height: 100%;
+    min-width: px-to-rem(520);
+  }
+}

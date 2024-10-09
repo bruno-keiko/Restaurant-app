@@ -16,6 +16,12 @@
   justify-content: center;
 }
 
+@mixin mobile {
+  @media (max-width: map.get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: map.get($breakpoints, "md")) {
     @content;

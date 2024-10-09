@@ -1,0 +1,33 @@
+@import "../../../foundations/sass/all";
+
+.tabs {
+  display: flex;
+
+  &__tab-wrapper {
+    box-shadow: 1px 0 0 0 $special-section-tab-border-color;
+    flex: 1;
+
+    &:last-child {
+      box-shadow: none;
+    }
+  }
+
+  &__tab {
+    background-color: transparent;
+    border: none;
+    color: $special-section-tab-color;
+    cursor: pointer;
+    font-size: $fs-xl;
+    height: px-to-rem(60);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include center;
+  }
+
+  &__tab--active {
+    background-color: $special-section-tab-color;
+    color: $special-section-tab-active-color;
+  }
+}

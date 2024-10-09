@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MenuItem.module.scss";
 
-interface MenuItemProps {
+export interface MenuItemProps {
   name: string;
   ingredients: string;
   price: number;

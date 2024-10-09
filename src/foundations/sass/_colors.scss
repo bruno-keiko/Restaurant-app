@@ -196,3 +196,48 @@ $big-offer-section-subheading-color: var(
   --popular-dishes-section-subheading-color,
   $secondary-color
 ) !default;
+
+/* =============================================
+=                 SpecialCarouselItem          =
+============================================= */
+$special-carousel-item-link-bg-color: var(
+  --special-carousel-item-link-bg-color,
+  $primary-color
+) !default;
+$special-carousel-item-link-color: var(
+  --special-carousel-item-link-color,
+  $white-floral
+) !default;
+$special-carousel-item-link-hover-bg-color: var(
+  --special-carousel-item-link-hover-bg-color,
+  $primary-color-shade
+) !default;
+
+/* =============================================
+=                 SpecialSectionTabs           =
+============================================= */
+$special-section-tab-color: var(
+  --special-section-tab-color,
+  $primary-color
+) !default;
+$special-section-tab-active-color: var(
+  --special-section-tab-active-color,
+  $white-floral
+) !default;
+$special-section-tab-border-color: var(
+  --special-section-tab-border-color,
+  $secondary-color
+) !default;
+
+/* =============================================
+=                 SpecialSection               =
+============================================= */
+$special-section-upheading-color: var(
+  --special-section-upheading-color,
+  $primary-color
+) !default;
+$special-section-color: var(--special-section-color, $secondary-color) !default;
+$special-section-bg-color: var(
+  --special-section-bg-color,
+  $white-floral
+) !default;
