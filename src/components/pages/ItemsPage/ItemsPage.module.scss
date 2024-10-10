@@ -1,12 +1,11 @@
 @import '../../../foundations/sass/all';
-
 .items-page{
     & h3{
-        @include secondary-heading;
-
-        color: $secondary-color;
-        line-height: 41.02px;
-        padding: px-to-rem(10);
-        text-align: center;
-    }
-}
+          @include secondary-heading;
+          color: $secondary-color;
+          line-height: 41.02px;
+          margin: px-to-rem(15) 0;
+          padding: px-to-rem(15);
+          text-align: center;
+      }
+  }

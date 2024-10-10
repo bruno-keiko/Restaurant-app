@@ -2,7 +2,7 @@ import { Meta } from "@storybook/react";
 import SecondaryHeaderPages from "./SecondaryHeaderPages";
 
 const secondaryHeaderPages: Meta<typeof SecondaryHeaderPages> = {
-  title: "Pages/SecondaryHeaderPages",
+  title: "Templates/SecondaryHeaderPages",
   component: SecondaryHeaderPages,
   tags: ["autodocs"],
   decorators: [
