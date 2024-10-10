@@ -6,10 +6,6 @@
   min-height: 100%;
 }
 
-.banner {
-  @extend %banner;
-}
-
 .content {
   background-color: #f7fafc;
   flex-grow: 1;

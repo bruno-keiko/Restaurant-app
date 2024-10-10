@@ -1,28 +1,19 @@
 import React from "react";
 import Header from "../Header";
-import Image from "next/image";
 import BannerImage from "@/../../public/images/banner.png";
 import CopyrightInfo from "@/components/atoms/CopyrightInfo";
 import Link from "next/link";
 import styles from "./LoginSection.module.scss";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import Banner from "@/components/atoms/Banner/Banner";
 
 const LoginSection: React.FC = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <div className={styles.banner}>
-        <Image
-          src={BannerImage}
-          alt="Banner image"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
-        <div className={styles.overlay} />
-        <h1>My Account</h1>
-      </div>
+      <Banner image={BannerImage} text="My Account" />
+
       <div className={styles.content}>
         <div className={styles.forms}>
           <div className={styles["login-form"]}>

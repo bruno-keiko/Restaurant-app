@@ -27,35 +27,6 @@
   }
 }
 
-%banner {
-  height: 12rem;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-
-  img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .overlay {
-    inset: 0;
-    position: absolute;
-  }
-
-  h1 {
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: bold;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-}
-
 .forms {
   align-items: center;
   display: flex;
