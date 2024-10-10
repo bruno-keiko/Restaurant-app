@@ -58,10 +58,10 @@
   background-color: #f7fafc;
 
   h2 {
-    padding: 2rem;
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 1.5rem;
+    padding: 2rem;
     text-align: center;
   }
 
@@ -87,34 +87,34 @@
       }
 
       div {
-        font-size: 20px;
         align-items: center;
         display: flex;
+        font-size: 20px;
         gap: 5px;
         justify-content: center;
         margin-bottom: 0.5rem;
       }
 
       span {
-        display: flex;
         align-items: center;
-        justify-content: center;
+        display: flex;
         gap: 20px;
+        justify-content: center;
         margin-bottom: 0.5rem;
       }
 
       p {
-        display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 12px;
+        display: flex;
         font-size: 12px;
+        gap: 12px;
+        justify-content: center;
         text-align: center;
       }
 
       a {
-        font-size: 18px;
         color: #4bff3c;
+        font-size: 18px;
         text-decoration: none;
 
         &:hover {
