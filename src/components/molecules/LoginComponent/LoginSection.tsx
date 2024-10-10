@@ -4,9 +4,9 @@ import BannerImage from "@/../../public/images/banner.png";
 import CopyrightInfo from "@/components/atoms/CopyrightInfo";
 import Link from "next/link";
 import styles from "./LoginSection.module.scss";
-import { MdOutlineAccessTimeFilled } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
 import Banner from "@/components/atoms/Banner/Banner";
+import InfoCard from "@/components/atoms/infoCard";
+import Image from "next/image";
 
 const LoginSection: React.FC = () => {
   return (
@@ -59,15 +59,28 @@ const LoginSection: React.FC = () => {
                   }
                 </div>
                 <span>
-                  <p>
-                    {" "}
-                    <MdOutlineAccessTimeFilled size={20} />
-                    7:30 AM - 9:30 PM
-                  </p>
-                  <p>
-                    <FaPhoneAlt size={20} />
-                    +880 1630-225015
-                  </p>
+                  <InfoCard
+                    title="7.30 AM - 9.30 PM"
+                    icon={
+                      <Image
+                        src="/icons/watch_icon.svg"
+                        alt="Watch icon"
+                        width={20}
+                        height={20}
+                      />
+                    }
+                  />
+                  <InfoCard
+                    title="+880 1630 225 015"
+                    icon={
+                      <Image
+                        src="/icons/phone_icon.svg"
+                        alt="Phone icon"
+                        width={20}
+                        height={20}
+                      />
+                    }
+                  />
                 </span>
                 <a href="#">Click to View Google Map</a>
               </div>
