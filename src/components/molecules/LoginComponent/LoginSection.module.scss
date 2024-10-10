@@ -6,7 +6,6 @@
   min-height: 100%;
 }
 
-
 .content {
   background-color: #f7fafc;
   flex-grow: 1;
@@ -31,7 +30,7 @@
 
   h2 {
     color: #e53e3e;
-    font-size: 1.5rem;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 1rem;
   }
@@ -43,6 +42,7 @@
   label {
     color: #c33;
     display: block;
+    font-size: 18px;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
     text-align: left;
@@ -60,6 +60,7 @@
 .remember-me {
   align-items: center;
   display: flex;
+  font-size: 25px;
   margin-top: 0.1rem;
 
   input {

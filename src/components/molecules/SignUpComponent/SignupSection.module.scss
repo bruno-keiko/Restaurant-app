@@ -29,7 +29,7 @@
 
   h2 {
     color: #e53e3e;
-    font-size: 1.5rem;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 1rem;
     text-align: center;
@@ -46,9 +46,14 @@
   label {
     color: #c33;
     display: block;
+    font-size: 18px;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
     text-align: left;
+  }
+
+  p {
+    font-size: 18px;
   }
 
   input {

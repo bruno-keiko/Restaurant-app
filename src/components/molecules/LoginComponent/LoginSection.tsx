@@ -49,7 +49,7 @@ const LoginSection: React.FC = () => {
             (branch, index) => (
               <div key={index} className={styles.branch}>
                 <h3>{branch}</h3>
-                <p>
+                <div>
                   {
                     [
                       "1986 Hilltop DriveBorger, TX 79007",
@@ -57,16 +57,18 @@ const LoginSection: React.FC = () => {
                       "1509 Peaceful LaneCleveland, OH 44115",
                     ][index]
                   }
-                </p>
-                <p>
-                  {" "}
-                  <MdOutlineAccessTimeFilled size={20} />
-                  7:30 AM - 9:30 PM
-                </p>
-                <p>
-                  <FaPhoneAlt size={20} />
-                  +880 1630-225015
-                </p>
+                </div>
+                <span>
+                  <p>
+                    {" "}
+                    <MdOutlineAccessTimeFilled size={20} />
+                    7:30 AM - 9:30 PM
+                  </p>
+                  <p>
+                    <FaPhoneAlt size={20} />
+                    +880 1630-225015
+                  </p>
+                </span>
                 <a href="#">Click to View Google Map</a>
               </div>
             ),
