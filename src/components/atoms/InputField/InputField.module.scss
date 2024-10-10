@@ -1,15 +1,17 @@
 @import "../../../foundations/sass/all";
 
 .input-field{
-    @include body-font;
+      @include body-font;
+      
+      border: none;
+      border: px-to-rem(20) solid $primary-color;
+      border-radius: px-to-rem(40);
+      color: $secondary-color;
+      height: px-to-rem(80);
+      line-height: 21.09px;
+      outline: none;
+      padding: px-to-rem(5) px-to-rem(15);
+      width: px-to-rem(400);
 
-    width: px-to-rem(400); //as per figma design
-    height: px-to-rem(80);
-    border: none;
-    outline: none;
-    border-radius: px-to-rem(40);
-    border: px-to-rem(20) solid $primary-color;
-    padding: px-to-rem(5) px-to-rem(15);
-    line-height: 21.09px;
-    color: $secondary-color;
-}
+ // as per figma design
+  }

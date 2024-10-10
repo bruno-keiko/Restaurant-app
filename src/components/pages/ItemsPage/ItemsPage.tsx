@@ -1,11 +1,22 @@
 import React from "react";
 import styles from "./ItemsPage.module.scss";
 import SecondaryHeaderPages from "@/components/templates/SecondaryHeaderPages";
-import SearchBar from "@/components/molecules/SearchBar/SearchBar";
+import SearchBar from "@/components/molecules/SearchBar";
+import ItemCard from "@/components/atoms/ItemCard";
 
-interface ItemsPageProps {}
+interface ItemsPageProps {
+  items: {
+    id: number;
+    image: string;
+    dishname: string;
+    price: number;
+    description: string;
+    discountOne: string;
+    discountTwo: string;
+  }[];
+}
 
-const ItemsPage: React.FC<ItemsPageProps> = () => {
+const ItemsPage: React.FC<ItemsPageProps> = ({ items }) => {
   const handleSearch = (searchTerm: string) => {
     alert(`Search ${searchTerm}`);
   };
@@ -19,8 +30,15 @@ const ItemsPage: React.FC<ItemsPageProps> = () => {
       >
         <h3>It&apos;s the food and groceries you love, delivered</h3>
       </SecondaryHeaderPages>
-      <div>
+
+      <div className={styles["items-page-searchbox"]}>
         <SearchBar onSearch={handleSearch} />
+      </div>
+
+      <div className={styles["items-page-container"]}>
+        {items.map((item, index) => {
+          return <ItemCard key={index} {...item} />;
+        })}
       </div>
     </div>
   );

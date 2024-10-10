@@ -1,11 +1,154 @@
 @import '../../../foundations/sass/all';
-.items-page{
-    & h3{
-          @include secondary-heading;
-          color: $secondary-color;
-          line-height: 41.02px;
-          margin: px-to-rem(15) 0;
-          padding: px-to-rem(15);
-          text-align: center;
-      }
+
+.items-page {
+  width: px-to-rem(1440);
+
+  & > h3 {
+    @include secondary-heading;
+
+    color: $secondary-color;
+    line-height: 41.02px;
+    margin: px-to-rem(10) 0;
+    padding: px-to-rem(10);
+    text-align: center;
   }
+
+  &-searchbox {
+    margin: px-to-rem(10) 0;
+    padding: px-to-rem(10) 0;
+  }
+
+  &-container {
+    display: grid;
+    grid: repeat(10, auto) / repeat(2, auto);
+    grid-gap: 10px;
+    grid-template-areas:
+      'item-card-0 discount-image'
+      'item-card-1 discount-image'
+      'item-card-2 discount-image'
+      'item-card-3 item-card-4'
+      'item-card-5 item-card-6'
+      'discount-image-full-width discount-image-full-width'
+      'item-card-7 item-card-8'
+      'item-card-9 item-card-10'
+      'item-card-11 item-card-12';
+    margin: 0 auto;
+    max-width: px-to-rem(1254);
+
+    .item-card {
+      align-items: center;
+      background: $white-floral;
+      border-radius: 20px;
+      box-shadow: 0 1px 4px 3px rgba(0 0 0 / 25%);
+      box-sizing: border-box;
+      display: flex;
+      height: px-to-rem(170);
+      justify-content: space-between;
+      margin: px-to-rem(10);
+      padding: px-to-rem(10);
+      width: px-to-rem(588);
+
+      &-img {
+        border-radius: px-to-rem(20);
+        height: px-to-rem(150);
+        min-width: px-to-rem(150);
+        overflow: hidden;
+        width: px-to-rem(150);
+      }
+
+      &-text {
+        box-sizing: border-box;
+        color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        padding: px-to-rem(10);
+
+        & > h3,
+        & > h4 {
+          font-family: Roboto, sans-serif;
+          font-size: px-to-rem(20);
+          font-weight: 700;
+        }
+
+        p {
+          @include body-font;
+
+          line-height: 21.09px;
+        }
+      }
+    }
+
+    .item-card:nth-of-type(1) {
+      grid-area: item-card-0;
+    }
+
+    .item-card:nth-of-type(2) {
+      grid-area: item-card-1;
+    }
+
+    .item-card:nth-of-type(3) {
+      grid-area: item-card-2;
+    }
+
+    .item-card:nth-of-type(4) {
+      grid-area: item-card-3;
+    }
+
+    .item-card:nth-of-type(5) {
+      grid-area: item-card-4;
+    }
+
+    .item-card:nth-of-type(6) {
+      grid-area: item-card-5;
+    }
+
+    .item-card:nth-of-type(7) {
+      grid-area: item-card-6;
+    }
+
+    .item-card:nth-of-type(8) {
+      grid-area: item-card-7;
+    }
+
+    .item-card:nth-of-type(9) {
+      grid-area: item-card-8;
+    }
+
+    .item-card:nth-of-type(10) {
+      grid-area: item-card-9;
+    }
+
+    .item-card:nth-of-type(11) {
+      grid-area: item-card-10;
+    }
+
+    .item-card:nth-of-type(12) {
+      grid-area: item-card-11;
+    }
+
+    .item-card:nth-of-type(13) {
+      grid-area: item-card-12;
+    }
+
+    .discount-image {
+      border-radius: 4px;
+      box-shadow: 0 0 6px 4px rgba(0 0 0 / 25%);
+      box-sizing: border-box;
+      grid-row: span 3;
+      height: px-to-rem(570);
+      margin: px-to-rem(10);
+      width: px-to-rem(588);
+    }
+
+    .discount-image-full-width {
+      box-shadow: 0 2px 6px 5px rgba(0 0 0 / 25%);
+      box-sizing: border-box;
+      grid-column: span 2;
+      height: px-to-rem(323);
+      margin: px-to-rem(10);
+      width: px-to-rem(1214);
+    }
+  }
+}
