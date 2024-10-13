@@ -1,10 +1,10 @@
-import SignupSection from "./SignupSection";
+import AuthSection from "./AuthSection";
 
 export const Default = {};
 
 const headerConfig = {
   title: "Molecules/Header",
-  component: SignupSection,
+  component: AuthSection,
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
 };
