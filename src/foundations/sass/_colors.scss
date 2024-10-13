@@ -196,3 +196,26 @@ $big-offer-section-subheading-color: var(
   --popular-dishes-section-subheading-color,
   $secondary-color
 ) !default;
+
+/* =============================================
+=                 BranchSection                =
+============================================= */
+$link-color: var(--branch-section, $green-neon) !default;
+$branch-bg-color: var(--branch-section, $white) !default;
+$branch-section-color: var(--branch-section, $primary-color) !default;
+$branch-section-secondary-color: var(
+  --branch-section,
+  $secondary-color
+) !default;
+
+/* =============================================
+=                 AuthSection                =
+============================================= */
+$auth-link-color: var(--branch-section, $dark-green) !default;
+$auth-bg-color: var(--branch-section, $white) !default;
+$auth-section-color: var(--branch-section, $primary-color) !default;
+$auth-section-secondary-color: var(--branch-section, $secondary-color) !default;
+$auth-card-secondary-link-shade: var(
+  --highlight-card-secondary-link-shade,
+  $primary-color-shade
+);

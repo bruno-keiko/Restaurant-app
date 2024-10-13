@@ -1,6 +1,5 @@
 @import "../../../foundations/sass/all";
 
-// Mixins
 @mixin form-input {
   border: 1px solid $auth-section-color;
   border-radius: 4px;
@@ -23,14 +22,12 @@
   cursor: pointer;
   font-size: 1.25rem;
   padding: 1rem 2rem;
-  transition: background-color 0.3s;
 
   &:hover {
     background-color: $auth-card-secondary-link-shade;
   }
 }
 
-// Container styles
 .container {
   display: flex;
   flex-direction: column;
@@ -43,17 +40,15 @@
   padding: 1.5rem;
 }
 
-// Forms container
 .forms {
   align-items: center;
   display: flex;
   justify-content: center;
-  min-height: 55%;
   margin: 0 auto;
   max-width: 72rem;
+  min-height: 55%;
 }
 
-// Base form styles
 %form-base {
   background-color: $header-bottom-bg-color;
   border-radius: 8px;
@@ -80,7 +75,6 @@
   }
 }
 
-// Login form specific styles
 .login-form {
   @extend %form-base;
 
@@ -89,7 +83,6 @@
   }
 }
 
-// Register form specific styles
 .register-form {
   @extend %form-base;
 
@@ -102,7 +95,6 @@
   }
 }
 
-// Form group styles
 .form-group {
   margin-bottom: 1rem;
 
@@ -127,9 +119,8 @@
   color: $header-top-bg-color;
 }
 
-// Remember me checkbox
-.rememberMe {
-  align-items: center;
+.remember-me {
+  align-items: left;
   display: flex;
   font-size: 16px;
   margin-top: 0.5rem;
@@ -139,7 +130,6 @@
   }
 }
 
-// Lost password link
 .lost-password {
   color: $auth-link-color;
   display: inline-block;
@@ -150,7 +140,6 @@
   }
 }
 
-// User switch styles
 %user-switch {
   margin-top: 1rem;
 
@@ -165,6 +154,7 @@
 
 .new-user {
   @extend %user-switch;
+
   color: $auth-section-secondary-color;
 
   a {
@@ -174,6 +164,7 @@
 
 .old-user {
   @extend %user-switch;
+
   color: $secondary-color;
 
   a {

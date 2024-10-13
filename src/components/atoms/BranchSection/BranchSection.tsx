@@ -6,13 +6,13 @@ import styles from "./BranchSection.module.scss";
 const BranchSection = () => {
   return (
     <div className={styles["branch-section"]}>
-      <h2>Our Branch</h2>
+      <h2 className={styles.title}>Our Branch</h2>
       <div className={styles.branches}>
         {["Robert Food", "Mark A. Reed Food", "Karie K. Hill Food"].map(
           (branch, index) => (
             <div key={index} className={styles.branch}>
               <h3>{branch}</h3>
-              <div>
+              <div className={styles.address}>
                 {
                   [
                     "1986 Hilltop DriveBorger, TX 79007",
@@ -21,7 +21,7 @@ const BranchSection = () => {
                   ][index]
                 }
               </div>
-              <span>
+              <div className={styles["info-box"]}>
                 <InfoCard
                   title="7.30 AM - 9.30 PM"
                   icon={
@@ -44,8 +44,10 @@ const BranchSection = () => {
                     />
                   }
                 />
-              </span>
-              <a href="#">Click to View Google Map</a>
+              </div>
+              <a href="#" className={styles.link}>
+                Click to View Google Map
+              </a>
             </div>
           ),
         )}

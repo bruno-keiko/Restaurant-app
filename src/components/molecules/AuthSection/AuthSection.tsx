@@ -42,7 +42,7 @@ const AuthSection: React.FC<AuthSectionProps> = ({ initialMode = "login" }) => {
                   />
                 </div>
                 <button type="submit">Log in</button>
-                <div className={styles.rememberMe}>
+                <div className={styles["remember-me"]}>
                   <input type="checkbox" id="remember" />
                   <label htmlFor="remember">Remember me</label>
                 </div>

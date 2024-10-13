@@ -1,9 +1,10 @@
-import LoginSection from "@/components/molecules/LoginComponent/LoginSection";
+import AuthSection from "@/components/molecules/AuthSection";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <LoginSection />
+      <AuthSection />
     </div>
   );
 };

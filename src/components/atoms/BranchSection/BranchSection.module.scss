@@ -1,5 +1,8 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
 .branch-section {
-  background-color: #f7fafc;
+  background-color: $branch-bg-color;
 
   h2 {
     font-size: 35px;
@@ -10,7 +13,7 @@
   }
 
   .branches {
-    background-color: #c33;
+    background-color: $branch-section-color;
     display: flex;
     gap: 1rem;
     justify-content: space-evenly;
@@ -18,8 +21,8 @@
     padding: 2rem;
 
     .branch {
-      border-radius: 4px;
-      color: #fff;
+      border-radius: $br-sm;
+      color: $header-bottom-bg-color;
       flex: 1;
       padding: 1rem;
       text-align: center;
@@ -28,6 +31,14 @@
         font-size: 35px;
         font-weight: bold;
         margin-bottom: 0.5rem;
+      }
+
+      .info-box {
+        display: flex;
+        font-size: $fs-xs;
+        gap: map.get($spacing, "xl");
+        justify-content: center;
+        margin-bottom: 1rem;
       }
 
       div {
@@ -47,8 +58,8 @@
         margin-bottom: 0.5rem;
       }
 
-      a {
-        color: #4bff3c;
+      .link {
+        color: $link-color;
         font-size: 18px;
         text-decoration: none;
 
