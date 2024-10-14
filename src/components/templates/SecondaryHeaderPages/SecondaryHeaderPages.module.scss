@@ -1,0 +1,45 @@
+@import '../../../foundations/sass/all';
+
+.secondary-header {
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  display: block;
+  height: px-to-rem(280);
+  max-width: px-to-rem(1440);
+  padding: px-to-rem(20);
+  width: px-to-rem(1440);
+
+  // background: url('/images/itemsheadbg.png');
+  &--textContent {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: px-to-rem(20);
+    width: 50%;
+
+    & h2 {
+      @include secondary-heading;
+
+      color: $white-floral;
+      line-height: 41.02px;
+      margin-bottom: px-to-rem(15);
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    & p {
+      @include body-font;
+
+      color: $white-floral;
+      line-height: 21.09px;
+      margin-bottom: px-to-rem(15);
+      text-align: center;
+    }
+  }
+}
