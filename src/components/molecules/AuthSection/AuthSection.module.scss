@@ -1,0 +1,173 @@
+@import "../../../foundations/sass/all";
+
+@mixin form-input {
+  border: 1px solid $auth-section-color;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0.5rem 0.75rem;
+  width: 90%;
+
+  &:focus {
+    border-color: $auth-section-secondary-color;
+    box-shadow: 0 0 0 3px $header-shadow-color;
+    outline: none;
+  }
+}
+
+@mixin button {
+  background-color: $auth-section-color;
+  border: none;
+  border-radius: 4px;
+  color: $auth-bg-color;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+
+  &:hover {
+    background-color: $auth-card-secondary-link-shade;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  background-color: $auth-bg-color;
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.forms {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 72rem;
+  min-height: 55%;
+}
+
+%form-base {
+  background-color: $header-bottom-bg-color;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 $secondary-color;
+  max-width: 400px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  button {
+    @include button;
+  }
+}
+
+.login-form {
+  @extend %form-base;
+
+  h2 {
+    color: $primary-color;
+  }
+}
+
+.register-form {
+  @extend %form-base;
+
+  h2 {
+    color: $header-top-bg-color;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.form-group {
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    text-align: left;
+  }
+
+  input {
+    @include form-input;
+  }
+}
+
+.login-form .form-group label {
+  color: $primary-color;
+}
+
+.register-form .form-group label {
+  color: $header-top-bg-color;
+}
+
+.remember-me {
+  align-items: left;
+  display: flex;
+  font-size: 16px;
+  margin-top: 0.5rem;
+
+  input {
+    margin-right: 0.5rem;
+  }
+}
+
+.lost-password {
+  color: $auth-link-color;
+  display: inline-block;
+  margin-top: 0.5rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+%user-switch {
+  margin-top: 1rem;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.new-user {
+  @extend %user-switch;
+
+  color: $auth-section-secondary-color;
+
+  a {
+    color: $header-bottom-link-shade-color;
+  }
+}
+
+.old-user {
+  @extend %user-switch;
+
+  color: $secondary-color;
+
+  a {
+    color: $header-bottom-link-shade-color;
+  }
+}

@@ -1,0 +1,72 @@
+@use "sass:map";
+@import "../../../foundations/sass/all";
+
+.branch-section {
+  background-color: $branch-bg-color;
+
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .branches {
+    background-color: $branch-section-color;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding: 2rem;
+
+    .branch {
+      border-radius: $br-sm;
+      color: $header-bottom-bg-color;
+      flex: 1;
+      padding: 1rem;
+      text-align: center;
+
+      h3 {
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .info-box {
+        display: flex;
+        font-size: $fs-xs;
+        gap: map.get($spacing, "xl");
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      div {
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+      }
+
+      span {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .link {
+        color: $link-color;
+        font-size: 18px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

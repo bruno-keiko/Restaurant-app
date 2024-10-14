@@ -41,7 +41,10 @@ const Header: React.FC<HeaderProps> = () => {
                 }
               />
             </div>
-            <Link href="#" className={styles["header__top__container__link"]}>
+            <Link
+              href="/signup"
+              className={styles["header__top__container__link"]}
+            >
               Register
             </Link>
           </div>
@@ -50,13 +53,15 @@ const Header: React.FC<HeaderProps> = () => {
       <section className={styles["header__bottom"]}>
         <MainContainer>
           <div className={styles["header__bottom__container"]}>
-            <Image
-              src="/icons/logo.png"
-              alt="Plate and with spoon and fork"
-              height={75}
-              width={112}
-              className={styles["header__bottom__container__logo"]}
-            />
+            <Link href={"/"}>
+              <Image
+                src="/icons/logo.png"
+                alt="Plate and with spoon and fork"
+                height={75}
+                width={112}
+                className={styles["header__bottom__container__logo"]}
+              />
+            </Link>
             <div className={styles["header__bottom__container__info-box"]}>
               <NavBar
                 navItems={[
@@ -73,7 +78,7 @@ const Header: React.FC<HeaderProps> = () => {
                 tel="+880 1630 225 015"
               />
               <Link
-                href="#"
+                href="/login"
                 className={styles["header__bottom__container__info-box__link"]}
               >
                 Login
