@@ -82,9 +82,16 @@ To contribute:
 5. Open a pull request and describe the changes you made.
 
  Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for more details on how to get started.
+ 
+---
 
+## Our Valuable Contributors ❤️✨
 
+This project exists thanks to all the amazing people who have contributed! Check out the [Contributors Graph](https://github.com/bruno-keiko/Restaurant-app/graphs/contributors) to see everyone who has helped out.
 
+[![Contributors](https://contrib.rocks/image?repo=bruno-keiko/Restaurant-app)](https://github.com/bruno-keiko/Restaurant-app/graphs/contributors))
+
+---
 
 ## 📜 License
 
