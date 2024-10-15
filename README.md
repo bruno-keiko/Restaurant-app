@@ -89,7 +89,7 @@ To contribute:
 
 This project exists thanks to all the amazing people who have contributed! Check out the [Contributors Graph](https://github.com/bruno-keiko/Restaurant-app/graphs/contributors) to see everyone who has helped out.
 
-[![Contributors](https://contrib.rocks/image?repo=bruno-keiko/Restaurant-app)](https://github.com/bruno-keiko/Restaurant-app/graphs/contributors))
+[![Contributors](https://contrib.rocks/image?repo=bruno-keiko/Restaurant-app)](https://github.com/bruno-keiko/Restaurant-app/graphs/contributors)
 
 ---
 
