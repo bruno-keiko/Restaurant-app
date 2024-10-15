@@ -19,6 +19,7 @@ const PopularDishesSection = () => {
   useEffect(() => {
     dishes.fetchPopular();
   }, []);
+  console.log(dishes.popularDishes);
   return (
     <div className={styles["popular-dishes-section"]}>
       <p className={styles["popular-dishes-section__subheading"]}>Food Items</p>

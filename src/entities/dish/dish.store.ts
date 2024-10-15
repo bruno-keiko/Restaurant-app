@@ -1,10 +1,11 @@
 import { DishService } from "@/shared/api/dish";
-import { DishDto, DishesDto } from "@/shared/api/dish/dish.types";
+import { DishTypeDto, DishesTypeDto } from "@/shared/api/dish/dish.types";
+import { adapterDishesList, adapterDishList } from "./dish.lib";
 import { create } from "zustand";
 
 interface DishState {
-  popularDishes: DishDto[];
-  dishes: DishesDto | null;
+  popularDishes: DishTypeDto[];
+  dishes: DishesTypeDto | null;
   fetchPopular: () => void;
   fetchDishes: () => void;
   isLoading: boolean;
@@ -13,7 +14,7 @@ interface DishState {
 
 export const useDishStore = create<DishState>((set) => ({
   dishes: null,
-  popularDishes: [] as DishDto[],
+  popularDishes: [] as DishTypeDto[],
   isLoading: false,
   error: null,
   fetchDishes: async () => {
@@ -24,7 +25,7 @@ export const useDishStore = create<DishState>((set) => ({
         limit: 10,
       });
       {
-        response && set({ dishes: response });
+        response && set({ dishes: adapterDishesList(response) });
       }
     } catch (error) {
       set({ error: String(error) });
@@ -39,7 +40,7 @@ export const useDishStore = create<DishState>((set) => ({
         popular: true,
       });
       {
-        response && set({ popularDishes: response.data });
+        response && set({ popularDishes: adapterDishList(response.data) });
       }
     } catch (error) {
       set({ error: String(error) });

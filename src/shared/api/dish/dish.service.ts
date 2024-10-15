@@ -8,9 +8,10 @@ export class DishService {
     const parameters = new URLSearchParams(
       Object.entries(params).map(([key, value]) => [key, String(value)]),
     );
-    console.log("parameters", parameters.toString());
-    return await api
+    const response = await api
       .get("/dish" + "?" + parameters.toString())
       .then((res) => FetchContracts.responseContract(DishesDtoSchema)(res));
+    console.log("RESPONSE", response);
+    return response;
   }
 }

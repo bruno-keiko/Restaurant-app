@@ -4,7 +4,7 @@ export const DishDto = z.object({
   id: z.string(),
   name: z.string(),
   description: z.string(),
-  price: z.string(),
+  price: z.number(),
   image: z.string(),
   popular: z.boolean().optional(),
   category: z.string(),
