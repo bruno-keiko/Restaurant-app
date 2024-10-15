@@ -11,7 +11,6 @@ export class DishService {
     const response = await api
       .get("/dish" + "?" + parameters.toString())
       .then((res) => FetchContracts.responseContract(DishesDtoSchema)(res));
-    console.log("RESPONSE", response);
     return response;
   }
 }

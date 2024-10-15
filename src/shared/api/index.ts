@@ -1,7 +1,6 @@
 export const BASE_URL = process.env.BASE_URL
   ? process.env.BASE_URL
   : "http://localhost:3000/api";
-console.log("Base URL: ", BASE_URL);
 class ApiFetcher {
   private prefix: string;
 
@@ -11,7 +10,6 @@ class ApiFetcher {
 
   private async request<T>(endpoint: string, options: RequestInit): Promise<T> {
     const url = `${this.prefix}${endpoint}`;
-    console.log("url", url);
     const response = await fetch(url, {
       ...options,
       headers: {
