@@ -24,7 +24,7 @@ This app incorporates cutting-edge development practices and design systems, inc
 
 ## 💡 Explore the UIX
 
-Check out the interactive [Figma design](https://www.figma.com/design/xiAbsYNAyBYPH5pfPUkIEX/Restaurant-website-template-(Community)?node-id=0-1&t=SsJ8S57pB4BlgRxA-0) for a visual preview of what we’re building!
+Check out the interactive [Figma design](<https://www.figma.com/design/xiAbsYNAyBYPH5pfPUkIEX/Restaurant-website-template-(Community)?node-id=0-1&t=SsJ8S57pB4BlgRxA-0>) for a visual preview of what we’re building!
 
 ## 🛠️ Setup
 
@@ -33,21 +33,28 @@ Follow these steps to set up the project locally and start exploring:
 1. Clone the repository:
    ```sh
    git clone https://github.com/bruno-keiko/Restaurant-app.git
-   
+
+   ```
 2. Navigate to the project directory:
+
    ```
    cd restaurant-app
+
+   ```
 
 3. Install the dependencies:
    ```
    npm install
+   ```
 4. Start the storybook for component exploration:
    ```
    npm run storybook
-   
+
+   ```
 5. Run the development server:
-    ```
-    npm run dev
+   ```
+   npm run dev
+   ```
 
 ## 🎮 Usage
 
@@ -62,10 +69,9 @@ Here are a few suggestions to get started:
 
 Don't hesitate to break things and learn from the process—that’s the essence of this project!
 
-
 ## 🤝 Contribution
 
-We welcome contributions from developers of all skill levels! Whether you're fixing a bug, adding new features, or improving documentation, your help is appreciated. 
+We welcome contributions from developers of all skill levels! Whether you're fixing a bug, adding new features, or improving documentation, your help is appreciated.
 
 To contribute:
 
@@ -73,16 +79,19 @@ To contribute:
 2. Create a new branch for your feature or fix:
    ```sh
    git checkout -b feature-or-fix-name
+   ```
 3. Make your changes and commit them using Conventional Commits:
    ```
    git commit -m "feat: describe your changes"
+   ```
 4. Push your branch:
    ```
     git push origin feature-or-fix-name
+   ```
 5. Open a pull request and describe the changes you made.
 
- Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for more details on how to get started.
- 
+Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for more details on how to get started.
+
 ---
 
 ## Our Valuable Contributors ❤️✨
@@ -96,6 +105,3 @@ This project exists thanks to all the amazing people who have contributed! Check
 ## 📜 License
 
 This project is licensed under the MIT License, meaning you’re free to use, modify, and distribute this software as long as the original license is included. For more information, please see the [LICENSE](LICENSE) file.
-
-
-

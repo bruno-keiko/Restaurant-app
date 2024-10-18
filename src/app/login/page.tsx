@@ -1,11 +1,11 @@
-import AuthSection from "@/components/molecules/AuthSection";
+import AuthSection from "@/components/templates/AuthSection";
 import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <>
       <AuthSection />
-    </div>
+    </>
   );
 };
 

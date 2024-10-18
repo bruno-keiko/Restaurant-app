@@ -6,7 +6,6 @@ import styles from "./BranchSection.module.scss";
 const BranchSection = () => {
   return (
     <div className={styles["branch-section"]}>
-      <h2 className={styles.title}>Our Branch</h2>
       <div className={styles.branches}>
         {["Robert Food", "Mark A. Reed Food", "Karie K. Hill Food"].map(
           (branch, index) => (

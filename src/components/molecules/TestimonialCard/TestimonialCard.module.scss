@@ -1,0 +1,39 @@
+@import "../../../foundations/sass/all";
+
+.card {
+  align-items: center;
+  background: $white-floral;
+  display: flex;
+  flex-direction: column;
+  gap: px-to-rem(15);
+  height: px-to-rem(277);
+  position: relative;
+  width: px-to-rem(443);
+
+  &__image {
+    border: 4px solid $testimonial-card-image-border-color;
+    border-radius: $br-full;
+    height: px-to-rem(80);
+    object-fit: cover;
+    width: px-to-rem(80);
+  }
+
+  &__name {
+    color: $testimonial-card-color;
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+    text-align: center;
+  }
+
+  &__description {
+    color: $testimonial-card-color;
+    font-size: $fs-md;
+    text-align: center;
+  }
+
+  &__rating {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+}

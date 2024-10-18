@@ -1,7 +1,5 @@
-import CopyrightInfo from "@/components/atoms/CopyrightInfo";
 import MainContainer from "@/components/atoms/mainContainer/MainContainer";
 import DeliverySection from "@/components/molecules/DeliverySection";
-import Header from "@/components/molecules/Header";
 import MainCarousel from "@/components/molecules/MainCarousel";
 import RichAndHealthy from "@/components/molecules/RichAndHealthy";
 import SpecialMenu from "@/components/molecules/SpecialMenu";
@@ -29,19 +27,15 @@ export default function Home() {
     title: "Hot Dogs",
   }));
   return (
-    <>
-      <Header />
-      <div style={{ marginTop: "50px", marginBottom: "50px" }}>
-        <MainContainer>
-          <MainCarousel slides={slides} />
-          <PopularDishesSection />
-          <RichAndHealthy />
-          <BigOfferSection />
-          <SpecialMenu meals={meals} />
-          <DeliverySection />
-        </MainContainer>
-      </div>
-      <CopyrightInfo text={"\u00A9 2024 My Website. All rights reserved"} />
-    </>
+    <div style={{ marginTop: "50px", marginBottom: "50px" }}>
+      <MainContainer>
+        <MainCarousel slides={slides} />
+        <PopularDishesSection />
+        <RichAndHealthy />
+        <BigOfferSection />
+        <SpecialMenu meals={meals} />
+        <DeliverySection />
+      </MainContainer>
+    </div>
   );
 }
