@@ -82,7 +82,7 @@ const AuthSection: React.FC<AuthSectionProps> = ({ initialMode = "login" }) => {
         </div>
       </div>
       <BranchSection />
-      <CopyrightInfo text="Copyright © 2024 | Shaheen Uddin Ahmad" />
+      <CopyrightInfo text="Copyright © 2024 | All Rights Reserved" />
     </div>
   );
 };

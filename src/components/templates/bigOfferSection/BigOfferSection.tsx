@@ -26,10 +26,8 @@ const BigOfferSection = () => {
         spaceBetween={18}
         slidesPerView={2}
         centeredSlides={true}
-        onSlideChange={() => console.log("slide change")}
         initialSlide={1}
         loop
-        onSwiper={(swiper) => console.log(swiper)}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
