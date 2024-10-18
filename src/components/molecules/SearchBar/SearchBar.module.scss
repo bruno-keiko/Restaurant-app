@@ -1,11 +1,11 @@
 @import "../../../foundations/sass/all";
 
-.search-bar{
-      align-items: center;
-      display: flex;
-      justify-content: center;
+.search-bar {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 
-    & button{
-          margin-left: px-to-rem(10);
-      }
+  & button {
+    margin-left: px-to-rem(10);
   }
+}

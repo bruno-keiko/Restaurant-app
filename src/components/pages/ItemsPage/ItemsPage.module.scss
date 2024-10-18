@@ -1,4 +1,4 @@
-@import '../../../foundations/sass/all';
+@import "../../../foundations/sass/all";
 
 .items-page {
   width: px-to-rem(1440);
@@ -23,15 +23,15 @@
     grid: repeat(10, auto) / repeat(2, auto);
     grid-gap: 10px;
     grid-template-areas:
-      'item-card-0 discount-image'
-      'item-card-1 discount-image'
-      'item-card-2 discount-image'
-      'item-card-3 item-card-4'
-      'item-card-5 item-card-6'
-      'discount-image-full-width discount-image-full-width'
-      'item-card-7 item-card-8'
-      'item-card-9 item-card-10'
-      'item-card-11 item-card-12';
+      "item-card-0 discount-image"
+      "item-card-1 discount-image"
+      "item-card-2 discount-image"
+      "item-card-3 item-card-4"
+      "item-card-5 item-card-6"
+      "discount-image-full-width discount-image-full-width"
+      "item-card-7 item-card-8"
+      "item-card-9 item-card-10"
+      "item-card-11 item-card-12";
     margin: 0 auto;
     max-width: px-to-rem(1254);
 

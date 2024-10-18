@@ -3,7 +3,7 @@ import styles from "./InputField.module.scss";
 
 interface InputFieldProps {
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: React.ChangeEventHandler<HTMLInputElement> | undefined;
   placeholder?: string;
   disabled?: boolean;
 }

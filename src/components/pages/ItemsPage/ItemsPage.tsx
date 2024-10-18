@@ -1,4 +1,4 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 import styles from "./ItemsPage.module.scss";
 import SecondaryHeaderPages from "@/components/templates/SecondaryHeaderPages";
 import SearchBar from "@/components/molecules/SearchBar";
@@ -17,7 +17,7 @@ interface ItemsPageProps {
 }
 
 const ItemsPage: React.FC<ItemsPageProps> = ({ items }) => {
-  const handleSearch = (searchTerm: string) => {
+  const handleSearch = (searchTerm: SetStateAction<string>): void => {
     alert(`Search ${searchTerm}`);
   };
 

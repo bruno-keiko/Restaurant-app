@@ -3,7 +3,7 @@ import AuthSection from "./AuthSection";
 export const Default = {};
 
 const headerConfig = {
-  title: "Molecules/Header",
+  title: "Molecules/AuthSection",
   component: AuthSection,
   tags: ["autodocs"],
   excludeStories: /.*Data$/,

@@ -1,0 +1,6 @@
+@import "../../../foundations/sass/all";
+
+.stars {
+  display: flex;
+  gap: px-to-rem(10);
+}

@@ -219,3 +219,19 @@ $auth-card-secondary-link-shade: var(
   --highlight-card-secondary-link-shade,
   $primary-color-shade
 );
+
+/* =============================================
+=                 TestimonialCard              =
+============================================= */
+$testimonial-card-color: var(
+  --testimonial-card-color,
+  $secondary-color
+) !default;
+$testimonial-card-image-border-color: var(
+  --testimonial-card-image-border-color,
+  $primary-color
+) !default;
+$testimonial-card-star-color: var(
+  --testimonial-card-star-color,
+  $primary-color
+) !default;

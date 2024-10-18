@@ -4,7 +4,8 @@ import Button from "../../atoms/button";
 import styles from "./SearchBar.module.scss";
 
 interface SearchBarProps {
-  onSearch: (searchTerm: string) => void;
+  // eslint-disable-next-line no-unused-vars
+  onSearch: (value: React.SetStateAction<string>) => void;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {

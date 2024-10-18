@@ -6,7 +6,7 @@
     "declaration-property-unit-allowed-list": {
       "/^border/": ["px"]
     },
-    "unit-allowed-list": ["%", "deg", "px", "rem", "ms"],
+    "unit-allowed-list": ["%", "deg", "px", "rem", "ms","vh"],
     "color-named": "never",
     "function-disallowed-list": ["rgb", "hwb", "lch"],
     "plugin/selector-bem-pattern": {
