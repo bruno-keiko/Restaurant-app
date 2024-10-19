@@ -1,0 +1,53 @@
+@import "../../../foundations/sass/all";
+
+.testimonial-section {
+  text-align: center;
+
+  &__name {
+    color: $testimonial-section-color;
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+    margin-bottom: px-to-rem(15);
+  }
+
+  &__heading {
+    color: $testimonial-section-color;
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    line-height: 1.2;
+    margin-bottom: px-to-rem(20);
+    text-align: center;
+
+    span {
+      color: $testimonial-section-secondary-color;
+    }
+  }
+
+  &__swiper {
+    box-sizing: border-box;
+    height: fit-content;
+    max-width: px-to-rem(1220);
+    min-height: px-to-rem(345);
+    padding: px-to-rem(10);
+    text-align: center;
+
+    & > div {
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    & > div:last-of-type {
+      margin: auto;
+
+      & > span {
+        border: 2px solid $primary-color;
+
+        &.swiper-pagination-bullet-active {
+          background: $primary-color;
+        }
+      }
+    }
+  }
+}

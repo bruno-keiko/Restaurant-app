@@ -1,0 +1,24 @@
+@import "../../../foundations/sass/all";
+
+.section {
+  &__heading {
+    color: $primary-color;
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+    line-height: px-to-rem(25);
+    margin-bottom: px-to-rem(33);
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    gap: 1rem;
+
+    @include tablet {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+}

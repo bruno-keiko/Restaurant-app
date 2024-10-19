@@ -4,7 +4,9 @@ import MainCarousel from "@/components/molecules/MainCarousel";
 import RichAndHealthy from "@/components/molecules/RichAndHealthy";
 import SpecialMenu from "@/components/molecules/SpecialMenu";
 import BigOfferSection from "@/components/templates/bigOfferSection/BigOfferSection";
+import HighlightSection from "@/components/templates/HighlightSection/HighlightSection";
 import PopularDishesSection from "@/components/templates/popularDishesSection/PopularDishesSection";
+import TestimonialSection from "@/components/templates/testimonialSection/TestimonialSection";
 
 const slides = Array.from({ length: 5 }, (item, index) => ({
   id: index,
@@ -35,6 +37,8 @@ export default function Home() {
         <BigOfferSection />
         <SpecialMenu meals={meals} />
         <DeliverySection />
+        <HighlightSection />
+        <TestimonialSection />
       </MainContainer>
     </div>
   );

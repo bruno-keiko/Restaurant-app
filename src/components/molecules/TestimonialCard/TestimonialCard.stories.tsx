@@ -8,6 +8,7 @@ export const Default = {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
     rating: 4,
     image: "/images/man.jpg",
+    isActive: true,
   },
 };
 
