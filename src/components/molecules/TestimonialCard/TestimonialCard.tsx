@@ -8,15 +8,17 @@ interface TestimonialCardProps {
   description: string;
   rating: number;
   image: string;
+  isActive?: boolean;
 }
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
   name,
   description,
   rating,
   image,
+  isActive = true,
 }) => {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${isActive ? "" : styles["card--blur"]}`}>
       <Image
         src={image}
         width={100}

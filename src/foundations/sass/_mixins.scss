@@ -28,20 +28,20 @@
   justify-content: center;
 }
 
+@mixin phone {
+  @media (max-width: map.get($breakpoints, "md")) {
+    @content;
+  }
+}
+
 @mixin tablet {
-  @media (min-width: map.get($breakpoints, "md")) {
+  @media (max-width: map.get($breakpoints, "lg")) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (min-width: map.get($breakpoints, "lg")) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: map.get($breakpoints, "xl")) {
+  @media (max-width: map.get($breakpoints, "xl")) {
     @content;
   }
 }

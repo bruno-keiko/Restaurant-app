@@ -2,6 +2,7 @@
 @import "../../../foundations/sass/all";
 
 .card {
+  border: 1px solid $special-meal-card-color;
   border-radius: $br-md;
   color: $special-meal-card-color;
   height: px-to-rem(180);

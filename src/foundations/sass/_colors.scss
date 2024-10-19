@@ -30,10 +30,7 @@ $navbar-color: var(--navbar-color, $secondary-color) !default;
 =                 DeliveryOrderCard            =
 ============================================= */
 
-$delivery-order-card-color: var(
-  --delivery-order-card-color,
-  $secondary-color
-) !default;
+$delivery-order-card-color: var(--delivery-order-card-color, $secondary-color) !default;
 
 /* =============================================
 =                 InfoCard                  =
@@ -58,10 +55,7 @@ $basket-button-text-color: var(--basket-button-text-color, $white-floral);
 =                 SpecialMealCard              =
 ============================================= */
 $special-meal-card-color: var(--special-meal-card-color, $primary-color);
-$special-meal-card-color-hover: var(
-  --special-meal-card-color-hover,
-  $white-floral
-);
+$special-meal-card-color-hover: var(--special-meal-card-color-hover, $white-floral);
 
 /* ================================================
 =                 HighLightCard               =
@@ -69,10 +63,7 @@ $special-meal-card-color-hover: var(
 $highlight-card-bg: var(--highlight-card-bg, $primary-color);
 $highlight-card-color: var(--highlight-card-color, $white-floral);
 $highlight-card-link-tint: var(--highlight-card-link-tint, $white);
-$highlight-card-secondary-color: var(
-  --highlight-card-secondary-color,
-  $secondary-color
-);
+$highlight-card-secondary-color: var(--highlight-card-secondary-color, $secondary-color);
 $highlight-card-secondary-link-shade: var(
   --highlight-card-secondary-link-shade,
   $primary-color-shade
@@ -82,18 +73,12 @@ $highlight-card-secondary-link-shade: var(
 =                 BranchCard              =
 ============================================= */
 $branch-card-color: var(--branch-card-color, $white-floral) !default;
-$branch-card-location-color: var(
-  --branch-card-location-color,
-  $green-neon
-) !default;
+$branch-card-location-color: var(--branch-card-location-color, $green-neon) !default;
 
 /* ======================================================
 =                SpecialServiceCard              =
 ======================================================= */
-$special-service-heading-color: var(
-  --special-service-heading-color,
-  $primary-color
-) !default;
+$special-service-heading-color: var(--special-service-heading-color, $primary-color) !default;
 $special-service-description-color: var(
   --special-service-description-color,
   $secondary-color
@@ -103,10 +88,7 @@ $special-service-description-color: var(
 =                 MemberCard              =
 ============================================= */
 $member-card-color: var(--member-card-color, $primary-color) !default;
-$member-card-border-color: var(
-  --member-card-border-color,
-  $primary-color
-) !default;
+$member-card-border-color: var(--member-card-border-color, $primary-color) !default;
 
 /* ================================================
 =                 Header               =
@@ -114,10 +96,7 @@ $member-card-border-color: var(
 
 $header-top-bg-color: var(--header-top-bg, $primary-color);
 $header-bottom-bg-color: var(--header-bottom-bg, $white-floral);
-$header-bottom-link-shade-color: var(
-  --header-bottom-link-shade-color,
-  $primary-color-shade
-);
+$header-bottom-link-shade-color: var(--header-bottom-link-shade-color, $primary-color-shade);
 $header-shadow-color: var(--header-shadow-color, $shadow-color);
 
 /* =============================================
@@ -129,14 +108,8 @@ $achievement-header-color: var(--header-color, $primary-color);
 /* =============================================
 =                 OurStoryCard              =
 ============================================= */
-$ourstory-card-border-color: var(
-  --ourstory-card-border-color,
-  $primary-color
-) !default;
-$ourstory-card-background-color: var(
-  --ourstory-card-background-color,
-  $white
-) !default;
+$ourstory-card-border-color: var(--ourstory-card-border-color, $primary-color) !default;
+$ourstory-card-background-color: var(--ourstory-card-background-color, $white) !default;
 $ourstory-card-color: var(--ourstory-card-color, $secondary-color) !default;
 
 /* =============================================
@@ -147,22 +120,10 @@ $special-menu-header-color: var(--special-menu-header-color, $primary-color);
 /* =============================================
 =                 RichAndHealthy               =
 ============================================= */
-$rich-and-healthy-heading-color: var(
-  --rich-and-healthy-heading-color,
-  $primary-color
-) !default;
-$rich-and-healthy-color: var(
-  --rich-and-healthy-color,
-  $secondary-color
-) !default;
-$rich-and-healthy-link-bg: var(
-  --rich-and-healthy-link-bg,
-  $primary-color
-) !default;
-$rich-and-healthy-link-color: var(
-  --rich-and-healthy-link-color,
-  $white-floral
-) !default;
+$rich-and-healthy-heading-color: var(--rich-and-healthy-heading-color, $primary-color) !default;
+$rich-and-healthy-color: var(--rich-and-healthy-color, $secondary-color) !default;
+$rich-and-healthy-link-bg: var(--rich-and-healthy-link-bg, $primary-color) !default;
+$rich-and-healthy-link-color: var(--rich-and-healthy-link-color, $white-floral) !default;
 $rich-and-healthy-link-shade-color: var(
   --rich-and-healthy-link-shade-color,
   $primary-color-shade
@@ -176,10 +137,7 @@ $delivery-section-color: var(--delivery-section-color, $primary-color);
 /* =============================================
 =                 PopularDishesSection             =
 ============================================= */
-$popular-dishes-section-color: var(
-  --popular-dishes-section-color,
-  $primary-color
-) !default;
+$popular-dishes-section-color: var(--popular-dishes-section-color, $primary-color) !default;
 $popular-dishes-section-subheading-color: var(
   --popular-dishes-section-subheading-color,
   $secondary-color
@@ -188,10 +146,7 @@ $popular-dishes-section-subheading-color: var(
 /* =============================================
 =                 BigOfferSection             =
 ============================================= */
-$big-offer-section-color: var(
-  --popular-dishes-section-color,
-  $primary-color
-) !default;
+$big-offer-section-color: var(--popular-dishes-section-color, $primary-color) !default;
 $big-offer-section-subheading-color: var(
   --popular-dishes-section-subheading-color,
   $secondary-color
@@ -203,10 +158,7 @@ $big-offer-section-subheading-color: var(
 $link-color: var(--branch-section, $green-neon) !default;
 $branch-bg-color: var(--branch-section, $white) !default;
 $branch-section-color: var(--branch-section, $primary-color) !default;
-$branch-section-secondary-color: var(
-  --branch-section,
-  $secondary-color
-) !default;
+$branch-section-secondary-color: var(--branch-section, $secondary-color) !default;
 
 /* =============================================
 =                 AuthSection                =
@@ -215,23 +167,20 @@ $auth-link-color: var(--branch-section, $dark-green) !default;
 $auth-bg-color: var(--branch-section, $white) !default;
 $auth-section-color: var(--branch-section, $primary-color) !default;
 $auth-section-secondary-color: var(--branch-section, $secondary-color) !default;
-$auth-card-secondary-link-shade: var(
-  --highlight-card-secondary-link-shade,
-  $primary-color-shade
-);
+$auth-card-secondary-link-shade: var(--highlight-card-secondary-link-shade, $primary-color-shade);
 
 /* =============================================
 =                 TestimonialCard              =
 ============================================= */
-$testimonial-card-color: var(
-  --testimonial-card-color,
-  $secondary-color
-) !default;
+$testimonial-card-color: var(--testimonial-card-color, $secondary-color) !default;
 $testimonial-card-image-border-color: var(
   --testimonial-card-image-border-color,
   $primary-color
 ) !default;
-$testimonial-card-star-color: var(
-  --testimonial-card-star-color,
-  $primary-color
-) !default;
+$testimonial-card-star-color: var(--testimonial-card-star-color, $primary-color) !default;
+
+/* =============================================
+=                 TestimonialSection           =
+============================================= */
+$testimonial-section-color: var(--info-card-text-color, $primary-color) !default;
+$testimonial-section-secondary-color: var(--info-card-text-color, $secondary-color) !default;
