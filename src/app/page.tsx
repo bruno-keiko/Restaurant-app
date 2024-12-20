@@ -1,10 +1,9 @@
 import MainContainer from "@/components/atoms/mainContainer/MainContainer";
-import DeliverySection from "@/components/molecules/DeliverySection";
+// import DeliverySection from "@/components/molecules/DeliverySection";
 import MainCarousel from "@/components/molecules/MainCarousel";
 import RichAndHealthy from "@/components/molecules/RichAndHealthy";
-import SpecialMenu from "@/components/molecules/SpecialMenu";
-import BigOfferSection from "@/components/templates/bigOfferSection/BigOfferSection";
-import HighlightSection from "@/components/templates/HighlightSection/HighlightSection";
+// import SpecialMenu from "@/components/molecules/SpecialMenu";
+// import BigOfferSection from "@/components/templates/bigOfferSection/BigOfferSection";
 import PopularDishesSection from "@/components/templates/popularDishesSection/PopularDishesSection";
 import TestimonialSection from "@/components/templates/testimonialSection/TestimonialSection";
 
@@ -23,22 +22,23 @@ const slides = Array.from({ length: 5 }, (item, index) => ({
 }));
 
 export default function Home() {
-  const meals = Array.from({ length: 10 }, (a, index) => ({
-    id: index,
-    image: "/images/image_richHealthy_2.png",
-    title: "Hot Dogs",
-  }));
+  // const meals = Array.from({ length: 10 }, (a, index) => ({
+  //   id: index,
+  //   image: "/images/image_richHealthy_2.png",
+  //   title: "Hot Dogs",
+  // }));
   return (
     <div style={{ marginTop: "50px", marginBottom: "50px" }}>
       <MainContainer>
-        <MainCarousel slides={slides} />
+        <div>
+          <MainCarousel slides={slides} />
+        </div>
+
         <PopularDishesSection />
         <RichAndHealthy />
-        <BigOfferSection />
+        {/* <BigOfferSection />
         <SpecialMenu meals={meals} />
-        <DeliverySection />
-        <HighlightSection />
-        <TestimonialSection />
+        <DeliverySection /> */}
       </MainContainer>
     </div>
   );

@@ -1,16 +1,13 @@
 @import "../../../foundations/sass/all";
 
 .swiper-slide {
-  display: hidden;
   margin: 0 auto;
   width: 78%;
 
   &--main {
     display: flex;
-
     &--headings {
       width: 60%;
-
       & > * {
         font-family: Roboto, sans-serif; // Following the figma design
         font-style: italic;
@@ -44,10 +41,12 @@
     &--image {
       max-height: px-to-rem(292);
       width: 40%;
+      overflow: hidden;
 
       img {
         display: block;
-        height: auto;
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -61,7 +60,11 @@
         font-family: Roboto, sans-serif;
         text-align: center;
         text-decoration: none;
-
+        font-size: $fs-sm;
+        border-radius: px-to-rem(8);
+        min-width: px-to-rem(100);
+        font-weight: 500;
+        padding: px-to-rem(6);
         @include laptop {
           border-radius: px-to-rem(10);
           font-size: px-to-rem(25);
@@ -89,16 +92,15 @@
     max-width: fit-content;
     padding: px-to-rem(5);
     width: fit-content;
-
+    display: hidden;
     & > div {
       align-items: flex-end;
       gap: px-to-rem(20);
       justify-content: space-between;
     }
-  }
 
-  @include tablet {
-    display: block;
-    width: 1166px;
+    @include tablet {
+      display: block;
+    }
   }
 }

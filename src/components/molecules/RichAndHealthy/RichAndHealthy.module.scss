@@ -6,65 +6,92 @@
 
   &__image-1 {
     border-radius: $br-md;
-    height: px-to-rem(600);
-    width: px-to-rem(361);
+    width: 50%;
+    height: 100%;
+    @include laptop {
+      height: px-to-rem(600);
+      width: px-to-rem(361);
+    }
   }
 
   &__subheading {
-    font-size: $fs-lg;
-    font-weight: $fw-bold;
+    font-size: $fs-md;
+    font-weight: $fw-semibold;
     text-align: center;
-
+    @include laptop {
+      font-size: $fs-lg;
+      font-weight: $fw-bold;
+    }
     @include margin-bottom("sm");
   }
 
   &__inner-box {
     display: flex;
-    gap: map.get($spacing, "lg");
+    gap: 10px;
+    @include laptop {
+      gap: map.get($spacing, "lg");
+    }
   }
 
   &__heading {
     color: $rich-and-healthy-heading-color;
-    font-size: $fs-xxl;
-    font-weight: $fw-bold;
+    font-size: $fs-lg;
+    font-weight: $fw-semibold;
+    margin-bottom: 10px;
+    @include laptop {
+      font-size: $fs-xxl;
+      font-weight: $fw-bold;
+      @include margin-bottom("lg");
+    }
     max-width: px-to-rem(510);
-
-    @include margin-bottom("lg");
   }
 
   &__text {
-    font-size: $fs-xl;
-    line-height: 1.4;
-    max-width: px-to-rem(750);
-
+    font-size: $fs-sm;
+    @include laptop {
+      font-size: $fs-xl;
+      line-height: 1.4;
+      max-width: px-to-rem(750);
+    }
     @include margin-bottom("xs");
   }
 
   &__feature-and-contact {
     display: flex;
-    gap: map.get($spacing, "sm");
+    gap: 1px;
+    @include laptop {
+      gap: map.get($spacing, "sm");
+    }
   }
 
   &__features-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 109px;
-
-    @include padding-vertical("lg");
+    gap: 30px;
+    
+    @include laptop {
+      gap: 109px;
+      @include padding-vertical("lg");
+    }
   }
 
   &__features {
     display: flex;
     flex-direction: column;
-    gap: map.get($spacing, "lg");
+    gap: 10px;
+    @include laptop {
+      gap: map.get($spacing, "lg");
+    }
   }
 
   &__feature-item {
     display: flex;
     gap: map.get($spacing, "xxs");
-
     &__text {
-      font-size: $fs-xl;
+      font-size: $fs-md;
+      @include laptop {
+        font-size: $fs-xl;
+      }
     }
   }
 
@@ -72,18 +99,28 @@
     text-align: center;
   }
 
+  &__image-2 {
+    display: none;
+    @include laptop {
+      display: block;
+    }
+  }
+
   &__link:link,
   &__link:visited {
     background-color: $rich-and-healthy-link-bg;
     border-radius: $br-md;
     color: $rich-and-healthy-link-color;
-    font-size: $fs-xxl;
-    font-weight: $fw-bold;
     text-decoration: none;
     text-transform: uppercase;
-
-    @include padding-horizontal(xl);
-    @include padding-vertical(xs);
+    font-size: $fs-xl;
+    padding: 10px 15px;
+    @include laptop {
+      @include padding-horizontal(xl);
+      @include padding-vertical(xs);
+      font-size: $fs-xxl;
+      font-weight: $fw-bold;
+    }
 
     &:hover,
     &:active {

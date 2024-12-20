@@ -37,7 +37,13 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
             </h2>
           </div>
           <div className={styles["swiper-slide--main--image"]}>
-            <Image src={image} alt={dishname} width={438} height={292} />
+            <Image
+              src={image}
+              alt={dishname}
+              width={438}
+              height={292}
+              objectFit="contain"
+            />
           </div>
         </div>
         <div className={styles["swiper-slide--main--cta"]}>
@@ -48,7 +54,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
         </div>
       </div>
       <div className={styles["swiper-slide--socials"]}>
-        <SocialMediaBar size={"medium"} socialMedias={socialMedia} />
+        <SocialMediaBar size={"small"} socialMedias={socialMedia} />
       </div>
     </SwiperSlide>
   );

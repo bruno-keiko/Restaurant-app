@@ -11,6 +11,7 @@ const RichAndHealthy: React.FC = () => {
         <Image
           width={361}
           height={600}
+          objectFit="contain"
           src={"/images/image_richHealthy_1.png"}
           alt="a chef cooking meal"
           className={styles["rich-and-healthy__image-1"]}
