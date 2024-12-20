@@ -28,7 +28,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
 }) => {
   return (
     <SwiperSlide key={id}>
-      <div className={styles["swiper-slide"]}>
+      <div className={styles[""]}>
         <div className={styles["swiper-slide--main"]}>
           <div className={styles["swiper-slide--main--headings"]}>
             <h4>Best In Town</h4>

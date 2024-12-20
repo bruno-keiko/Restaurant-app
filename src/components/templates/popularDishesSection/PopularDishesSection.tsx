@@ -22,11 +22,29 @@ const PopularDishesSection = () => {
       </h2>
       <Swiper
         modules={[Pagination, Navigation, Scrollbar, A11y, Autoplay]}
-        spaceBetween={18}
-        slidesPerView={5}
+        // spaceBetween={}
+        // slidesPerView={5}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         loop
+        breakpoints={{
+          0: {
+            slidesPerView: 1.1,
+            spaceBetween: 10,
+          },
+          321: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        }}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,

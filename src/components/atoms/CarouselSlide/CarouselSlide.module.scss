@@ -1,6 +1,7 @@
 @import "../../../foundations/sass/all";
 
 .swiper-slide {
+  display: hidden;
   margin: 0 auto;
   width: 78%;
 
@@ -25,10 +26,14 @@
 
       & > h2 {
         color: $secondary-color;
-        font-size: px-to-rem(50);
-        line-height: 58.59px;
+        font-size: $fs-md;
         text-align: left;
         text-transform: uppercase;
+
+        @include laptop {
+          font-size: px-to-rem(50);
+          line-height: 58.59px;
+        }
 
         & > span {
           color: $primary-color;
@@ -43,7 +48,6 @@
       img {
         display: block;
         height: auto;
-        max-width: 100%;
       }
     }
 
@@ -52,25 +56,31 @@
 
       > a {
         background-color: $primary-color;
-        border-radius: px-to-rem(10);
         color: $btn-primary-color;
         display: block;
         font-family: Roboto, sans-serif;
-        font-size: px-to-rem(25);
-        font-weight: 700;
-        min-width: px-to-rem(200);
-        padding: px-to-rem(14);
         text-align: center;
         text-decoration: none;
+
+        @include laptop {
+          border-radius: px-to-rem(10);
+          font-size: px-to-rem(25);
+          font-weight: 700;
+          min-width: px-to-rem(200);
+          padding: px-to-rem(14);
+        }
       }
 
       > p {
         color: $secondary-color;
-        font-size: px-to-rem(25);
-        font-weight: 400;
-        line-height: 29.33px;
         margin: 0 px-to-rem(10);
         padding: px-to-rem(10);
+
+        @include laptop {
+          font-size: px-to-rem(25);
+          font-weight: 400;
+          line-height: 29.33px;
+        }
       }
     }
   }
@@ -85,5 +95,10 @@
       gap: px-to-rem(20);
       justify-content: space-between;
     }
+  }
+
+  @include tablet {
+    display: block;
+    width: 1166px;
   }
 }

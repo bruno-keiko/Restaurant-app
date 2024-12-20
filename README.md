@@ -31,10 +31,12 @@ Check out the interactive [Figma design](<https://www.figma.com/design/xiAbsYNAy
 Follow these steps to set up the project locally and start exploring:
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/bruno-keiko/Restaurant-app.git
 
    ```
+
 2. Navigate to the project directory:
 
    ```
@@ -47,10 +49,12 @@ Follow these steps to set up the project locally and start exploring:
    npm install
    ```
 4. Start the storybook for component exploration:
+
    ```
    npm run storybook
 
    ```
+
 5. Run the development server:
    ```
    npm run dev

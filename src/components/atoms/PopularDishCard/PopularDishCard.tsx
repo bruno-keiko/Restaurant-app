@@ -16,6 +16,7 @@ const PopularDishCard: FC<PopularDishCardProps> = ({ image, link }) => {
         width={229}
         height={120}
         alt="Popular dish"
+        objectFit="cover"
         className={styles["popular-dish"]}
       />
     </Link>

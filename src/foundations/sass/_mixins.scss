@@ -28,8 +28,8 @@
   justify-content: center;
 }
 
-@mixin phone {
-  @media (max-width: map.get($breakpoints, "md")) {
+@mixin mobile {
+  @media (max-width: map.get($breakpoints, "sm")) {
     @content;
   }
 }
