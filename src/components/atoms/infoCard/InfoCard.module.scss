@@ -4,6 +4,7 @@
 .info-card {
   align-items: center;
   display: flex;
+  font-size: $fs-xs;
   gap: 15px;
 
   &__icon {

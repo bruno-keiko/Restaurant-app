@@ -5,11 +5,15 @@
   background-color: $branch-bg-color;
 
   h2 {
-    font-size: 35px;
-    font-weight: bold;
+    font-size: $fs-lg;
     margin-bottom: 1.5rem;
     padding: 2rem;
     text-align: center;
+
+    @include laptop {
+      font-size: 35px;
+      font-weight: bold;
+    }
   }
 
   .branches {
@@ -18,36 +22,52 @@
     gap: 1rem;
     justify-content: space-evenly;
     max-width: 100%;
+    overflow-y: auto;
     padding: 2rem;
 
     .branch {
       border-radius: $br-sm;
       color: $header-bottom-bg-color;
       flex: 1;
+      min-width: 300px;
       padding: 1rem;
       text-align: center;
 
       h3 {
-        font-size: 35px;
+        font-size: $fs-lg;
         font-weight: bold;
         margin-bottom: 0.5rem;
+
+        @include laptop {
+          font-size: 35px;
+        }
       }
 
       .info-box {
         display: flex;
+        flex-direction: column;
         font-size: $fs-xs;
-        gap: map.get($spacing, "xl");
         justify-content: center;
         margin-bottom: 1rem;
+
+        @include laptop {
+          flex-direction: row;
+          font-size: $fs-xl;
+          gap: map.get($spacing, "xl");
+        }
       }
 
       div {
         align-items: center;
         display: flex;
-        font-size: 20px;
+        font-size: $fs-md;
         gap: 5px;
         justify-content: center;
         margin-bottom: 0.5rem;
+
+        @include laptop {
+          font-size: 20px;
+        }
       }
 
       span {

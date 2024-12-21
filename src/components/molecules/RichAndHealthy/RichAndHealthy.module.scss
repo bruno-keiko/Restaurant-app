@@ -3,6 +3,7 @@
 
 .rich-and-healthy {
   color: $rich-and-healthy-color;
+  margin: 16px;
 
   &__image-1 {
     border-radius: $br-md;
@@ -125,8 +126,8 @@
     background-color: $rich-and-healthy-link-bg;
     border-radius: $br-md;
     color: $rich-and-healthy-link-color;
-    font-size: $fs-xl;
-    padding: 10px 15px;
+    font-size: $fs-lg;
+    padding: 8px 12px;
     text-decoration: none;
     text-transform: uppercase;
 

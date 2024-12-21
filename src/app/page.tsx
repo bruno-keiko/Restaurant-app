@@ -1,5 +1,5 @@
 import MainContainer from "@/components/atoms/mainContainer/MainContainer";
-// import DeliverySection from "@/components/molecules/DeliverySection";
+import DeliverySection from "@/components/molecules/DeliverySection";
 import MainCarousel from "@/components/molecules/MainCarousel";
 import RichAndHealthy from "@/components/molecules/RichAndHealthy";
 import SpecialMenu from "@/components/molecules/SpecialMenu";
@@ -32,12 +32,11 @@ export default function Home() {
         <div>
           <MainCarousel slides={slides} />
         </div>
-
         <PopularDishesSection />
         <RichAndHealthy />
         <BigOfferSection />
         <SpecialMenu meals={meals} />
-        {/* <DeliverySection /> */}
+        <DeliverySection />
       </MainContainer>
     </div>
   );

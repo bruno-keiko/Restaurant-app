@@ -21,23 +21,15 @@ const DeliverySection = () => {
           </p>
           <div className={styles["delivery-section__delivery-order-card"]}>
             <DeliveryOrderCard title="Delivery Order" tel="+880 1630 225 015" />
-            <Button
-              size="small"
-              style={{
-                height: "50px",
-                minWidth: "159px",
-                fontSize: "25px",
-                fontWeight: "400",
-              }}
-            >
-              Order Now
-            </Button>
+            <Button size="small">Order Now</Button>
           </div>
         </div>
         <Image
           src="/images/image_delivery_section.png"
           alt={"food delivery"}
+          className={styles["delivery-section__image"]}
           width="447"
+          objectFit="contain"
           height="330"
         />
       </div>

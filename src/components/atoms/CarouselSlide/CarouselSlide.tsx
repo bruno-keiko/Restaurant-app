@@ -1,6 +1,5 @@
 import styles from "./CarouselSlide.module.scss";
 import React from "react";
-import { SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import Image from "next/image";
 import SocialMediaBar from "../social-media-bar/SocialMediaBar";
@@ -19,7 +18,6 @@ interface CarouselSlideProps {
 }
 
 const CarouselSlide: React.FC<CarouselSlideProps> = ({
-  id,
   image,
   dishname,
   price,
@@ -27,7 +25,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
   socialMedia,
 }) => {
   return (
-    <SwiperSlide key={id}>
+    <>
       <div className={styles["swiper-slide"]}>
         <div className={styles["swiper-slide--main"]}>
           <div className={styles["swiper-slide--main--headings"]}>
@@ -56,7 +54,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
       <div className={styles["swiper-slide--socials"]}>
         <SocialMediaBar size={"small"} socialMedias={socialMedia} />
       </div>
-    </SwiperSlide>
+    </>
   );
 };
 

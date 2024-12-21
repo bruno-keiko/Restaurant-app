@@ -2,6 +2,7 @@
 
 .swiper-slide {
   margin: 0 auto;
+  padding-left: 16px;
   width: 78%;
 
   &--main {
@@ -94,7 +95,8 @@
   &--socials {
     display: hidden;
     max-width: fit-content;
-    padding: px-to-rem(5);
+    padding: px-to-rem(15);
+    padding-left: 20px;
     width: fit-content;
 
     & > div {

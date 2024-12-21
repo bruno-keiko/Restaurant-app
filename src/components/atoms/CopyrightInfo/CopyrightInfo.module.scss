@@ -3,9 +3,15 @@
 .copyright-info {
   background-color: $secondary-color;
   color: $white-floral;
-  font-size: $fs-lg;
-  font-weight: $fw-bold;
-  height: 100px;
+  font-size: $fs-xs;
+  font-weight: $fw-semibold;
+  height: 60px;
+
+  @include laptop {
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+    height: 100px;
+  }
 
   @include center;
 }
