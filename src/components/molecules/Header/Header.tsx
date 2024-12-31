@@ -67,7 +67,7 @@ const Header: React.FC<HeaderProps> = () => {
                 navItems={[
                   { title: "Home", href: "/" },
                   { title: "About", href: "/" },
-                  { title: "Items", href: "/" },
+                  { title: "Items", href: "/items" },
                   { title: "Pages", href: "/" },
                   { title: "Contact", href: "/" },
                 ]}

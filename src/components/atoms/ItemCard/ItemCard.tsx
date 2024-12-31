@@ -2,6 +2,8 @@ import styles from "../../pages/ItemsPage/ItemsPage.module.scss";
 import style from "./ItemCard.module.scss";
 import React from "react";
 import Image from "next/image";
+import DiscountOne from "./DiscountOne";
+import DiscountTwo from "./DiscountTwo";
 interface ItemCardProps {
   id: number;
   image: string;
@@ -35,41 +37,18 @@ const ItemCard: React.FC<ItemCardProps> = ({
           <Image
             src={image}
             alt={dishname}
+            className={styles["item-card-image"]}
             width="150"
             height="150"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "contain" }}
           />
         </div>
       </div>
     );
   } else if (discountOne) {
-    return (
-      <div
-        className={`${styles["discount-image"]} ${style["discount"]}`}
-        style={{ position: "relative" }}
-      >
-        <Image
-          src={discountOne}
-          fill
-          alt="discount offer"
-          style={{ objectFit: "cover" }}
-        />
-      </div>
-    );
+    return <DiscountOne discountOne={discountOne} />;
   } else if (discountTwo) {
-    return (
-      <div
-        className={`${styles["discount-image-full-width"]} ${style["discount-full-width"]}`}
-        style={{ position: "relative" }}
-      >
-        <Image
-          src={discountTwo}
-          fill
-          alt="discount offer"
-          style={{ objectFit: "cover" }}
-        />
-      </div>
-    );
+    return <DiscountTwo discountTwo={discountTwo} />;
   }
 };
 

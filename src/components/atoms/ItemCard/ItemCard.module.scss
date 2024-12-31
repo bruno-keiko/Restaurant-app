@@ -10,15 +10,19 @@
   height: px-to-rem(170);
   justify-content: space-between;
   margin: px-to-rem(10);
+  max-width: px-to-rem(588);
   padding: px-to-rem(10);
-  width: px-to-rem(588);
 
-  &-img {
+  &-image {
     border-radius: px-to-rem(20);
-    height: px-to-rem(150);
-    min-width: px-to-rem(150);
+    height: px-to-rem(120);
     overflow: hidden;
-    width: px-to-rem(150);
+    width: px-to-rem(120);
+
+    @include laptop {
+      height: px-to-rem(150);
+      width: px-to-rem(150);
+    }
   }
 
   &-text {
@@ -33,13 +37,19 @@
     & > h3,
     & > h4 {
       font-family: Roboto, sans-serif;
-      font-size: px-to-rem(20);
-      font-weight: 700;
+      font-size: $fs-md;
+      font-weight: $fw-bold;
+
+      @include laptop {
+        font-size: px-to-rem(20);
+        font-weight: 700;
+      }
     }
 
     p {
       @include body-font;
 
+      font-size: $fs-sm;
       line-height: 21.09px;
     }
   }

@@ -6,10 +6,15 @@
   background-size: cover;
   box-sizing: border-box;
   display: block;
-  height: px-to-rem(280);
-  max-width: px-to-rem(1440);
+  height: 200px;
   padding: px-to-rem(20);
-  width: px-to-rem(1440);
+  width: 100%;
+
+  @include laptop {
+    height: px-to-rem(280);
+    max-width: px-to-rem(1440);
+    width: px-to-rem(1440);
+  }
 
   // background: url('/images/itemsheadbg.png');
   &--textContent {
@@ -21,7 +26,11 @@
     justify-content: flex-end;
     margin: 0 auto;
     padding: px-to-rem(20);
-    width: 50%;
+    width: 100%;
+
+    @include laptop {
+      width: 50%;
+    }
 
     & h2 {
       @include secondary-heading;
@@ -37,6 +46,8 @@
       @include body-font;
 
       color: $white-floral;
+      font-size: $fs-lg;
+      font-weight: $fw-semibold;
       line-height: 21.09px;
       margin-bottom: px-to-rem(15);
       text-align: center;

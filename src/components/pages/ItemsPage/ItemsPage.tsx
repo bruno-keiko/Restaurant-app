@@ -1,3 +1,4 @@
+"use client";
 import React, { SetStateAction } from "react";
 import styles from "./ItemsPage.module.scss";
 import SecondaryHeaderPages from "@/components/templates/SecondaryHeaderPages";

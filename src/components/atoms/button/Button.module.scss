@@ -27,7 +27,13 @@
   &--large {
     border-radius: $br-md;
     font-size: $fs-xxl;
-    height: 120px;
-    min-width: 120px;
+    height: 60px;
+    min-width: 80px;
+
+    @include laptop {
+      border-radius: $br-md;
+      height: 80px;
+      min-width: 120px;
+    }
   }
 }

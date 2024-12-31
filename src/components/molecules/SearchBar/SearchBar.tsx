@@ -1,11 +1,11 @@
+"use client";
 import React, { useState } from "react";
 import InputField from "../../atoms/InputField";
 import Button from "../../atoms/button";
 import styles from "./SearchBar.module.scss";
 
 interface SearchBarProps {
-  // eslint-disable-next-line no-unused-vars
-  onSearch: (value: React.SetStateAction<string>) => void;
+  onSearch: (_value: React.SetStateAction<string>) => void;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
