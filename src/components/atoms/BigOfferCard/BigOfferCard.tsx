@@ -18,6 +18,7 @@ const BigOfferCard: React.FC<BigOfferCardProps> = ({ image, link }) => {
           height={200}
           width={560}
           className={styles["big-offer-card__link__img"]}
+          objectFit="containe"
         />
       </Link>
     </figure>

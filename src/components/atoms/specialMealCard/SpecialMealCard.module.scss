@@ -2,13 +2,18 @@
 @import "../../../foundations/sass/all";
 
 .card {
-  border: 1px solid $special-meal-card-color;
-  border-radius: $br-md;
+  border-radius: $br-sm;
   color: $special-meal-card-color;
-  height: px-to-rem(180);
+  height: px-to-rem(140);
   text-align: center;
   transition: all 300ms ease;
-  width: px-to-rem(180);
+  width: px-to-rem(140);
+
+  @include laptop {
+    border-radius: $br-md;
+    height: px-to-rem(180);
+    width: px-to-rem(180);
+  }
 
   &:hover {
     background-color: $special-meal-card-color;

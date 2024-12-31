@@ -4,17 +4,27 @@
 .special-menu {
   &__header {
     color: $special-menu-header-color;
-    font-size: $fs-xxl;
-    font-weight: $fw-bold;
+    font-size: $fs-lg;
+    font-weight: $fw-semibold;
+    margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
 
-    @include margin-bottom("xxl");
+    @include laptop {
+      font-size: $fs-xxl;
+      font-weight: $fw-bold;
+
+      @include margin-bottom("xxl");
+    }
   }
 
   &__meals-container {
     flex-wrap: wrap;
-    gap: map.get($spacing, md);
+    gap: 16px;
+
+    @include laptop {
+      gap: map.get($spacing, md);
+    }
 
     @include center;
   }

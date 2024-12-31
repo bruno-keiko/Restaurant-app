@@ -6,8 +6,10 @@
 
   &--main {
     display: flex;
+
     &--headings {
       width: 60%;
+
       & > * {
         font-family: Roboto, sans-serif; // Following the figma design
         font-style: italic;
@@ -40,8 +42,8 @@
 
     &--image {
       max-height: px-to-rem(292);
-      width: 40%;
       overflow: hidden;
+      width: 40%;
 
       img {
         display: block;
@@ -55,16 +57,17 @@
 
       > a {
         background-color: $primary-color;
+        border-radius: px-to-rem(8);
         color: $btn-primary-color;
         display: block;
         font-family: Roboto, sans-serif;
+        font-size: $fs-sm;
+        font-weight: 500;
+        min-width: px-to-rem(100);
+        padding: px-to-rem(6);
         text-align: center;
         text-decoration: none;
-        font-size: $fs-sm;
-        border-radius: px-to-rem(8);
-        min-width: px-to-rem(100);
-        font-weight: 500;
-        padding: px-to-rem(6);
+
         @include laptop {
           border-radius: px-to-rem(10);
           font-size: px-to-rem(25);
@@ -89,10 +92,11 @@
   }
 
   &--socials {
+    display: hidden;
     max-width: fit-content;
     padding: px-to-rem(5);
     width: fit-content;
-    display: hidden;
+
     & > div {
       align-items: flex-end;
       gap: px-to-rem(20);

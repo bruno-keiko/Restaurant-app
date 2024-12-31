@@ -23,12 +23,28 @@ const BigOfferSection = () => {
       </p>
       <Swiper
         modules={[Pagination, Navigation, Scrollbar, A11y, Autoplay]}
-        spaceBetween={18}
-        slidesPerView={2}
         centeredSlides={true}
         onSlideChange={() => console.log("slide change")}
         initialSlide={1}
         loop
+        breakpoints={{
+          0: {
+            slidesPerView: 1.1,
+            spaceBetween: 10,
+          },
+          321: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        }}
         onSwiper={(swiper) => console.log(swiper)}
         autoplay={{
           delay: 3000,

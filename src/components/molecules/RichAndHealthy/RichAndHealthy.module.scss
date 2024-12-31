@@ -6,8 +6,9 @@
 
   &__image-1 {
     border-radius: $br-md;
-    width: 50%;
     height: 100%;
+    width: 50%;
+
     @include laptop {
       height: px-to-rem(600);
       width: px-to-rem(361);
@@ -18,16 +19,19 @@
     font-size: $fs-md;
     font-weight: $fw-semibold;
     text-align: center;
+
     @include laptop {
       font-size: $fs-lg;
       font-weight: $fw-bold;
     }
+
     @include margin-bottom("sm");
   }
 
   &__inner-box {
     display: flex;
     gap: 10px;
+
     @include laptop {
       gap: map.get($spacing, "lg");
     }
@@ -38,27 +42,32 @@
     font-size: $fs-lg;
     font-weight: $fw-semibold;
     margin-bottom: 10px;
+    max-width: px-to-rem(510);
+
     @include laptop {
       font-size: $fs-xxl;
       font-weight: $fw-bold;
+
       @include margin-bottom("lg");
     }
-    max-width: px-to-rem(510);
   }
 
   &__text {
     font-size: $fs-sm;
+
     @include laptop {
       font-size: $fs-xl;
       line-height: 1.4;
       max-width: px-to-rem(750);
     }
+
     @include margin-bottom("xs");
   }
 
   &__feature-and-contact {
     display: flex;
     gap: 1px;
+
     @include laptop {
       gap: map.get($spacing, "sm");
     }
@@ -71,6 +80,7 @@
     
     @include laptop {
       gap: 109px;
+
       @include padding-vertical("lg");
     }
   }
@@ -79,6 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     @include laptop {
       gap: map.get($spacing, "lg");
     }
@@ -87,8 +98,10 @@
   &__feature-item {
     display: flex;
     gap: map.get($spacing, "xxs");
+
     &__text {
       font-size: $fs-md;
+
       @include laptop {
         font-size: $fs-xl;
       }
@@ -101,6 +114,7 @@
 
   &__image-2 {
     display: none;
+
     @include laptop {
       display: block;
     }
@@ -111,13 +125,15 @@
     background-color: $rich-and-healthy-link-bg;
     border-radius: $br-md;
     color: $rich-and-healthy-link-color;
-    text-decoration: none;
-    text-transform: uppercase;
     font-size: $fs-xl;
     padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+
     @include laptop {
       @include padding-horizontal(xl);
       @include padding-vertical(xs);
+
       font-size: $fs-xxl;
       font-weight: $fw-bold;
     }
