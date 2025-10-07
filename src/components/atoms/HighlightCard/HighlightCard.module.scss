@@ -20,7 +20,7 @@
 
     &::after {
       border-radius: $br-full;
-      content: "2";
+      content: attr(data-badge);
       display: block;
       font-size: $fs-xxl;
       font-weight: $fw-bold;

@@ -1,14 +1,15 @@
-import React from "react";
-import styles from "./HighlightCard.module.scss";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react';
+import styles from './HighlightCard.module.scss';
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface HighlightCardProps {
   image: string;
   title: string;
   description: string;
   link: string;
-  mode: "primary" | "secondary";
+  mode: 'primary' | 'secondary';
+  badge?: string | number;
 }
 
 const HighlightCard: React.FC<HighlightCardProps> = ({
@@ -16,21 +17,20 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
   title,
   description,
   link,
-  mode = "primary",
+  mode = 'primary',
+  badge = '2',
 }) => {
   return (
-    <article
-      className={`${styles["highlight-card"]} ${styles[`highlight-card--${mode}`]}`}
-    >
-      <figure className={styles["highlight-card__image-box"]}>
+    <article className={`${styles['highlight-card']} ${styles[`highlight-card--${mode}`]}`}>
+      <figure className={styles['highlight-card__image-box']} data-badge={String(badge)}>
         <Image src={image} alt="Card icon" width={80} height={80} />
       </figure>
 
-      <h3 className={styles["highlight-card__title"]}>{title}</h3>
+      <h3 className={styles['highlight-card__title']}>{title}</h3>
 
-      <p className={styles["highlight-card__description"]}>{description}</p>
+      <p className={styles['highlight-card__description']}>{description}</p>
 
-      <Link className={styles["highlight-card__link"]} href={link}>
+      <Link className={styles['highlight-card__link']} href={link}>
         Read More
       </Link>
     </article>

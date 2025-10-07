@@ -1,19 +1,20 @@
-import HighlightCard from "./HighlightCard";
+import HighlightCard from './HighlightCard';
 
 export const Default = {
   args: {
-    image: "icons/highlight-icon.svg",
-    title: "100 % Fresh Foods",
+    image: 'icons/highlight-icon.svg',
+    title: '100 % Fresh Foods',
     description:
-      "Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.",
-    link: "/",
+      'Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.',
+    link: '/',
+    badge: '2',
   },
 };
 
 const highlightCardConfig = {
-  title: "Atoms/HighlightCard",
+  title: 'Atoms/HighlightCard',
   component: HighlightCard,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 
