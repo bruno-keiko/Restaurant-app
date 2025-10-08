@@ -12,15 +12,15 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event?.target.value);
+    setSearchTerm(event.target.value);
+    onSearch(event.target.value); // Real-time search
   };
 
-  const handleSearch = () => {
-    if (searchTerm) {
-      onSearch(searchTerm);
-      setSearchTerm("");
-    }
+  const handleClear = () => {
+    setSearchTerm("");
+    onSearch(""); // Clear results
   };
+
   return (
     <div className={styles["search-bar"]}>
       <InputField
@@ -28,9 +28,11 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         value={searchTerm}
         onChange={handleChange}
       />
-      <Button id={styles["search-bar-btn"]} size="large" onClick={handleSearch}>
-        Go
-      </Button>
+      {searchTerm && (
+        <Button size="large" onClick={handleClear}>
+          Clear
+        </Button>
+      )}
     </div>
   );
 };

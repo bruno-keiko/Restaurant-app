@@ -1,5 +1,5 @@
 "use client";
-import React, { SetStateAction } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./ItemsPage.module.scss";
 import SecondaryHeaderPages from "@/components/templates/SecondaryHeaderPages";
 import SearchBar from "@/components/molecules/SearchBar";
@@ -18,8 +18,26 @@ interface ItemsPageProps {
 }
 
 const ItemsPage: React.FC<ItemsPageProps> = ({ items }) => {
-  const handleSearch = (searchTerm: SetStateAction<string>): void => {
-    alert(`Search ${searchTerm}`);
+  const [filteredItems, setFilteredItems] = useState(items);
+
+  // Update filtered items when items prop changes
+  useEffect(() => {
+    setFilteredItems(items);
+  }, [items]);
+
+  const handleSearch = (searchTerm: string): void => {
+    if (!searchTerm.trim()) {
+      setFilteredItems(items);
+      return;
+    }
+
+    const filtered = items.filter(
+      (item) =>
+        item.dishname.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.description.toLowerCase().includes(searchTerm.toLowerCase()),
+    );
+
+    setFilteredItems(filtered);
   };
 
   return (
@@ -37,7 +55,7 @@ const ItemsPage: React.FC<ItemsPageProps> = ({ items }) => {
       </div>
 
       <div className={styles["items-page-container"]}>
-        {items.map((item, index) => {
+        {filteredItems.map((item, index) => {
           return <ItemCard key={index} {...item} />;
         })}
       </div>

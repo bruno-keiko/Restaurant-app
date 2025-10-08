@@ -21,11 +21,35 @@ const slides = Array.from({ length: 5 }, (item, index) => ({
 }));
 
 export default function Home() {
-  const meals = Array.from({ length: 10 }, (a, index) => ({
-    id: index,
-    image: "/images/image_richHealthy_2.png",
-    title: "Hot Dogs",
-  }));
+  const meals = [
+    { id: 1, image: "/images/image_specialManu_1.png", title: "Burger" },
+    { id: 2, image: "/images/image_specialManu_2.png", title: "Fried chicken" },
+    {
+      id: 3,
+      image: "/images/image_specialManu_3.png",
+      title: "Donner with Grilled Chicken",
+    },
+    { id: 4, image: "/images/image_specialManu_4.png", title: "Pizza" },
+    { id: 5, image: "/images/image_specialManu_5.png", title: "Hot Dogs" },
+    {
+      id: 6,
+      image: "/images/image_specialManu_6.png",
+      title: "Chicken Sewers",
+    },
+    { id: 7, image: "/images/image_specialManu_7.png", title: "Greek Salad" },
+    { id: 8, image: "/images/image_specialManu_8.png", title: "Dahi Puri" },
+    {
+      id: 9,
+      image: "/images/image_specialManu_9.png",
+      title: "Ice Cream with Chocolate",
+    },
+    {
+      id: 10,
+      image: "/images/image_specialManu_10.png",
+      title: "Coctail Glasses",
+    },
+  ];
+
   return (
     <div style={{ marginTop: "50px", marginBottom: "50px" }}>
       <MainContainer>
